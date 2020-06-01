@@ -34,7 +34,8 @@ int		add_args(t_inc *inc, char *str)
 void	make_lst(t_inc *inc)
 {
 	inc->lst = (t_dir*)malloc(sizeof(t_dir));
-	inc->lst->dir = ".";
+	inc->lst->dir = ft_strdup(".");
+	inc->lst->full_path = ft_strnew(0);
 	inc->lst->next = NULL;
 }
 
@@ -47,11 +48,12 @@ void	free_lst(t_dir *dir)
 		{
 			tmp = dir;
 //			if (dir->dir)
-//				free(dir->dir);
-//			if (dir->full_path)
-//				free(dir->full_path);
-			//free(dir);
 			dir = dir->next;
+//				free(tmp->dir);
+//			if (dir->full_path)
+			free(tmp->full_path);
+			//free(dir);
+
 			free(tmp);
 		}
 	}
@@ -70,16 +72,16 @@ void	free_l(t_inc *inc)
 
 			inc->lst = inc->lst->next;
 //			if (tmp->dir)
-//				free(tmp->dir);
+			free(tmp->dir);
 //			if (tmp->full_path)
-//				free(tmp->full_path);
+			free(tmp->full_path);
 			free(tmp);
 		}
 	}
 	if (inc->path)
 		free(inc->path);
-	if (inc->dirp)
-		free(inc->dirp);
+//	if (inc->dirp && inc->rr == 0)
+	closedir(inc->dirp);
 	free(inc);
 	inc = NULL;
 }
@@ -99,7 +101,8 @@ int main(int argc, char **argv)
 	{
 		if (argv[i][0] != '-')
 		{
-			tmp->dir = argv[i];
+			ft_printf("lol\n");
+			tmp->dir = ft_strdup(argv[i]);
 			tmp->next = inc->lst;
 			inc->lst = tmp;
 		}
@@ -112,6 +115,7 @@ int main(int argc, char **argv)
 	ft_ls(inc, str_tmp);
 	//free(str_tmp);
 //	free_lst(tmp);
+	//free(tmp->dir);
 	free_l(inc);
 	return (0);
 }

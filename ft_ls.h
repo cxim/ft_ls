@@ -40,10 +40,11 @@ typedef struct		s_inc
 }					t_inc;
 
 void	ft_ls(t_inc *inc, char *str);
-void	ft_print_ls(t_dir *lst, t_inc *inc, char *path, char *str_tmp);
+void	ft_print_ls(t_dir *lst, t_inc *inc, char *path);
 void	sort_lst(t_dir **lst, int (*cmp)(t_dir, t_dir), int i);
 int		compare_strs(t_dir str1, t_dir str2);
 void	ft_rev_lst(t_dir **head);
-void	do_operation(char *str, t_inc *inc, char *str_tmp);
+void	do_operation(char *str, t_inc *inc);
 void	free_lst(t_dir *dir);
+void	free_l(t_inc *inc);
 #endif //FT_LS_FT_LS_H

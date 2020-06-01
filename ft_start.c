@@ -32,25 +32,34 @@ int		ft_check(t_inc *inc)
 	return (0);
 }
 
+char 	*sek_j(char *s1, char *s2)
+{
+	return (ft_strjoin(s1, s2));
+}
+
 char	*some_str(char *str, t_inc *inc)
 {
 	char	*tmp;
 	char	*res;
 
-	res = NULL;
+	res = str;
 	str = ft_strjoin(str, "/");
-	tmp = ft_strjoin(str, inc->dp->d_name);
+	//free(res);
+	tmp = sek_j(str, inc->dp->d_name);
+	//tmp = ft_strjoin(str, inc->dp->d_name);
 	free(str);
 	return (tmp);
 }
 
-void	do_operation(char *str, t_inc *inc, char *str_tmp)
+void	do_operation(char *str, t_inc *inc)
 {
 	t_dir		*lst;
 	t_dir		*tmp;
-	//char 		*str_tmp;
+	char 		*str_tmp;
 
 	lst = NULL;
+//	if (flag == 1)
+//		free(inc->dirp);
 	if ((inc->dirp = opendir(str)) != NULL)
 	{
 		while ((inc->dp = readdir(inc->dirp)) != NULL)
@@ -63,7 +72,7 @@ void	do_operation(char *str, t_inc *inc, char *str_tmp)
 				tmp->full_path = str_tmp;
 				lstat(tmp->full_path, &inc->sb);
 				tmp->time = inc->sb.st_mtime;
-				(S_ISDIR(inc->sb.st_mode) == 1) ? tmp->true_dir = 1 : 0;
+				(S_ISDIR(inc->sb.st_mode) == 1) ? tmp->true_dir = 100 : 0;
 				tmp->next = lst;
 				lst = tmp;
 
@@ -72,11 +81,14 @@ void	do_operation(char *str, t_inc *inc, char *str_tmp)
 		}
 
 		sort_lst(&lst, compare_strs, 0);
-		ft_print_ls(lst, inc, str, str_tmp);
+		ft_print_ls(lst, inc, str);
+
 		//free_lst(tmp);
 		free_lst(lst);
+		//free(inc->dirp);
 		//free(str_tmp);
 		//free(inc->dirp);
+		//free_l(inc);
 	}
 	else
 		ft_check(inc);
@@ -84,13 +96,11 @@ void	do_operation(char *str, t_inc *inc, char *str_tmp)
 
 void	ft_ls(t_inc *inc, char *str_tmp) {
 	t_dir *tmp;
-	char	*str;
 
 	tmp = inc->lst;
 	while (tmp != NULL)
 	{
-		str = tmp->dir;
-		do_operation(str, inc, str_tmp);
+		do_operation(tmp->dir, inc);
 
 		tmp = tmp->next;
 	}

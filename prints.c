@@ -7,17 +7,25 @@
 //int		compare_time(t_dir d1, t_dir d2)
 //{
 //}
-void	big_r(t_dir *lst, t_inc *inc, char *str_tmp)
+void	big_r(t_dir *lst, t_inc *inc)
 {
 	t_dir	*tmp;
 
 	tmp = lst;
+
 	while (tmp != NULL)
 	{
-		if (tmp->true_dir == 1 && tmp->dir[0] != '.')
-			do_operation(tmp->full_path, inc, str_tmp);
+
+		if (tmp->true_dir == 100 && tmp->dir[0] != '.')
+		{
+			//if (tmp->true_dir == 1)
+			closedir(inc->dirp);
+			do_operation(tmp->full_path, inc);
+		}
 		tmp = tmp->next;
+
 	}
+
 }
 void	get_time(struct stat fstat, t_dir *tmp)
 {
@@ -104,13 +112,29 @@ void 	print_blocks(t_dir *dir)
 	ft_putchar('\n');
 }
 
+int		num_len(int num)
+{
+	int		count;
+
+	count = 1;
+	if (num < 10 && num > -10)
+		return (count);
+	while (num > 10 || num < -10)
+	{
+		num =num / 10;
+		count++;
+	}
+	return (count);
+}
+
 void	print_l(t_dir *lst)
 {
 	t_dir			*tmp;
 	struct stat		fstat;
-	char 			*bytes;
+	//char 			*bytes;
 	int 			len;
 	int 			i;
+	int				some;
 
 	tmp = lst;
 	print_blocks(tmp);
@@ -129,17 +153,19 @@ void	print_l(t_dir *lst)
 		get_user(fstat);
 		ft_putstr(" ");
 		i = 5;
-		bytes = ft_itoa(fstat.st_size);
-		len = ft_strlen(bytes);
-		while (i-- > len)
+		//bytes = ft_itoa(fstat.st_size);
+		some = num_len(fstat.st_size);
+		//len = ft_strlen(bytes);
+		//ft_printf("\n%d %d\n", some, len);
+		while (i-- > some)
 			ft_putchar(' ');
-		ft_printf("%s%s", bytes, "  ");
+		ft_printf("%d%s", fstat.st_size, "  ");
 		get_time(fstat, tmp);
 		tmp = tmp->next;
 		if(tmp != NULL)
 			ft_putchar('\n');
 	}
-	free(bytes);
+	//free(bytes);
 }
 
 int		compare_time(t_dir d1, t_dir d2)
@@ -150,7 +176,7 @@ int		compare_time(t_dir d1, t_dir d2)
 		return (0);
 }
 
-void	ft_print_ls(t_dir *lst, t_inc *inc, char *path, char *str_tmp)
+void	ft_print_ls(t_dir *lst, t_inc *inc, char *path)
 {
 	t_dir	*tmp;
 
@@ -159,7 +185,8 @@ void	ft_print_ls(t_dir *lst, t_inc *inc, char *path, char *str_tmp)
 	if (inc->r == 1)
 		ft_rev_lst(&lst);
 	if (inc->rr == 1)
-		ft_putstr(ft_strjoin(path, ":\n"));
+		//ft_putstr(ft_strjoin(path, ":\n"));
+		ft_printf("%s:\n", path);
 	if (inc->l == 1)
 		print_l(lst);
 	else
@@ -175,7 +202,11 @@ void	ft_print_ls(t_dir *lst, t_inc *inc, char *path, char *str_tmp)
 	}
 	ft_putchar('\n');
 	if (inc->rr == 1)
-		big_r(lst, inc, str_tmp);
+	{
+		big_r(lst, inc);
+//		if (inc->dirp)
+//			free(inc->dirp);
+	}
 	//free_lst(lst);
 }
 
