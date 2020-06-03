@@ -67,7 +67,7 @@ void	do_operation(char *str, t_inc *inc)
 			if (inc->dp->d_name[0] != '.' || inc->a == 1)
 			{
 				tmp = (t_dir *)ft_memalloc(sizeof(t_dir));
-				tmp->dir = inc->dp->d_name;
+				tmp->dir = ft_strdup(inc->dp->d_name);
 				str_tmp = some_str(str, inc);
 				tmp->full_path = str_tmp;
 				lstat(tmp->full_path, &inc->sb);

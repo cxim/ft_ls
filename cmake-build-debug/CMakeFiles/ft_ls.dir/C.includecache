@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/cxim1/ft_ls/ft_ls.h
+/home/cxim1/unix/ft_ls/ft_ls.h
 ft_printf/includes/printf.h
-/home/cxim1/ft_ls/ft_printf/includes/printf.h
+/home/cxim1/unix/ft_ls/ft_printf/includes/printf.h
 dirent.h
 -
 sys/types.h
@@ -26,7 +26,7 @@ time.h
 limits.h
 -
 
-/home/cxim1/ft_ls/ft_printf/includes/libft/libft.h
+/home/cxim1/unix/ft_ls/ft_printf/includes/libft/libft.h
 unistd.h
 -
 stdlib.h
@@ -36,7 +36,7 @@ string.h
 fcntl.h
 -
 
-/home/cxim1/ft_ls/ft_printf/includes/printf.h
+/home/cxim1/unix/ft_ls/ft_printf/includes/printf.h
 stdio.h
 -
 unistd.h
@@ -46,9 +46,9 @@ stdarg.h
 fcntl.h
 -
 libft/libft.h
-/home/cxim1/ft_ls/ft_printf/includes/libft/libft.h
+/home/cxim1/unix/ft_ls/ft_printf/includes/libft/libft.h
 
-/home/cxim1/ft_ls/ft_start.c
+/home/cxim1/unix/ft_ls/main.c
 ft_ls.h
-/home/cxim1/ft_ls/ft_ls.h
+/home/cxim1/unix/ft_ls/ft_ls.h
 

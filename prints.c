@@ -50,7 +50,28 @@ void	get_time(struct stat fstat, t_dir *tmp)
 	}
 }
 
-void 	get_user(struct stat fstat)
+void	print_ow_gr(char *name, char *g_name, t_inc *inc)
+{
+	int		i;
+
+	if (ft_strlen(name) < inc->owner_name_len)
+	{
+		i = inc->owner_name_len + 1;
+		while (ft_strlen(name) < --i)
+			ft_putchar(' ');
+	}
+	ft_putstr(name);
+	ft_putchar(' ');
+	if (ft_strlen(g_name) < inc->group_name_len)
+	{
+		i = inc->group_name_len + 1;
+		while (ft_strlen(g_name) < --i)
+			ft_putchar(' ');
+	}
+	ft_putstr(g_name);
+}
+
+void 	get_user(t_inc *inc, struct stat fstat, int flag)
 {
 //	char 			*str;
 	struct passwd	*pw;
@@ -62,16 +83,15 @@ void 	get_user(struct stat fstat)
 	gp = getgrgid(fstat.st_gid);
 	name = pw->pw_name;
 	name_g = gp->gr_name;
-//	str = ft_strjoin(name, "  ");
-//	str = ft_strjoin(str , name_g);
-//	str = ft_strjoin(str, " ");
-//	ft_putstr(str);
-	ft_printf("%s%s%s", name, "  ", name_g, " ");
-//	free(str);
-//	free(name);
-//	free(name_g);
-	//free(pw->pw_name);
-	//free(gp);
+	if (flag == 0)
+	{
+		if (ft_strlen(name) > inc->owner_name_len)
+			inc->owner_name_len = ft_strlen(name);
+		if (ft_strlen(name_g) > inc->group_name_len)
+			inc->group_name_len = ft_strlen(name_g);
+	}
+	else
+		print_ow_gr(name, name_g, inc);
 }
 
 void	get_permission(t_dir *tmp, struct stat fstat)
@@ -79,7 +99,7 @@ void	get_permission(t_dir *tmp, struct stat fstat)
 	if (tmp->true_dir)
 		ft_putchar('d');
 	else
-		ft_putchar((S_ISLNK(fstat.st_mode)) ? '1' : '-');
+		ft_putchar((S_ISLNK(fstat.st_mode)) ? 'l' : '-');
 	ft_putchar((fstat.st_mode & S_IRUSR) ? 'r' : '-');
 	ft_putchar((fstat.st_mode & S_IWUSR) ? 'w' : '-');
 	ft_putchar((fstat.st_mode & S_IXUSR) ? 'x' : '-');
@@ -89,7 +109,7 @@ void	get_permission(t_dir *tmp, struct stat fstat)
 	ft_putchar((fstat.st_mode & S_IROTH) ? 'r' : '-');
 	ft_putchar((fstat.st_mode & S_IWOTH) ? 'w' : '-');
 	ft_putchar((fstat.st_mode & S_IXOTH) ? 'x' : '-');
-	ft_putstr("  ");
+	ft_putstr(" "); // 1 || 2?
 }
 void 	print_blocks(t_dir *dir)
 {
@@ -127,7 +147,25 @@ int		num_len(int num)
 	return (count);
 }
 
-void	print_l(t_dir *lst)
+void	get_lens(t_dir *dir, t_inc *inc)
+{
+	t_dir			*tmp;
+	struct stat		fstat;
+
+	tmp = dir;
+	while (tmp != NULL)
+	{
+		lstat(tmp->full_path, &fstat);
+		if (num_len(fstat.st_nlink) > inc->links_len)
+			inc->links_len = num_len(fstat.st_nlink);
+		get_user(inc, fstat, 0);
+		if (num_len(fstat.st_size) > inc->bytes_len)
+			inc->bytes_len = num_len(fstat.st_size);
+		tmp = tmp->next;
+	}
+}
+
+void	print_l(t_dir *lst, t_inc *inc)
 {
 	t_dir			*tmp;
 	struct stat		fstat;
@@ -138,28 +176,29 @@ void	print_l(t_dir *lst)
 
 	tmp = lst;
 	print_blocks(tmp);
+	get_lens(tmp, inc);
 	while (tmp != NULL)
 	{
 		lstat(tmp->full_path, &fstat);
 		get_permission(tmp, fstat);
-		if (fstat.st_nlink > 9)
-			ft_putnbr(fstat.st_nlink);
-		else
+		if (num_len(fstat.st_nlink) < inc->links_len)  // num links
 		{
-			ft_putstr(" ");
-			ft_putnbr(fstat.st_nlink);
+			i = inc->links_len + 1;
+			while (num_len(fstat.st_nlink) < --i)
+				ft_putchar(' ');
 		}
+		ft_putnbr(fstat.st_nlink);
 		ft_putstr(" ");
-		get_user(fstat);
+		get_user(inc, fstat, 1);
 		ft_putstr(" ");
-		i = 5;
+		i = inc->bytes_len;
 		//bytes = ft_itoa(fstat.st_size);
 		some = num_len(fstat.st_size);
 		//len = ft_strlen(bytes);
 		//ft_printf("\n%d %d\n", some, len);
 		while (i-- > some)
 			ft_putchar(' ');
-		ft_printf("%d%s", fstat.st_size, "  ");
+		ft_printf("%d%s", fstat.st_size, " ");
 		get_time(fstat, tmp);
 		tmp = tmp->next;
 		if(tmp != NULL)
@@ -188,7 +227,7 @@ void	ft_print_ls(t_dir *lst, t_inc *inc, char *path)
 		//ft_putstr(ft_strjoin(path, ":\n"));
 		ft_printf("%s:\n", path);
 	if (inc->l == 1)
-		print_l(lst);
+		print_l(lst, inc);
 	else
 	{
 		tmp = lst;

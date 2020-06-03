@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu11
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/cxim1/ft_ls/. -I/home/cxim1/ft_ls/ft_printf/includes -I/home/cxim1/ft_ls/ft_printf/includes/libft 
+C_INCLUDES = -I/home/cxim1/unix/ft_ls/. -I/home/cxim1/unix/ft_ls/ft_printf/includes -I/home/cxim1/unix/ft_ls/ft_printf/includes/libft 
 

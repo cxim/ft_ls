@@ -49,7 +49,7 @@ void	free_lst(t_dir *dir)
 			tmp = dir;
 //			if (dir->dir)
 			dir = dir->next;
-//				free(tmp->dir);
+			free(tmp->dir);
 //			if (dir->full_path)
 			free(tmp->full_path);
 			//free(dir);
@@ -101,8 +101,10 @@ int main(int argc, char **argv)
 	{
 		if (argv[i][0] != '-')
 		{
-			ft_printf("lol\n");
-			tmp->dir = ft_strdup(argv[i]);
+			//ft_printf("lol\n");
+			tmp =(t_dir *)ft_memalloc(sizeof(t_dir));
+			str_tmp = argv[i];
+			tmp->dir = ft_strdup(str_tmp);
 			tmp->next = inc->lst;
 			inc->lst = tmp;
 		}

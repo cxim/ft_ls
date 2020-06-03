@@ -27,6 +27,10 @@ typedef struct		s_dir
 
 typedef struct		s_inc
 {
+	int				bytes_len;
+	int 			links_len;
+	int 			owner_name_len;
+	int 			group_name_len;
 	int 			l;
 	int 			a;
 	int 			r;

@@ -1,3 +1,3 @@
-/home/cxim1/ft_ls/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/cxim1/ft_ls/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/cxim1/ft_ls/cmake-build-debug/CMakeFiles/ft_ls.dir
+/home/cxim1/unix/ft_ls/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/cxim1/unix/ft_ls/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/cxim1/unix/ft_ls/cmake-build-debug/CMakeFiles/ft_ls.dir
