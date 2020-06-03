@@ -37,13 +37,13 @@ void	sort_lst(t_dir **lst, int (*cmp)(t_dir, t_dir), int i)
 	}
 }
 
-void	ft_rev_lst(t_dir **head)
+t_dir 	*ft_rev_lst(t_dir *head)
 {
 	t_dir	*prev;
 	t_dir	*cur;
 	t_dir	*next;
 
-	cur = *head;
+	cur = head;
 	prev = NULL;
 	while (cur != NULL)
 	{
@@ -52,5 +52,6 @@ void	ft_rev_lst(t_dir **head)
 		prev = cur;
 		cur = next;
 	}
-	*head = prev;
+	head = prev;
+	return (head);
 }

@@ -82,8 +82,6 @@ void	do_operation(char *str, t_inc *inc)
 
 		sort_lst(&lst, compare_strs, 0);
 		ft_print_ls(lst, inc, str);
-
-		//free_lst(tmp);
 		free_lst(lst);
 		//free(inc->dirp);
 		//free(str_tmp);

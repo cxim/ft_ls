@@ -139,7 +139,7 @@ int		num_len(int num)
 	count = 1;
 	if (num < 10 && num > -10)
 		return (count);
-	while (num > 10 || num < -10)
+	while (num >= 10 || num <= -10)
 	{
 		num =num / 10;
 		count++;
@@ -222,7 +222,7 @@ void	ft_print_ls(t_dir *lst, t_inc *inc, char *path)
 	if (inc->t == 1)
 		sort_lst(&lst, compare_time, 0);
 	if (inc->r == 1)
-		ft_rev_lst(&lst);
+		lst = ft_rev_lst(lst);
 	if (inc->rr == 1)
 		//ft_putstr(ft_strjoin(path, ":\n"));
 		ft_printf("%s:\n", path);

@@ -6,6 +6,7 @@
 int		add_args(t_inc *inc, char *str)
 {
 	int 	i;
+	char 	*tmp;
 
 	i = 1;
 	while (str[i] != '\0')
@@ -22,9 +23,11 @@ int		add_args(t_inc *inc, char *str)
 			inc->rr = 1;
 		else
 		{
-			ft_putstr(str);
-			ft_putendl(": Invalid argument");
-			exit (1);
+			tmp = ft_strjoin(str, ": Invalid argument\n");
+			ft_putstr_fd(tmp, 2);
+			free_l(inc);
+			free(tmp);
+			exit (2);
 		}
 		i++;
 	}
