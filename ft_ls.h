@@ -22,6 +22,7 @@ typedef struct		s_dir
 	char 			*full_path;
 	char 			*some;
 	time_t 			time;
+	time_t			time_u;
 	struct s_dir 	*next;
 }					t_dir;
 
@@ -36,6 +37,7 @@ typedef struct		s_inc
 	int 			r;
 	int 			t;
 	int 			rr;
+	int				u;
 	char 			*path;
 	DIR				*dirp;
 	struct dirent	*dp;
@@ -44,11 +46,12 @@ typedef struct		s_inc
 }					t_inc;
 
 void	ft_ls(t_inc *inc, char *str);
-void	ft_print_ls(t_dir *lst, t_inc *inc, char *path);
+void	ft_print_ls(t_dir **lst, t_inc *inc, char *path);
 void	sort_lst(t_dir **lst, int (*cmp)(t_dir, t_dir), int i);
 int		compare_strs(t_dir str1, t_dir str2);
-t_dir 	*ft_rev_lst(t_dir *head);
+void 	ft_rev_lst(t_dir **head);
 void	do_operation(char *str, t_inc *inc);
 void	free_lst(t_dir *dir);
 void	free_l(t_inc *inc);
+
 #endif //FT_LS_FT_LS_H

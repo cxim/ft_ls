@@ -72,6 +72,7 @@ void	do_operation(char *str, t_inc *inc)
 				tmp->full_path = str_tmp;
 				lstat(tmp->full_path, &inc->sb);
 				tmp->time = inc->sb.st_mtime;
+				tmp->time_u = inc->sb.st_atime;
 				(S_ISDIR(inc->sb.st_mode) == 1) ? tmp->true_dir = 100 : 0;
 				tmp->next = lst;
 				lst = tmp;
@@ -79,9 +80,8 @@ void	do_operation(char *str, t_inc *inc)
 			}
 
 		}
-
 		sort_lst(&lst, compare_strs, 0);
-		ft_print_ls(lst, inc, str);
+		ft_print_ls(&lst, inc, str);
 		free_lst(lst);
 		//free(inc->dirp);
 		//free(str_tmp);

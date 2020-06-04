@@ -34,6 +34,7 @@ void	get_time(struct stat fstat, t_dir *tmp)
 	char 	buf[64];
 	size_t 	len;
 
+
 	(void)fstat;
 	str = ctime(&tmp->time);
 	ft_memcpy(buff, &str[4], 12);
@@ -215,22 +216,32 @@ int		compare_time(t_dir d1, t_dir d2)
 		return (0);
 }
 
-void	ft_print_ls(t_dir *lst, t_inc *inc, char *path)
+int		compare_time_u(t_dir d1, t_dir d2)
+{
+	if (d1.time_u < d2.time_u)
+		return (1);
+	else
+		return (0);
+}
+
+void	ft_print_ls(t_dir **lst, t_inc *inc, char *path)
 {
 	t_dir	*tmp;
 
 	if (inc->t == 1)
-		sort_lst(&lst, compare_time, 0);
+		sort_lst(lst, compare_time, 0);
 	if (inc->r == 1)
-		lst = ft_rev_lst(lst);
+		ft_rev_lst(lst);
+	if (inc->u == 1)
+		sort_lst(lst, compare_time_u, 0);
 	if (inc->rr == 1)
 		//ft_putstr(ft_strjoin(path, ":\n"));
 		ft_printf("%s:\n", path);
 	if (inc->l == 1)
-		print_l(lst, inc);
+		print_l(*lst, inc);
 	else
 	{
-		tmp = lst;
+		tmp = *lst;
 		while (tmp != NULL)
 		{
 			ft_putstr(tmp->dir);
@@ -242,7 +253,7 @@ void	ft_print_ls(t_dir *lst, t_inc *inc, char *path)
 	ft_putchar('\n');
 	if (inc->rr == 1)
 	{
-		big_r(lst, inc);
+		big_r(*lst, inc);
 //		if (inc->dirp)
 //			free(inc->dirp);
 	}

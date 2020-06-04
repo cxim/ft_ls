@@ -21,6 +21,8 @@ int		add_args(t_inc *inc, char *str)
 			inc->a = 1;
 		else if (str[i] == 'R')
 			inc->rr = 1;
+		else if (str[i] == 'u')
+			inc->u = 1;
 		else
 		{
 			tmp = ft_strjoin(str, ": Invalid argument\n");
@@ -99,12 +101,10 @@ int main(int argc, char **argv)
 	i = 1;
 	str_tmp = NULL;
 	inc = (t_inc *)ft_memalloc(sizeof(t_inc));
-	tmp = inc->lst;
 	while (i < argc)
 	{
 		if (argv[i][0] != '-')
 		{
-			//ft_printf("lol\n");
 			tmp =(t_dir *)ft_memalloc(sizeof(t_dir));
 			str_tmp = argv[i];
 			tmp->dir = ft_strdup(str_tmp);
