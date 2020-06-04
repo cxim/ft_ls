@@ -55,21 +55,21 @@ void	print_ow_gr(char *name, char *g_name, t_inc *inc)
 {
 	int		i;
 
+	ft_putstr(name);
 	if (ft_strlen(name) < inc->owner_name_len)
 	{
 		i = inc->owner_name_len + 1;
 		while (ft_strlen(name) < --i)
 			ft_putchar(' ');
 	}
-	ft_putstr(name);
 	ft_putchar(' ');
+	ft_putstr(g_name);
 	if (ft_strlen(g_name) < inc->group_name_len)
 	{
 		i = inc->group_name_len + 1;
 		while (ft_strlen(g_name) < --i)
 			ft_putchar(' ');
 	}
-	ft_putstr(g_name);
 }
 
 void 	get_user(t_inc *inc, struct stat fstat, int flag)
