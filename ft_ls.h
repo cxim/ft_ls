@@ -59,4 +59,6 @@ void	do_operation(char *str, t_inc *inc);
 void	free_lst(t_dir *dir);
 void	free_l(t_inc *inc);
 int		compare_strs(t_dir str1, t_dir str2);
+void 	get_user(t_inc *inc, struct stat fstat, int flag);
+void	get_time(struct stat fstat, t_dir *tmp, t_inc *inc);
 #endif //FT_LS_FT_LS_H

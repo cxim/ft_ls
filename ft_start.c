@@ -4,6 +4,24 @@
 
 #include "ft_ls.h"
 
+void	get_p(t_dir *tmp, struct stat fstat)
+{
+	if (tmp->true_dir)
+		ft_putchar('d');
+	else
+		ft_putchar((S_ISLNK(fstat.st_mode)) ? 'l' : '-');
+	ft_putchar((fstat.st_mode & S_IRUSR) ? 'r' : '-');
+	ft_putchar((fstat.st_mode & S_IWUSR) ? 'w' : '-');
+	ft_putchar((fstat.st_mode & S_IXUSR) ? 'x' : '-');
+	ft_putchar((fstat.st_mode & S_IRGRP) ? 'r' : '-');
+	ft_putchar((fstat.st_mode & S_IWGRP) ? 'w' : '-');
+	ft_putchar((fstat.st_mode & S_IXGRP) ? 'x' : '-');
+	ft_putchar((fstat.st_mode & S_IROTH) ? 'r' : '-');
+	ft_putchar((fstat.st_mode & S_IWOTH) ? 'w' : '-');
+	ft_putchar((fstat.st_mode & S_IXOTH) ? 'x' : '-');
+	ft_putstr(" "); // 1 || 2?
+}
+
 int		ft_check(t_inc *inc)
 {
 	if ((inc->dirp = opendir(".")) != NULL)
@@ -13,7 +31,24 @@ int		ft_check(t_inc *inc)
 			lstat(inc->dp->d_name, &inc->sb);
 			if (S_ISREG(inc->sb.st_mode) && ft_strcmp(inc->dp->d_name, inc->lst->dir) == 0)
 			{
-				ft_putendl(inc->dp->d_name);
+				if (inc->l == 1)
+				{
+					get_p(inc->lst, inc->sb);
+					//ft_putchar(' ');
+					ft_putnbr(inc->sb.st_nlink);
+					ft_putstr(" ");
+					get_user(inc, inc->sb, 1);
+					ft_printf(" %d%s", inc->sb.st_size, " ");
+					inc->lst->time = inc->sb.st_mtime;
+					inc->lst->time_u = inc->sb.st_atime;
+					inc->lst->size_f = inc->sb.st_size;
+					inc->lst->time_m = inc->sb.st_mtim.tv_nsec;
+					inc->lst->time_u_m = inc->sb.st_atim.tv_nsec;
+					get_time(inc->sb, inc->lst, inc);
+					ft_putchar('\n');
+				}
+				else
+					ft_putendl(inc->dp->d_name);
 				return (1);
 			}
 			else if (!ft_strcmp(inc->dp->d_name, inc->lst->dir))

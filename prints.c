@@ -27,7 +27,7 @@ void	big_r(t_dir *lst, t_inc *inc)
 	}
 
 }
-void	get_time(struct stat fstat, t_dir *tmp)
+void	get_time(struct stat fstat, t_dir *tmp, t_inc *inc)
 {
 	char 	buff[13];
 	char 	*str;
@@ -36,7 +36,10 @@ void	get_time(struct stat fstat, t_dir *tmp)
 
 
 	(void)fstat;
-	str = ctime(&tmp->time);
+	if (inc->u == 0)
+		str = ctime(&tmp->time);
+	else
+		str = ctime(&tmp->time_u);
 	ft_memcpy(buff, &str[4], 12);
 	buff[12] = '\0';
 	ft_putstr(buff);
@@ -178,8 +181,6 @@ void	print_l(t_dir *lst, t_inc *inc)
 	tmp = lst;
 	print_blocks(tmp);
 	get_lens(tmp, inc);
-//	if (inc->u == 1)
-//		sort_lst(&tmp, compare_time_u, 0);
 	while (tmp != NULL)
 	{
 		lstat(tmp->full_path, &fstat);
@@ -195,14 +196,11 @@ void	print_l(t_dir *lst, t_inc *inc)
 		get_user(inc, fstat, 1);
 		ft_putstr(" ");
 		i = inc->bytes_len;
-		//bytes = ft_itoa(fstat.st_size);
 		some = num_len(fstat.st_size);
-		//len = ft_strlen(bytes);
-		//ft_printf("\n%d %d\n", some, len);
 		while (i-- > some)
 			ft_putchar(' ');
 		ft_printf("%d%s", fstat.st_size, " ");
-		get_time(fstat, tmp);
+		get_time(fstat, tmp, inc);
 		tmp = tmp->next;
 		if(tmp != NULL)
 			ft_putchar('\n');
@@ -244,13 +242,13 @@ int		compare_time_u(t_dir d1, t_dir d2)
 {
 	if (d1.time_u < d2.time_u)
 		return (1);
-//	else if (d1.time_u == d2.time_u)
-//	{
-//		if (d1.time_u_m < d2.time_u_m)
-//			return (1);
-//		else
-//			return (0);
-//	}
+	else if (d1.time_u == d2.time_u)
+	{
+		if (d1.time_u_m < d2.time_u_m)
+			return (1);
+		else
+			return (0);
+	}
 	else
 		return (0);
 }
@@ -262,9 +260,9 @@ void	ft_print_ls(t_dir **lst, t_inc *inc, char *path)
 {
 	t_dir	*tmp;
 
-	if (inc->t == 1)
+	if (inc->t == 1 && inc->u == 0)
 		sort_lst(lst, compare_time, 0);
-	if (inc->u == 1 && inc->l == 0)
+	if ((inc->u == 1 && inc->l == 1 && inc->t == 1) || (inc->u == 1 && (inc->t == 1 || inc->t == 0) && inc->l == 0))
 		sort_lst(lst, compare_time_u, 0);
 	if (inc->u == 1 && inc->l == 1 && inc->t == 0)
 		sort_lst(lst, compare_str, 0);
