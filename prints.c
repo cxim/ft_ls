@@ -260,6 +260,8 @@ void	ft_print_ls(t_dir **lst, t_inc *inc, char *path)
 {
 	t_dir	*tmp;
 
+	//if (inc->l == 1)
+	sort_lst(lst, compare_str, 0);
 	if (inc->t == 1 && inc->u == 0)
 		sort_lst(lst, compare_time, 0);
 	if ((inc->u == 1 && inc->l == 1 && inc->t == 1) || (inc->u == 1 && (inc->t == 1 || inc->t == 0) && inc->l == 0))
