@@ -178,6 +178,8 @@ void	print_l(t_dir *lst, t_inc *inc)
 	tmp = lst;
 	print_blocks(tmp);
 	get_lens(tmp, inc);
+//	if (inc->u == 1)
+//		sort_lst(&tmp, compare_time_u, 0);
 	while (tmp != NULL)
 	{
 		lstat(tmp->full_path, &fstat);
@@ -208,10 +210,32 @@ void	print_l(t_dir *lst, t_inc *inc)
 	//free(bytes);
 }
 
+int		compare_str(t_dir str1, t_dir str2)
+{
+	return (ft_strcmp(str1.dir, str2.dir));
+}
+
+int		compare_size(t_dir d1, t_dir d2)
+{
+	if (d1.size_f < d2.size_f)
+		return (1);
+	else if (d1.size_f == d2.size_f)
+		return (compare_strs(d1, d2));
+	else
+		return (0);
+}
+
 int		compare_time(t_dir d1, t_dir d2)
 {
 	if (d1.time < d2.time)
 		return (1);
+	else if (d1.time == d2.time)
+	{
+		if (d1.time_m < d2.time_m)
+			return (1);
+		else
+			return (0);
+	}
 	else
 		return (0);
 }
@@ -220,9 +244,19 @@ int		compare_time_u(t_dir d1, t_dir d2)
 {
 	if (d1.time_u < d2.time_u)
 		return (1);
+//	else if (d1.time_u == d2.time_u)
+//	{
+//		if (d1.time_u_m < d2.time_u_m)
+//			return (1);
+//		else
+//			return (0);
+//	}
 	else
 		return (0);
 }
+
+
+// У ВАС ОН БУДЕТ ЗА КРУГОМ ТОЛЬКО
 
 void	ft_print_ls(t_dir **lst, t_inc *inc, char *path)
 {
@@ -230,13 +264,16 @@ void	ft_print_ls(t_dir **lst, t_inc *inc, char *path)
 
 	if (inc->t == 1)
 		sort_lst(lst, compare_time, 0);
+	if (inc->u == 1 && inc->l == 0)
+		sort_lst(lst, compare_time_u, 0);
+	if (inc->u == 1 && inc->l == 1 && inc->t == 0)
+		sort_lst(lst, compare_str, 0);
 	if (inc->r == 1)
 		ft_rev_lst(lst);
-	if (inc->u == 1)
-		sort_lst(lst, compare_time_u, 0);
 	if (inc->rr == 1)
-		//ft_putstr(ft_strjoin(path, ":\n"));
 		ft_printf("%s:\n", path);
+	if (inc->s_big == 1)
+		sort_lst(lst, compare_size, 0);
 	if (inc->l == 1)
 		print_l(*lst, inc);
 	else

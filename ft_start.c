@@ -56,7 +56,7 @@ void	do_operation(char *str, t_inc *inc)
 	t_dir		*lst;
 	t_dir		*tmp;
 	char 		*str_tmp;
-
+	struct tm	*tm;
 	lst = NULL;
 //	if (flag == 1)
 //		free(inc->dirp);
@@ -73,12 +73,16 @@ void	do_operation(char *str, t_inc *inc)
 				lstat(tmp->full_path, &inc->sb);
 				tmp->time = inc->sb.st_mtime;
 				tmp->time_u = inc->sb.st_atime;
+				tmp->size_f = inc->sb.st_size;
+				tmp->time_m = inc->sb.st_mtim.tv_nsec;
+				tmp->time_u_m = inc->sb.st_atim.tv_nsec;
 				(S_ISDIR(inc->sb.st_mode) == 1) ? tmp->true_dir = 100 : 0;
+//				tm = localtime(&inc->sb.st_mtime);
+//				ft_printf("%d %d %d %d %d %d %d %s!!\n", tm->tm_year + 1900, tm->tm_mon + 1,
+//						tm->tm_wday, tm->tm_hour, tm->tm_min, tm->tm_sec, inc->sb.st_mtim.tv_nsec, tmp->dir);
 				tmp->next = lst;
 				lst = tmp;
-
 			}
-
 		}
 		sort_lst(&lst, compare_strs, 0);
 		ft_print_ls(&lst, inc, str);

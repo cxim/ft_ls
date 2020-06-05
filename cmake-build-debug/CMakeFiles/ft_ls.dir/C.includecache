@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/cxim1/unix/ft_ls/for_sort.c
-ft_ls.h
-/home/cxim1/unix/ft_ls/ft_ls.h
-
 /home/cxim1/unix/ft_ls/ft_ls.h
 ft_printf/includes/printf.h
 /home/cxim1/unix/ft_ls/ft_printf/includes/printf.h
@@ -51,4 +47,8 @@ fcntl.h
 -
 libft/libft.h
 /home/cxim1/unix/ft_ls/ft_printf/includes/libft/libft.h
+
+/home/cxim1/unix/ft_ls/prints.c
+ft_ls.h
+/home/cxim1/unix/ft_ls/ft_ls.h
 
