@@ -10,8 +10,8 @@ ls  -lat > test/b3
 ls  -latu > test/b4
 ./ft_ls  -latuS > test/a5
 ls  -latuS > test/b5
-./ft_ls  -1lu > test/a6
-ls  -1lu > test/b6
+./ft_ls zzzz -1lu > test/a6
+ls  zzzz -1lu > test/b6
 diff  test/a test/b
 diff  test/a1 test/b1
 diff  test/a2 test/b2

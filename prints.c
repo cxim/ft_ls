@@ -27,6 +27,42 @@ void	big_r(t_dir *lst, t_inc *inc)
 	}
 
 }
+
+
+int		half_year(long int time_m) //26 symbols
+{
+	long int	tt;
+
+	tt = time(NULL);
+	if (tt - time_m > 15811201 || tt - time_m < 0)
+		return (1);
+	return (0);
+}
+
+void 	get_date(char *str, char *buf)
+{
+	int		i;
+	int		j;
+
+	i = 0;
+	j = 0;
+	while (str[i] != '\n')
+	{
+		if (i >= 4 && i <= 10)
+		{
+			buf[j] = str[i];
+			j++;
+		}
+		if (i >= 19 && i <= 24)
+		{
+			buf[j] = str[i];
+			j++;
+		}
+		i++;
+	}
+	buf[j] = '\0';
+}
+
 void	get_time(struct stat fstat, t_dir *tmp, t_inc *inc)
 {
 	char 	buff[13];
@@ -34,13 +70,25 @@ void	get_time(struct stat fstat, t_dir *tmp, t_inc *inc)
 	char 	buf[64];
 	size_t 	len;
 
-
+	//half_year(tmp->time);
 	(void)fstat;
 	if (inc->u == 0)
+	{
 		str = ctime(&tmp->time);
+		if (half_year(tmp->time) == 1)
+			get_date(str, buff);
+		else
+			ft_memcpy(buff, &str[4], 12);
+	}
 	else
+	{
 		str = ctime(&tmp->time_u);
-	ft_memcpy(buff, &str[4], 12);
+		if (half_year(tmp->time_u) == 1)
+			get_date(str, buff);
+		else
+			ft_memcpy(buff, &str[4], 12);
+	}
+
 	buff[12] = '\0';
 	ft_putstr(buff);
 	ft_putstr(" ");
