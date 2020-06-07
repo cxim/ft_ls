@@ -63,7 +63,7 @@ void 	get_date(char *str, char *buf)
 	buf[j] = '\0';
 }
 
-void	get_time(struct stat fstat, t_dir *tmp, t_inc *inc)
+void	get_time(struct stat fstat, t_dir *tmp, t_inc *inc, int flag)
 {
 	char 	buff[13];
 	char 	*str;
@@ -96,7 +96,10 @@ void	get_time(struct stat fstat, t_dir *tmp, t_inc *inc)
 	if (S_ISLNK(fstat.st_mode))
 	{
 		ft_putstr(" -> ");
-		len = readlink(tmp->full_path, buf, 64);
+		if (flag == 1)
+			len = readlink(tmp->dir, buf, 64);
+		else
+			len = readlink(tmp->full_path, buf, 64);
 		buf[len] = '\0';
 		ft_putstr(buf);
 	}
@@ -248,7 +251,7 @@ void	print_l(t_dir *lst, t_inc *inc)
 		while (i-- > some)
 			ft_putchar(' ');
 		ft_printf("%d%s", fstat.st_size, " ");
-		get_time(fstat, tmp, inc);
+		get_time(fstat, tmp, inc, 0);
 		tmp = tmp->next;
 		if(tmp != NULL)
 			ft_putchar('\n');

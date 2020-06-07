@@ -22,7 +22,29 @@ void	get_p(t_dir *tmp, struct stat fstat)
 	ft_putstr(" "); // 1 || 2?
 }
 
-int		ft_check(t_inc *inc)
+void	print_info(t_inc *inc, int flag)
+{
+	//tmp->dir = ft_strdup(inc->dp->d_name);
+	char *str_tmp;
+
+	str_tmp = some_str(inc->lst->dir, inc);
+	inc->lst->full_path = str_tmp;
+	get_p(inc->lst, inc->sb);
+	//ft_putchar(' ');
+	ft_putnbr(inc->sb.st_nlink);
+	ft_putstr(" ");
+	get_user(inc, inc->sb, 1);
+	ft_printf(" %d%s", inc->sb.st_size, " ");
+	inc->lst->time = inc->sb.st_mtime;
+	inc->lst->time_u = inc->sb.st_atime;
+	inc->lst->size_f = inc->sb.st_size;
+	inc->lst->time_m = inc->sb.st_mtim.tv_nsec;
+	inc->lst->time_u_m = inc->sb.st_atim.tv_nsec;
+	get_time(inc->sb, inc->lst, inc, flag);
+	ft_putchar('\n');
+}
+
+int		ft_check(t_inc *inc, char *str)
 {
 	if ((inc->dirp = opendir(".")) != NULL)
 	{
@@ -33,19 +55,7 @@ int		ft_check(t_inc *inc)
 			{
 				if (inc->l == 1)
 				{
-					get_p(inc->lst, inc->sb);
-					//ft_putchar(' ');
-					ft_putnbr(inc->sb.st_nlink);
-					ft_putstr(" ");
-					get_user(inc, inc->sb, 1);
-					ft_printf(" %d%s", inc->sb.st_size, " ");
-					inc->lst->time = inc->sb.st_mtime;
-					inc->lst->time_u = inc->sb.st_atime;
-					inc->lst->size_f = inc->sb.st_size;
-					inc->lst->time_m = inc->sb.st_mtim.tv_nsec;
-					inc->lst->time_u_m = inc->sb.st_atim.tv_nsec;
-					get_time(inc->sb, inc->lst, inc);
-					ft_putchar('\n');
+					print_info(inc, 0);
 				}
 				else
 					ft_putendl(inc->dp->d_name);
@@ -80,7 +90,10 @@ char	*some_str(char *str, t_inc *inc)
 	res = str;
 	str = ft_strjoin(str, "/");
 	//free(res);
-	tmp = sek_j(str, inc->dp->d_name);
+	if (inc->dp != NULL)
+		tmp = sek_j(str, inc->dp->d_name);
+	else
+		tmp = sek_j(str, "\0");
 	//tmp = ft_strjoin(str, inc->dp->d_name);
 	free(str);
 	return (tmp);
@@ -95,7 +108,8 @@ void	do_operation(char *str, t_inc *inc)
 	lst = NULL;
 //	if (flag == 1)
 //		free(inc->dirp);
-	if ((inc->dirp = opendir(str)) != NULL)
+
+	if ((inc->dirp = opendir(str)) != NULL) //S_ISLNK(fstat.st_mode)
 	{
 		while ((inc->dp = readdir(inc->dirp)) != NULL)
 		{
@@ -128,19 +142,43 @@ void	do_operation(char *str, t_inc *inc)
 		//free_l(inc);
 	}
 	else
-		ft_check(inc);
+		ft_check(inc, str);
 }
+
+//int 	check_link(t_inc *inc, struct stat fstat)
+//{
+//	//S_ISDIR(inc->sb.st_mode) == 1
+//	int i = 0;
+////	(S_ISDIR(fstat.st_mode) == 1) ? i = 1 : 0;
+////	ft_printf("%d\n",i);
+//	//get_p(inc->lst, fstat);
+//	(S_ISLNK(fstat.st_mode) == 1) ? i = 1 : 0;
+//	ft_printf("%d\n",i);
+//	return 0;
+//}
 
 void	ft_ls(t_inc *inc, char *str_tmp) {
 	t_dir *tmp;
+	//struct stat		fstat;
+	int 			i;
 
+	i = 0;
 	tmp = inc->lst;
-	while (tmp != NULL)
+	lstat(tmp->dir, &inc->sb);
+	if (inc->l == 1 && (S_ISLNK(inc->sb.st_mode) == 1))
 	{
-		do_operation(tmp->dir, inc);
 
-		tmp = tmp->next;
+		print_info(inc, 1);
 	}
+	else
+		{
+			while (tmp != NULL)
+			{
+				do_operation(tmp->dir, inc);
+
+				tmp = tmp->next;
+			}
+		}
 	//free(str);
 
 	//free_lst(tmp);
