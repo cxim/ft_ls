@@ -25,8 +25,12 @@ int		add_args(t_inc *inc, char *str)
 			inc->u = 1;
 		else if (str[i] == '1')
 			inc->one = 1;
+		else if (str[i] == 'c')
+			inc->c = 1;
 		else if (str[i] == 'S')
 			inc->s_big = 1;
+		else if (str[i] == 'U')
+			inc->u_big = 1;
 		else
 		{
 			tmp = ft_strjoin(str, ": Invalid argument\n");

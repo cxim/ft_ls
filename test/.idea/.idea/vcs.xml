@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/42FileChecker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/42FileChecker/fillit_checker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/42FileChecker/maintest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/42FileChecker/moulitest_42projects" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/42FileChecker/pft" vcs="Git" />
+  </component>
+</project>

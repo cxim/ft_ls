@@ -24,8 +24,10 @@ typedef struct		s_dir
 	int 			size_f;
 	time_t 			time;
 	time_t			time_u;
+	time_t			time_c;
 	ulong 			time_m;
 	ulong 			time_u_m;
+	ulong 			time_c_m;
 	struct s_dir 	*next;
 }					t_dir;
 
@@ -41,7 +43,9 @@ typedef struct		s_inc
 	int 			t;
 	int 			rr;
 	int				u;
+	int				c;
 	int				one;
+	int				u_big;
 	int				s_big;
 	char 			*path;
 	DIR				*dirp;

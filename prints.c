@@ -20,6 +20,14 @@ void	big_r(t_dir *lst, t_inc *inc)
 		{
 			//if (tmp->true_dir == 1)
 			closedir(inc->dirp);
+			ft_putchar('\n');
+			do_operation(tmp->full_path, inc);
+		}
+		else if (inc->a == 1 && tmp->dir[0] == '.' && tmp->dir[1] != '\0' && tmp->dir[1] != '.' && tmp->true_dir == 100)
+		{
+			//if (tmp->true_dir == 1)
+			closedir(inc->dirp);
+			ft_putchar('\n');
 			do_operation(tmp->full_path, inc);
 		}
 		tmp = tmp->next;
@@ -72,10 +80,18 @@ void	get_time(struct stat fstat, t_dir *tmp, t_inc *inc, int flag)
 
 	//half_year(tmp->time);
 	(void)fstat;
-	if (inc->u == 0)
+	if (inc->u == 0 && inc->c == 0)
 	{
 		str = ctime(&tmp->time);
 		if (half_year(tmp->time) == 1)
+			get_date(str, buff);
+		else
+			ft_memcpy(buff, &str[4], 12);
+	}
+	else if (inc->c == 1 && inc->u == 0)
+	{
+		str = ctime(&tmp->time_c);
+		if (half_year(tmp->time_c) == 1)
 			get_date(str, buff);
 		else
 			ft_memcpy(buff, &str[4], 12);
@@ -256,6 +272,12 @@ void	print_l(t_dir *lst, t_inc *inc)
 		if(tmp != NULL)
 			ft_putchar('\n');
 	}
+	if (inc->rr == 1)
+	{
+//		ft_putchar('\n');
+		inc->bytes_len = 0;
+		inc->links_len = 0;
+	}
 	//free(bytes);
 }
 
@@ -304,6 +326,20 @@ int		compare_time_u(t_dir d1, t_dir d2)
 		return (0);
 }
 
+int		compare_time_c(t_dir d1, t_dir d2)
+{
+	if (d1.time_c < d2.time_c)
+		return (1);
+	else if (d1.time_c == d2.time_c)
+	{
+		if (d1.time_c_m < d2.time_c_m)
+			return (1);
+		else
+			return (0);
+	}
+	else
+		return (0);
+}
 
 // У ВАС ОН БУДЕТ ЗА КРУГОМ ТОЛЬКО
 
@@ -311,20 +347,23 @@ void	ft_print_ls(t_dir **lst, t_inc *inc, char *path)
 {
 	t_dir	*tmp;
 
-	//if (inc->l == 1)
-	sort_lst(lst, compare_str, 0);
-	if (inc->t == 1 && inc->u == 0)
-		sort_lst(lst, compare_time, 0);
-	if ((inc->u == 1 && inc->l == 1 && inc->t == 1) || (inc->u == 1 && (inc->t == 1 || inc->t == 0) && inc->l == 0))
-		sort_lst(lst, compare_time_u, 0);
-	if (inc->u == 1 && inc->l == 1 && inc->t == 0)
+	if (inc->u_big == 0)
 		sort_lst(lst, compare_str, 0);
+	if (inc->t == 1 && inc->u == 0 && inc->u_big == 0)
+		sort_lst(lst, compare_time, 0);
+	if ((inc->u == 1 && inc->l == 1 && inc->t == 1 && inc->u_big ==0) || (inc->u == 1 && (inc->t == 1 || inc->t == 0) && inc->l == 0 && inc->u_big == 0))
+		sort_lst(lst, compare_time_u, 0);
+	if (inc->u == 1 && inc->l == 1 && inc->t == 0 && inc->u_big == 0)
+		sort_lst(lst, compare_str, 0);
+	if (((inc->c == 1 && inc->l == 0) || (inc->c == 1 && inc->t == 1)) && inc->u_big == 0)
+		sort_lst(lst, compare_time_c, 0);
 	if (inc->r == 1)
 		ft_rev_lst(lst);
 	if (inc->rr == 1)
 		ft_printf("%s:\n", path);
-	if (inc->s_big == 1)
+	if (inc->s_big == 1 && inc->u_big == 0)
 		sort_lst(lst, compare_size, 0);
+
 	if (inc->l == 1)
 		print_l(*lst, inc);
 	else

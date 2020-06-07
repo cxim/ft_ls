@@ -69,9 +69,10 @@ int		ft_check(t_inc *inc, char *str)
 				return (-1);
 			}
 		}
-		ft_putstr("ft_ls: ");
+		ft_putstr("/bin/ls: "); //потом исправить как фт_лс
+		ft_putstr("cannot access '");
 		ft_putstr(inc->lst->dir);
-		ft_putendl(": No such file or directory");
+		ft_putendl("': No such file or directory");
 		return (-1);
 	}
 	return (0);
@@ -122,9 +123,11 @@ void	do_operation(char *str, t_inc *inc)
 				lstat(tmp->full_path, &inc->sb);
 				tmp->time = inc->sb.st_mtime;
 				tmp->time_u = inc->sb.st_atime;
+				tmp->time_c = inc->sb.st_ctime;
 				tmp->size_f = inc->sb.st_size;
 				tmp->time_m = inc->sb.st_mtim.tv_nsec;
 				tmp->time_u_m = inc->sb.st_atim.tv_nsec;
+				tmp->time_c_m = inc->sb.st_ctim.tv_nsec;
 				(S_ISDIR(inc->sb.st_mode) == 1) ? tmp->true_dir = 100 : 0;
 //				tm = localtime(&inc->sb.st_mtime);
 //				ft_printf("%d %d %d %d %d %d %d %s!!\n", tm->tm_year + 1900, tm->tm_mon + 1,
@@ -133,7 +136,8 @@ void	do_operation(char *str, t_inc *inc)
 				lst = tmp;
 			}
 		}
-		sort_lst(&lst, compare_strs, 0);
+		if (inc->u_big == 0)
+			sort_lst(&lst, compare_strs, 0);
 		ft_print_ls(&lst, inc, str);
 		free_lst(lst);
 		//free(inc->dirp);
