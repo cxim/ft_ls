@@ -6,7 +6,9 @@
 
 void	get_p(t_dir *tmp, struct stat fstat)
 {
-	if (tmp->true_dir)
+	if (S_ISFIFO(fstat.st_mode))
+		ft_putchar('p');
+	else if (tmp->true_dir && !(S_ISFIFO(fstat.st_mode)))
 		ft_putchar('d');
 	else
 		ft_putchar((S_ISLNK(fstat.st_mode)) ? 'l' : '-');
@@ -41,6 +43,8 @@ void	print_info(t_inc *inc, int flag)
 	inc->lst->time_m = inc->sb.st_mtim.tv_nsec;
 	inc->lst->time_u_m = inc->sb.st_atim.tv_nsec;
 	get_time(inc->sb, inc->lst, inc, flag);
+	if (inc->f_big == 1)
+		get_prem_for_f(inc->lst->dir, inc->sb, inc->lst);
 	ft_putchar('\n');
 }
 
@@ -169,10 +173,11 @@ void	ft_ls(t_inc *inc, char *str_tmp) {
 	i = 0;
 	tmp = inc->lst;
 	lstat(tmp->dir, &inc->sb);
-	if (inc->l == 1 && (S_ISLNK(inc->sb.st_mode) == 1))
-	{
-
+	if (inc->l == 1 && (S_ISDIR(inc->sb.st_mode) == 0))
 		print_info(inc, 1);
+	else if (inc->l == 0 && (S_ISDIR(inc->sb.st_mode) == 0))
+	{
+		ft_putendl(str_tmp);
 	}
 	else
 		{

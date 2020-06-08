@@ -72,7 +72,7 @@ int     get_next_line(int fd, char **line)
     *line[0] = '\0';
     if (remainder)
         rem(&line, &remainder, &p_n);
-    while (!p_n && (readed = read(fd, buf, BUFFER_SIZE)))
+    while (!p_n && (readed = read(fd, buf, BUFFER_SIZE)) > 0)
     {
         buf[readed] = '\0';
         if ((p_n = ft_strchr(buf, '\n')))
@@ -81,5 +81,7 @@ int     get_next_line(int fd, char **line)
         *line = ft_strjoin(*line, buf);//защитить
         free(tmp);
     }
+    if (readed < 0)
+    	return (-1);
     return (readed || ft_strlen(remainder)) ? 1 : 0;
 }

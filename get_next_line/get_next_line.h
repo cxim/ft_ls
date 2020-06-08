@@ -2,7 +2,7 @@
 # define GET_NEXT_LINE
 # include <unistd.h>
 # include <stdlib.h>
-#define BUFFER_SIZE  1
+//#define BUFFER_SIZE  1
 char	*ft_strchr(const char *s, int c);
 size_t	ft_strlen(const char *s);
 char	*ft_strjoin(char const *s1, char const *s2);

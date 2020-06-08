@@ -71,6 +71,15 @@ void 	get_date(char *str, char *buf)
 	buf[j] = '\0';
 }
 
+void	get_prem_for_f(char *str, struct stat fstat, t_dir *tmp)
+{
+	if (S_ISFIFO(fstat.st_mode))
+		ft_putchar('|');
+	else if (tmp->true_dir && !(S_ISFIFO(fstat.st_mode)))
+		ft_putchar('/');
+	//else
+}
+
 void	get_time(struct stat fstat, t_dir *tmp, t_inc *inc, int flag)
 {
 	char 	buff[13];
@@ -167,7 +176,9 @@ void 	get_user(t_inc *inc, struct stat fstat, int flag)
 
 void	get_permission(t_dir *tmp, struct stat fstat)
 {
-	if (tmp->true_dir)
+	if (S_ISFIFO(fstat.st_mode))
+		ft_putchar('p');
+	else if (tmp->true_dir && !(S_ISFIFO(fstat.st_mode)))
 		ft_putchar('d');
 	else
 		ft_putchar((S_ISLNK(fstat.st_mode)) ? 'l' : '-');
