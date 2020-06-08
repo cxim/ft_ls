@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cxim1/get_next_line/get_next_line.c
+stdio.h
+-
+fcntl.h
+-
+get_next_line.h
+/home/cxim1/get_next_line/get_next_line.h
+
+/home/cxim1/get_next_line/get_next_line.h
+unistd.h
+-
+stdlib.h
+-
+
