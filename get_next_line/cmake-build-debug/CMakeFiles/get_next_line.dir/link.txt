@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/get_next_line.dir/get_next_line.c.o CMakeFiles/get_next_line.dir/get_next_line_utils.c.o CMakeFiles/get_next_line.dir/gnl_tester.c.o  -o get_next_line 
+/usr/bin/cc -g   CMakeFiles/get_next_line.dir/get_next_line.c.o CMakeFiles/get_next_line.dir/get_next_line_utils.c.o  -o get_next_line 

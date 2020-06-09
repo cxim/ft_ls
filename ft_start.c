@@ -165,29 +165,70 @@ void	do_operation(char *str, t_inc *inc)
 //	return 0;
 //}
 
-void	ft_ls(t_inc *inc, char *str_tmp) {
+/*S_ISFIFO(mode) 	FIFO
+S_ISCHR(mode) 	Специальный файл символьного устройства
+S_ISDIR(mode) 	Каталог
+S_ISBLK(mode) 	Специальный файл блочного устройства
+S_ISREG(mode) 	Обычный файл
+S_ISLNK(mode) 	Символическая связь
+S_ISSOCK(mode) 	Сокет*/
+
+int		get_exec(struct stat fstat)
+{
+	if (fstat.st_mode & S_IXUSR)
+		return (1);
+	if (fstat.st_mode & S_IXGRP)
+		return  (1);
+	if (fstat.st_mode & S_IXOTH)
+		return (1);
+	return (0);
+}
+
+void	print_sign_f(t_inc *inc)
+{
+	if (S_ISFIFO(inc->sb.st_mode) != 0)
+		ft_putchar('|');
+	else if (S_ISLNK(inc->sb.st_mode) != 0)
+		ft_putchar('@');
+	else if (get_exec(inc->sb))
+		ft_putchar('*');
+}
+
+void	ft_ls(t_inc *inc, char *str_tmp, int flag) {
 	t_dir *tmp;
 	//struct stat		fstat;
+	//if ((inc->dirp = opendir(str)) != NULL)
 	int 			i;
 
 	i = 0;
 	tmp = inc->lst;
 	lstat(tmp->dir, &inc->sb);
-	if (inc->l == 1 && (S_ISDIR(inc->sb.st_mode) == 0))
-		print_info(inc, 1);
-	else if (inc->l == 0 && (S_ISDIR(inc->sb.st_mode) == 0))
-	{
-		ft_putendl(str_tmp);
-	}
-	else
+//	if (inc->sb.st_mtim.tv_nsec != 0) //st_mtim.tv_sec?
+//	{
+//		if ( (S_ISDIR(inc->sb.st_mode) == 0)) //(inc->dirp = opendir(tmp->dir)) != NULL &&
+	if (flag == 0) // flag == 1 dir path
 		{
-			while (tmp != NULL)
+			if (inc->l == 1)
+				print_info(inc, 1);
+			else if (inc->l == 0)
 			{
-				do_operation(tmp->dir, inc);
-
-				tmp = tmp->next;
+				ft_putstr(str_tmp);
+				if (inc->f_big == 1)
+					print_sign_f(inc);
+				ft_putchar('\n');
 			}
 		}
+
+	else if (flag == 1)
+	{
+		while (tmp != NULL)
+		{
+			do_operation(tmp->dir, inc);
+			tmp = tmp->next;
+		}
+	}
+	else
+		ft_check(inc, str_tmp);
 	//free(str);
 
 	//free_lst(tmp);

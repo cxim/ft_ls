@@ -48,10 +48,10 @@ RM = "/home/cxim1/Рабочий стол/clion-2020.1.1/bin/cmake/linux/bin/cma
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cxim1/get_next_line
+CMAKE_SOURCE_DIR = /home/cxim1/unix/ft_ls/get_next_line
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cxim1/get_next_line/cmake-build-debug
+CMAKE_BINARY_DIR = /home/cxim1/unix/ft_ls/get_next_line/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cxim1/get_next_line/cmake-build-debug/CMakeFiles /home/cxim1/get_next_line/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cxim1/unix/ft_ls/get_next_line/cmake-build-debug/CMakeFiles /home/cxim1/unix/ft_ls/get_next_line/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cxim1/get_next_line/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cxim1/unix/ft_ls/get_next_line/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,33 +177,6 @@ get_next_line_utils.c.s:
 	$(MAKE) -f CMakeFiles/get_next_line.dir/build.make CMakeFiles/get_next_line.dir/get_next_line_utils.c.s
 .PHONY : get_next_line_utils.c.s
 
-gnl_tester.o: gnl_tester.c.o
-
-.PHONY : gnl_tester.o
-
-# target to build an object file
-gnl_tester.c.o:
-	$(MAKE) -f CMakeFiles/get_next_line.dir/build.make CMakeFiles/get_next_line.dir/gnl_tester.c.o
-.PHONY : gnl_tester.c.o
-
-gnl_tester.i: gnl_tester.c.i
-
-.PHONY : gnl_tester.i
-
-# target to preprocess a source file
-gnl_tester.c.i:
-	$(MAKE) -f CMakeFiles/get_next_line.dir/build.make CMakeFiles/get_next_line.dir/gnl_tester.c.i
-.PHONY : gnl_tester.c.i
-
-gnl_tester.s: gnl_tester.c.s
-
-.PHONY : gnl_tester.s
-
-# target to generate assembly for a file
-gnl_tester.c.s:
-	$(MAKE) -f CMakeFiles/get_next_line.dir/build.make CMakeFiles/get_next_line.dir/gnl_tester.c.s
-.PHONY : gnl_tester.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -219,9 +192,6 @@ help:
 	@echo "... get_next_line_utils.o"
 	@echo "... get_next_line_utils.i"
 	@echo "... get_next_line_utils.s"
-	@echo "... gnl_tester.o"
-	@echo "... gnl_tester.i"
-	@echo "... gnl_tester.s"
 .PHONY : help
 
 

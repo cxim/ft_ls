@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu11
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/cxim1/get_next_line/. 
+C_INCLUDES = -I/home/cxim1/unix/ft_ls/get_next_line/. 
 

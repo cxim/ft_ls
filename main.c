@@ -101,6 +101,21 @@ void	free_l(t_inc *inc)
 	inc = NULL;
 }
 
+int 	dir_file(t_inc *inc, char *name)
+{
+	lstat(inc->lst->dir, &inc->sb);
+	if (inc->sb.st_mtim.tv_sec != 0)
+	{
+		if (S_ISLNK(inc->sb.st_mode) && (inc->l == 0 && inc->f_big == 0)) //for simb link
+			return 1;
+		else if (S_ISDIR(inc->sb.st_mode))
+			return 1;
+		else
+			return 0;
+	}
+	return -1;
+}
+
 int main(int argc, char **argv)
 {
 	int 	i;
@@ -127,7 +142,18 @@ int main(int argc, char **argv)
 	}
 	if (inc->lst == NULL)
 		make_lst(inc);
-	ft_ls(inc, str_tmp);
+	i = dir_file(inc, str_tmp);
+	//ft_printf("%d\n", i);
+	if (i >= 0)
+		ft_ls(inc, str_tmp, i);
+	else
+	{
+		ft_putstr("/bin/ls: "); //потом исправить как фт_лс
+		ft_putstr("cannot access '");
+		ft_putstr(inc->lst->dir);
+		ft_putendl("': No such file or directory");
+		return (-1);
+	}
 	//free(str_tmp);
 //	free_lst(tmp);
 	//free(tmp->dir);

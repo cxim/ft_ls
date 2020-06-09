@@ -2,6 +2,7 @@
 CMakeLists.txt
 Makefile
 cmake-build-debug
+fifo
 for_sort.c
 for_sort.o
 ft_ls
@@ -9,6 +10,7 @@ ft_ls.h
 ft_printf
 ft_start.c
 ft_start.o
+get_next_line
 main.c
 main.o
 printf.h
@@ -16,5 +18,6 @@ prints.c
 prints.o
 test
 test.sh
+test2
 zfz
 zzzz

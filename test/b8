@@ -1,14 +1,14 @@
 ft_printf:
 total 260
-drwxr-xr-x 6 cxim1 cxim1   4096 Jun  4 20:57 .
-drwxr-xr-x 8 cxim1 cxim1   4096 Jun  7 21:30 ..
--rw-r--r-- 1 cxim1 cxim1   8196 Jun  3 11:31 .DS_Store
--rwxr-xr-x 1 cxim1 cxim1   2235 Jun  3 11:31 Makefile
-drwxr-xr-x 3 cxim1 cxim1   4096 Jun  3 11:31 a.out.dSYM
-drwxr-xr-x 3 cxim1 cxim1   4096 Jun  3 11:31 includes
--rw-r--r-- 1 cxim1 cxim1 221582 Jun  4 20:57 libftprintf.a
-drwxr-xr-x 2 cxim1 cxim1   4096 Jun  4 20:57 objs
-drwxr-xr-x 2 cxim1 cxim1   4096 Jun  3 11:31 srcs
+drwxr-xr-x  6 cxim1 cxim1   4096 Jun  4 20:57 .
+drwxr-xr-x 10 cxim1 cxim1   4096 Jun  9 09:56 ..
+-rw-r--r--  1 cxim1 cxim1   8196 Jun  3 11:31 .DS_Store
+-rwxr-xr-x  1 cxim1 cxim1   2235 Jun  3 11:31 Makefile
+drwxr-xr-x  3 cxim1 cxim1   4096 Jun  3 11:31 a.out.dSYM
+drwxr-xr-x  3 cxim1 cxim1   4096 Jun  3 11:31 includes
+-rw-r--r--  1 cxim1 cxim1 221582 Jun  4 20:57 libftprintf.a
+drwxr-xr-x  2 cxim1 cxim1   4096 Jun  4 20:57 objs
+drwxr-xr-x  2 cxim1 cxim1   4096 Jun  3 11:31 srcs
 
 ft_printf/a.out.dSYM:
 total 12

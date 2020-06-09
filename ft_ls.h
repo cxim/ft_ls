@@ -55,7 +55,7 @@ typedef struct		s_inc
 	t_dir			*lst;
 }					t_inc;
 
-void	ft_ls(t_inc *inc, char *str);
+void	ft_ls(t_inc *inc, char *str, int flag);
 void	ft_print_ls(t_dir **lst, t_inc *inc, char *path);
 void	sort_lst(t_dir **lst, int (*cmp)(t_dir, t_dir), int i);
 int		compare_strs(t_dir str1, t_dir str2);

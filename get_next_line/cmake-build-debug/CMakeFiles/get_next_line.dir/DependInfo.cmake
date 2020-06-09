@@ -4,9 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/cxim1/get_next_line/get_next_line.c" "/home/cxim1/get_next_line/cmake-build-debug/CMakeFiles/get_next_line.dir/get_next_line.c.o"
-  "/home/cxim1/get_next_line/get_next_line_utils.c" "/home/cxim1/get_next_line/cmake-build-debug/CMakeFiles/get_next_line.dir/get_next_line_utils.c.o"
-  "/home/cxim1/get_next_line/gnl_tester.c" "/home/cxim1/get_next_line/cmake-build-debug/CMakeFiles/get_next_line.dir/gnl_tester.c.o"
+  "/home/cxim1/unix/ft_ls/get_next_line/get_next_line.c" "/home/cxim1/unix/ft_ls/get_next_line/cmake-build-debug/CMakeFiles/get_next_line.dir/get_next_line.c.o"
+  "/home/cxim1/unix/ft_ls/get_next_line/get_next_line_utils.c" "/home/cxim1/unix/ft_ls/get_next_line/cmake-build-debug/CMakeFiles/get_next_line.dir/get_next_line_utils.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

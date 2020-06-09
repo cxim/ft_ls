@@ -1,21 +1,24 @@
-total 284
-drwxr-xr-x 11 cxim1 cxim1  4096 Jun  7 08:17 42FileChecker
+total 296
+drwxr-xr-x 11 cxim1 cxim1  4096 Jun  9 09:31 42FileChecker
 -rw-r--r--  1 cxim1 cxim1  5214 Jun  3 11:31 CMakeLists.txt
 -rw-r--r--  1 cxim1 cxim1   441 Jun  4 20:59 Makefile
-drwxr-xr-x  3 cxim1 cxim1  4096 Jun  7 21:28 cmake-build-debug
+drwxr-xr-x  3 cxim1 cxim1  4096 Jun  9 09:30 cmake-build-debug
+prw-r--r--  1 cxim1 cxim1     0 Jun  8 00:04 fifo
 -rw-r--r--  1 cxim1 cxim1  1074 Jun  4 21:26 for_sort.c
--rw-r--r--  1 cxim1 cxim1  5704 Jun  7 21:29 for_sort.o
--rwxr-xr-x  1 cxim1 cxim1 85864 Jun  7 21:29 ft_ls
--rw-r--r--  1 cxim1 cxim1  1419 Jun  7 07:19 ft_ls.h
+-rw-r--r--  1 cxim1 cxim1  5704 Jun  9 09:54 for_sort.o
+-rwxr-xr-x  1 cxim1 cxim1 86624 Jun  9 09:54 ft_ls
+-rw-r--r--  1 cxim1 cxim1  1507 Jun  9 09:27 ft_ls.h
 drwxr-xr-x  6 cxim1 cxim1  4096 Jun  4 20:57 ft_printf
--rw-r--r--  1 cxim1 cxim1  4353 Jun  7 07:24 ft_start.c
--rw-r--r--  1 cxim1 cxim1 14248 Jun  7 21:29 ft_start.o
--rw-r--r--  1 cxim1 cxim1  2212 Jun  7 07:19 main.c
--rw-r--r--  1 cxim1 cxim1 10400 Jun  7 21:29 main.o
+-rw-r--r--  1 cxim1 cxim1  5174 Jun  9 09:27 ft_start.c
+-rw-r--r--  1 cxim1 cxim1 15432 Jun  9 09:54 ft_start.o
+drwxr-xr-x  7 cxim1 cxim1  4096 Jun  8 22:24 get_next_line
+-rw-r--r--  1 cxim1 cxim1  2831 Jun  9 09:56 main.c
+-rw-r--r--  1 cxim1 cxim1 11536 Jun  9 09:54 main.o
 -rwxr-xr-x  1 cxim1 cxim1  4388 Jun  3 11:31 printf.h
--rw-r--r--  1 cxim1 cxim1  7297 Jun  7 21:28 prints.c
--rw-r--r--  1 cxim1 cxim1 22040 Jun  7 21:29 prints.o
-drwxr-xr-x  4 cxim1 cxim1  4096 Jun  7 21:22 test
+-rw-r--r--  1 cxim1 cxim1  7579 Jun  8 01:28 prints.c
+-rw-r--r--  1 cxim1 cxim1 22728 Jun  9 09:54 prints.o
+drwxr-xr-x  5 cxim1 cxim1  4096 Jun  9 05:56 test
 -rwxrwxrwx  1 cxim1 cxim1   621 Jun  7 21:30 test.sh
+drwxr-xr-x  3 cxim1 cxim1  4096 Jun  8 00:32 test2
 -rwxr-xr-x  1 cxim1 cxim1 73456 Jun  3 20:05 zfz
 -rw-r--r--  1 cxim1 cxim1     0 Dec  5  2019 zzzz

@@ -7,5 +7,3 @@ CMakeFiles/get_next_line.dir/get_next_line.c.o: ../get_next_line.h
 CMakeFiles/get_next_line.dir/get_next_line_utils.c.o: ../get_next_line.h
 CMakeFiles/get_next_line.dir/get_next_line_utils.c.o: ../get_next_line_utils.c
 
-CMakeFiles/get_next_line.dir/gnl_tester.c.o: ../gnl_tester.c
-
