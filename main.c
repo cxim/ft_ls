@@ -86,6 +86,7 @@ void	free_l(t_inc *inc)
 			tmp = inc->lst;
 
 			inc->lst = inc->lst->next;
+
 //			if (tmp->dir)
 			free(tmp->dir);
 //			if (tmp->full_path)
@@ -95,6 +96,9 @@ void	free_l(t_inc *inc)
 	}
 	if (inc->path)
 		free(inc->path);
+	free(inc->dump_dir);
+//	if (inc->dump_dir_tmp)
+//		free(inc->dump_dir_tmp);
 //	if (inc->dirp && inc->rr == 0)
 	closedir(inc->dirp);
 	free(inc);
@@ -134,6 +138,7 @@ int main(int argc, char **argv)
 			str_tmp = argv[i];
 			tmp->dir = ft_strdup(str_tmp);
 			tmp->next = inc->lst;
+			inc->dump_dir = ft_strdup(str_tmp);
 			inc->lst = tmp;
 		}
 		else if (add_args(inc, argv[i]) == 0)

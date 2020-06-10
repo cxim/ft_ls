@@ -80,15 +80,29 @@ void	get_prem_for_f(char *str, struct stat fstat, t_dir *tmp)
 	//else
 }
 
+char	*path_link(char *str1, char *str2)
+{
+	char	*tmp;
+	char	*res;
+
+	res = str1;
+	str1 = ft_strjoin(str1, "/");
+	tmp = sek_j(str1, str2);
+	free(str1);
+	return (tmp);
+}
+
 void	get_time(struct stat fstat, t_dir *tmp, t_inc *inc, int flag)
 {
 	char 	buff[13];
 	char 	*str;
 	char 	buf[64];
 	size_t 	len;
+	int		i;
 
 	//half_year(tmp->time);
 	(void)fstat;
+	i = 0;
 	if (inc->u == 0 && inc->c == 0)
 	{
 		str = ctime(&tmp->time);
@@ -120,6 +134,7 @@ void	get_time(struct stat fstat, t_dir *tmp, t_inc *inc, int flag)
 	ft_putstr(tmp->dir);
 	if (S_ISLNK(fstat.st_mode))
 	{
+		i = 1;
 		ft_putstr(" -> ");
 		if (flag == 1)
 			len = readlink(tmp->dir, buf, 64);
@@ -127,6 +142,21 @@ void	get_time(struct stat fstat, t_dir *tmp, t_inc *inc, int flag)
 			len = readlink(tmp->full_path, buf, 64);
 		buf[len] = '\0';
 		ft_putstr(buf);
+	}
+	if (inc->f_big)
+	{
+		if (i == 1)
+		{
+			str = NULL;
+			str = path_link(inc->dump_dir, buf);
+			free(tmp->full_path);
+			tmp->full_path = ft_strdup(str);
+			print_sign_ff(tmp->full_path, 1);
+			free(str);
+			//free(inc->dump_dir_tmp);
+		}
+		else
+			print_sign_f(tmp->full_path, 1);
 	}
 }
 
@@ -383,6 +413,11 @@ void	ft_print_ls(t_dir **lst, t_inc *inc, char *path)
 		while (tmp != NULL)
 		{
 			ft_putstr(tmp->dir);
+			if (inc->f_big == 1)
+			{
+				lstat(tmp->dir, &inc->sb);
+				print_sign_f(tmp->full_path, 1);
+			}
 			tmp = tmp->next;
 			if (tmp != NULL)
 				ft_putchar('\n');

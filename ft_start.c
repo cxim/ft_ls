@@ -183,15 +183,34 @@ int		get_exec(struct stat fstat)
 		return (1);
 	return (0);
 }
-
-void	print_sign_f(t_inc *inc)
+void	print_sign_ff(char *path, int flag)
 {
-	if (S_ISFIFO(inc->sb.st_mode) != 0)
+	struct stat		sb;
+
+	lstat(path, &sb);
+	if (S_ISFIFO(sb.st_mode) != 0)
 		ft_putchar('|');
-	else if (S_ISLNK(inc->sb.st_mode) != 0)
+	else if (S_ISLNK(sb.st_mode) != 0)
 		ft_putchar('@');
-	else if (get_exec(inc->sb))
+	else if (get_exec(sb) && !S_ISDIR(sb.st_mode))
 		ft_putchar('*');
+	else if (S_ISDIR(sb.st_mode) != 0 && flag == 1)
+		ft_putchar('/');
+}
+
+void	print_sign_f(char *path, int flag)
+{
+	struct stat		sb;
+
+	lstat(path, &sb);
+	if (S_ISFIFO(sb.st_mode) != 0)
+		ft_putchar('|');
+	else if (S_ISLNK(sb.st_mode) != 0)
+		ft_putchar('@');
+	else if (get_exec(sb) && !S_ISDIR(sb.st_mode))
+		ft_putchar('*');
+	else if (S_ISDIR(sb.st_mode) != 0 && flag == 1)
+		ft_putchar('/');
 }
 
 void	ft_ls(t_inc *inc, char *str_tmp, int flag) {
@@ -214,7 +233,7 @@ void	ft_ls(t_inc *inc, char *str_tmp, int flag) {
 			{
 				ft_putstr(str_tmp);
 				if (inc->f_big == 1)
-					print_sign_f(inc);
+					print_sign_f(tmp->full_path, 0);
 				ft_putchar('\n');
 			}
 		}

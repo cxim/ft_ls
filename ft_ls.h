@@ -49,6 +49,8 @@ typedef struct		s_inc
 	int 			f_big;
 	int				s_big;
 	char 			*path;
+	char 			*dump_dir;
+	char 			*dump_dir_tmp;
 	DIR				*dirp;
 	struct dirent	*dp;
 	struct stat		sb;
@@ -68,4 +70,7 @@ void 	get_user(t_inc *inc, struct stat fstat, int flag);
 void	get_time(struct stat fstat, t_dir *tmp, t_inc *inc, int flag);
 char	*some_str(char *str, t_inc *inc);
 void	get_prem_for_f(char *str, struct stat fstat, t_dir *tmp);
+void	print_sign_f(char *path, int flag);
+char 	*sek_j(char *s1, char *s2);
+void	print_sign_ff(char *path, int flag);
 #endif //FT_LS_FT_LS_H
