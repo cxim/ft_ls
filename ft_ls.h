@@ -37,6 +37,7 @@ typedef struct		s_inc
 	int 			links_len;
 	int 			owner_name_len;
 	int 			group_name_len;
+	int 			p;
 	int 			l;
 	int 			a;
 	int 			r;
@@ -70,7 +71,10 @@ void 	get_user(t_inc *inc, struct stat fstat, int flag);
 void	get_time(struct stat fstat, t_dir *tmp, t_inc *inc, int flag);
 char	*some_str(char *str, t_inc *inc);
 void	get_prem_for_f(char *str, struct stat fstat, t_dir *tmp);
-void	print_sign_f(char *path, int flag);
+void	print_sign_f(char *path, int flag, t_inc *inc);
 char 	*sek_j(char *s1, char *s2);
-void	print_sign_ff(char *path, int flag);
+void	print_sign_ff(char *path, int flag, t_inc *inc);
+int 	dir_file(t_inc *inc, char *name);
+char	*path_link(char *str1, char *str2);
+
 #endif //FT_LS_FT_LS_H

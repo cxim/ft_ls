@@ -3,6 +3,26 @@
 //
 #include "ft_ls.h"
 
+int 	check_p(char *str)
+{
+	int 	res;
+	int 	i;
+	char	*tmp;
+
+	tmp = str;
+	res = 0;
+	i = 0;
+	while (tmp[i] != '\0')
+	{
+		if (tmp[i] == 'F')
+			res = 1;
+		if (tmp[i] =='p')
+			res = 2;
+		i++;
+	}
+	return (res);
+}
+
 int		add_args(t_inc *inc, char *str)
 {
 	int 	i;
@@ -33,6 +53,8 @@ int		add_args(t_inc *inc, char *str)
 			inc->u_big = 1;
 		else if (str[i] == 'F')
 			inc->f_big = 1;
+		else if (str[i] == 'p')
+			inc->p = check_p(str);
 		else
 		{
 			tmp = ft_strjoin(str, ": Invalid argument\n");
@@ -98,7 +120,7 @@ void	free_l(t_inc *inc)
 		free(inc->path);
 	free(inc->dump_dir);
 //	if (inc->dump_dir_tmp)
-//		free(inc->dump_dir_tmp);
+	free(inc->dump_dir_tmp);
 //	if (inc->dirp && inc->rr == 0)
 	closedir(inc->dirp);
 	free(inc);
@@ -157,12 +179,15 @@ int main(int argc, char **argv)
 		ft_putstr("cannot access '");
 		ft_putstr(inc->lst->dir);
 		ft_putendl("': No such file or directory");
+		free(inc->dump_dir_tmp);
+		free_l(inc);
 		return (-1);
 	}
 	//free(str_tmp);
 //	free_lst(tmp);
 	//free(tmp->dir);
 	free_l(inc);
+//	free(str_tmp);
 	return (0);
 }
 //==2135==    definitely lost: 763 bytes in 91 blocks

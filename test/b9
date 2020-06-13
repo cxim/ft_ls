@@ -1,0 +1,2108 @@
+.:
+total 304
+drwxr-xr-x 11 cxim1 cxim1  4096 Jun 12 13:22 42FileChecker
+-rw-r--r--  1 cxim1 cxim1  5214 Jun  3 11:31 CMakeLists.txt
+-rw-r--r--  1 cxim1 cxim1   441 Jun  4 20:59 Makefile
+drwxr-xr-x  3 cxim1 cxim1  4096 Jun 12 15:03 cmake-build-debug
+prw-r--r--  1 cxim1 cxim1     0 Jun  8 00:04 fifo
+-rw-r--r--  1 cxim1 cxim1  1074 Jun  4 21:26 for_sort.c
+-rw-r--r--  1 cxim1 cxim1  5704 Jun 12 15:22 for_sort.o
+-rwxr-xr-x  1 cxim1 cxim1 88008 Jun 12 15:22 ft_ls
+-rw-r--r--  1 cxim1 cxim1  1749 Jun 11 07:28 ft_ls.h
+drwxr-xr-x  6 cxim1 cxim1  4096 Jun  4 20:57 ft_printf
+-rw-r--r--  1 cxim1 cxim1  6930 Jun 12 15:19 ft_start.c
+-rw-r--r--  1 cxim1 cxim1 18088 Jun 12 15:22 ft_start.o
+drwxr-xr-x  7 cxim1 cxim1  4096 Jun  8 22:24 get_next_line
+-rw-r--r--  1 cxim1 cxim1  2987 Jun 12 13:33 main.c
+-rw-r--r--  1 cxim1 cxim1 11840 Jun 12 15:22 main.o
+-rwxr-xr-x  1 cxim1 cxim1  4388 Jun  3 11:31 printf.h
+-rw-r--r--  1 cxim1 cxim1  8427 Jun 12 15:22 prints.c
+-rw-r--r--  1 cxim1 cxim1 24408 Jun 12 15:22 prints.o
+drwxr-xr-x  5 cxim1 cxim1  4096 Jun 12 15:24 test
+-rwxrwxrwx  1 cxim1 cxim1   683 Jun 12 15:24 test.sh
+drwxr-xr-x  3 cxim1 cxim1  4096 Jun 11 11:08 test2
+-rwxr-xr-x  1 cxim1 cxim1 73456 Jun  3 20:05 zfz
+-rw-r--r--  1 cxim1 cxim1     0 Dec  5  2019 zzzz
+
+./42FileChecker:
+total 64
+-rwxr-xr-x  1 cxim1 cxim1  5377 Sep 28  2019 42FileChecker.sh
+-rw-r--r--  1 cxim1 cxim1 11358 Sep 28  2019 LICENCE
+-rw-r--r--  1 cxim1 cxim1  9882 Sep 28  2019 README.md
+drwxr-xr-x  2 cxim1 cxim1  4096 Jun  5 01:00 assets
+drwxr-xr-x  6 cxim1 cxim1  4096 Jun  5 01:00 fillit_checker
+drwxr-xr-x  6 cxim1 cxim1  4096 Jun  5 01:00 includes
+drwxr-xr-x  6 cxim1 cxim1  4096 Jun  5 01:00 maintest
+drwxr-xr-x 10 cxim1 cxim1  4096 Jun  5 01:01 moulitest_42projects
+drwxr-xr-x  5 cxim1 cxim1  4096 Jun  5 01:01 pft
+drwxr-xr-x  6 cxim1 cxim1  4096 Jun  5 01:01 srcs
+drwxr-xr-x  2 cxim1 cxim1  4096 Jun 12 13:21 tmp
+
+./42FileChecker/assets:
+total 88
+-rw-r--r-- 1 cxim1 cxim1   651 Sep 28  2019 42FileChecker.ascii
+-rw-r--r-- 1 cxim1 cxim1 16967 Sep 28  2019 42FileChecker.png
+-rw-r--r-- 1 cxim1 cxim1 12034 Sep 28  2019 42FileChecker_250x250.png
+-rw-r--r-- 1 cxim1 cxim1 20850 Sep 28  2019 42FileChecker_416x416.png
+-rw-r--r-- 1 cxim1 cxim1 23822 Sep 28  2019 42FileChecker_cropped.png
+-rw-r--r-- 1 cxim1 cxim1   175 Sep 28  2019 README.md
+
+./42FileChecker/fillit_checker:
+total 20
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:00 correct_compare
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:00 correct_file
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:00 error_file
+-rwxr-xr-x 1 cxim1 cxim1  247 Sep 30  2019 readme.txt
+-rwxr-xr-x 1 cxim1 cxim1 1808 Sep 30  2019 test.sh
+
+./42FileChecker/fillit_checker/correct_compare:
+total 88
+-rw-r--r-- 1 cxim1 cxim1 20 Sep 30  2019 output_valid_0
+-rw-r--r-- 1 cxim1 cxim1 20 Sep 30  2019 output_valid_1
+-rw-r--r-- 1 cxim1 cxim1 20 Sep 30  2019 output_valid_10
+-rw-r--r-- 1 cxim1 cxim1 30 Sep 30  2019 output_valid_11
+-rw-r--r-- 1 cxim1 cxim1 20 Sep 30  2019 output_valid_12
+-rw-r--r-- 1 cxim1 cxim1 20 Sep 30  2019 output_valid_13
+-rw-r--r-- 1 cxim1 cxim1 20 Sep 30  2019 output_valid_14
+-rw-r--r-- 1 cxim1 cxim1 20 Sep 30  2019 output_valid_15
+-rw-r--r-- 1 cxim1 cxim1 42 Sep 30  2019 output_valid_16
+-rw-r--r-- 1 cxim1 cxim1 30 Sep 30  2019 output_valid_17
+-rw-r--r-- 1 cxim1 cxim1 42 Sep 30  2019 output_valid_18
+-rw-r--r-- 1 cxim1 cxim1 56 Sep 30  2019 output_valid_19
+-rw-r--r-- 1 cxim1 cxim1 20 Sep 30  2019 output_valid_2
+-rw-r--r-- 1 cxim1 cxim1  6 Sep 30  2019 output_valid_20
+-rw-r--r-- 1 cxim1 cxim1 30 Sep 30  2019 output_valid_21
+-rw-r--r-- 1 cxim1 cxim1 30 Sep 30  2019 output_valid_3
+-rw-r--r-- 1 cxim1 cxim1 30 Sep 30  2019 output_valid_4
+-rw-r--r-- 1 cxim1 cxim1 30 Sep 30  2019 output_valid_5
+-rw-r--r-- 1 cxim1 cxim1 20 Sep 30  2019 output_valid_6
+-rw-r--r-- 1 cxim1 cxim1 12 Sep 30  2019 output_valid_7
+-rw-r--r-- 1 cxim1 cxim1  6 Sep 30  2019 output_valid_8
+-rw-r--r-- 1 cxim1 cxim1 20 Sep 30  2019 output_valid_9
+
+./42FileChecker/fillit_checker/correct_file:
+total 88
+-rwxr-xr-x 1 cxim1 cxim1  41 Sep 30  2019 valid_0
+-rwxr-xr-x 1 cxim1 cxim1  41 Sep 30  2019 valid_1
+-rwxr-xr-x 1 cxim1 cxim1  62 Sep 30  2019 valid_10
+-rwxr-xr-x 1 cxim1 cxim1 104 Sep 30  2019 valid_11
+-rwxr-xr-x 1 cxim1 cxim1  62 Sep 30  2019 valid_12
+-rwxr-xr-x 1 cxim1 cxim1  62 Sep 30  2019 valid_13
+-rwxr-xr-x 1 cxim1 cxim1  62 Sep 30  2019 valid_14
+-rwxr-xr-x 1 cxim1 cxim1  83 Sep 30  2019 valid_15
+-rwxr-xr-x 1 cxim1 cxim1 167 Sep 30  2019 valid_16
+-rwxr-xr-x 1 cxim1 cxim1  83 Sep 30  2019 valid_17
+-rwxr-xr-x 1 cxim1 cxim1 146 Sep 30  2019 valid_18
+-rwxr-xr-x 1 cxim1 cxim1 188 Sep 30  2019 valid_19
+-rwxr-xr-x 1 cxim1 cxim1  62 Sep 30  2019 valid_2
+-rwxr-xr-x 1 cxim1 cxim1  20 Sep 30  2019 valid_20
+-rwxr-xr-x 1 cxim1 cxim1  62 Sep 30  2019 valid_21
+-rwxr-xr-x 1 cxim1 cxim1  62 Sep 30  2019 valid_3
+-rwxr-xr-x 1 cxim1 cxim1  62 Sep 30  2019 valid_4
+-rwxr-xr-x 1 cxim1 cxim1  83 Sep 30  2019 valid_5
+-rwxr-xr-x 1 cxim1 cxim1  62 Sep 30  2019 valid_6
+-rwxr-xr-x 1 cxim1 cxim1  41 Sep 30  2019 valid_7
+-rwxr-xr-x 1 cxim1 cxim1  63 Sep 30  2019 valid_8
+-rwxr-xr-x 1 cxim1 cxim1  62 Sep 30  2019 valid_9
+
+./42FileChecker/fillit_checker/error_file:
+total 100
+-rwxr-xr-x 1 cxim1 cxim1 40 Sep 30  2019 error_0
+-rwxr-xr-x 1 cxim1 cxim1  4 Sep 30  2019 error_1
+-rwxr-xr-x 1 cxim1 cxim1 34 Sep 30  2019 error_10
+-rwxr-xr-x 1 cxim1 cxim1 21 Sep 30  2019 error_11
+-rwxr-xr-x 1 cxim1 cxim1 20 Sep 30  2019 error_12
+-rwxr-xr-x 1 cxim1 cxim1 21 Sep 30  2019 error_13
+-rw-r--r-- 1 cxim1 cxim1  2 Sep 30  2019 error_14
+-rwxr-xr-x 1 cxim1 cxim1 17 Sep 30  2019 error_15
+-rwxr-xr-x 1 cxim1 cxim1 25 Sep 30  2019 error_16
+-rwxr-xr-x 1 cxim1 cxim1 41 Sep 30  2019 error_17
+-rwxr-xr-x 1 cxim1 cxim1 41 Sep 30  2019 error_18
+-rwxr-xr-x 1 cxim1 cxim1 41 Sep 30  2019 error_19
+-rwxr-xr-x 1 cxim1 cxim1 31 Sep 30  2019 error_2
+-rw-r--r-- 1 cxim1 cxim1 40 Sep 30  2019 error_20
+-rw-r--r-- 1 cxim1 cxim1 61 Sep 30  2019 error_21
+-rw-r--r-- 1 cxim1 cxim1 41 Sep 30  2019 error_22
+-rw-r--r-- 1 cxim1 cxim1  0 Sep 30  2019 error_23
+-rwxr-xr-x 1 cxim1 cxim1 42 Sep 30  2019 error_24
+-rw-r--r-- 1 cxim1 cxim1 20 Sep 30  2019 error_25
+-rwxr-xr-x 1 cxim1 cxim1 42 Sep 30  2019 error_3
+-rwxr-xr-x 1 cxim1 cxim1 41 Sep 30  2019 error_4
+-rwxr-xr-x 1 cxim1 cxim1 20 Sep 30  2019 error_5
+-rwxr-xr-x 1 cxim1 cxim1 20 Sep 30  2019 error_6
+-rwxr-xr-x 1 cxim1 cxim1 41 Sep 30  2019 error_7
+-rwxr-xr-x 1 cxim1 cxim1 20 Sep 30  2019 error_8
+-rwxr-xr-x 1 cxim1 cxim1 40 Sep 30  2019 error_9
+
+./42FileChecker/includes:
+total 20
+drwxr-xr-x  2 cxim1 cxim1 4096 Jun  5 01:00 display
+drwxr-xr-x  2 cxim1 cxim1 4096 Jun  5 01:00 external_repositories
+-rw-r--r--  1 cxim1 cxim1 2405 Sep 28  2019 main.sh
+drwxr-xr-x 10 cxim1 cxim1 4096 Jun  5 01:00 projects
+drwxr-xr-x  2 cxim1 cxim1 4096 Jun  5 01:00 utils
+
+./42FileChecker/includes/display:
+total 88
+-rw-r--r-- 1 cxim1 cxim1   400 Sep 28  2019 display_center.sh
+-rw-r--r-- 1 cxim1 cxim1  2030 Sep 28  2019 display_credits.sh
+-rw-r--r-- 1 cxim1 cxim1   136 Sep 28  2019 display_error.sh
+-rw-r--r-- 1 cxim1 cxim1  1024 Sep 28  2019 display_header.sh
+-rw-r--r-- 1 cxim1 cxim1   535 Sep 28  2019 display_leftandright.sh
+-rw-r--r-- 1 cxim1 cxim1  3352 Sep 28  2019 display_menu.sh
+-rw-r--r-- 1 cxim1 cxim1  1423 Sep 28  2019 display_spinner.sh
+-rw-r--r-- 1 cxim1 cxim1 50291 Sep 28  2019 display_splash_screen.sh
+-rw-r--r-- 1 cxim1 cxim1   138 Sep 28  2019 display_success.sh
+-rw-r--r-- 1 cxim1 cxim1   560 Sep 28  2019 display_top.sh
+
+./42FileChecker/includes/external_repositories:
+total 28
+-rw-r--r-- 1 cxim1 cxim1 1684 Sep 28  2019 external_repository_42shelltester.sh
+-rw-r--r-- 1 cxim1 cxim1 1096 Sep 28  2019 external_repository_fillit_checker.sh
+-rw-r--r-- 1 cxim1 cxim1 1961 Sep 28  2019 external_repository_libftunittest.sh
+-rw-r--r-- 1 cxim1 cxim1 5165 Sep 28  2019 external_repository_maintest.sh
+-rw-r--r-- 1 cxim1 cxim1 1785 Sep 28  2019 external_repository_moulitest.sh
+-rw-r--r-- 1 cxim1 cxim1 2573 Sep 28  2019 external_repository_pft.sh
+
+./42FileChecker/includes/projects:
+total 32
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:00 fillit
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:00 ft_ls
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:00 ft_printf
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:00 generic_tests
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:00 gnl
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:00 libft
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:00 libftasm
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:00 minishell
+
+./42FileChecker/includes/projects/fillit:
+total 8
+-rw-r--r-- 1 cxim1 cxim1 6258 Sep 28  2019 fillit_main.sh
+
+./42FileChecker/includes/projects/ft_ls:
+total 8
+-rw-r--r-- 1 cxim1 cxim1 5421 Sep 28  2019 ft_ls_main.sh
+
+./42FileChecker/includes/projects/ft_printf:
+total 28
+-rw-r--r-- 1 cxim1 cxim1 10814 Sep 28  2019 ft_printf_list.sh
+-rw-r--r-- 1 cxim1 cxim1 14501 Sep 28  2019 ft_printf_main.sh
+
+./42FileChecker/includes/projects/generic_tests:
+total 4
+-rw-r--r-- 1 cxim1 cxim1 3460 Sep 28  2019 generic_tests_main.sh
+
+./42FileChecker/includes/projects/gnl:
+total 24
+-rw-r--r-- 1 cxim1 cxim1 21408 Sep 28  2019 get_next_line_main.sh
+
+./42FileChecker/includes/projects/libft:
+total 16
+-rw-r--r-- 1 cxim1 cxim1 13036 Sep 28  2019 libft_main.sh
+
+./42FileChecker/includes/projects/libftasm:
+total 24
+-rwxr-xr-x 1 cxim1 cxim1  8722 Sep 28  2019 libftasm_list.sh
+-rwxr-xr-x 1 cxim1 cxim1 11648 Sep 28  2019 libftasm_main.sh
+
+./42FileChecker/includes/projects/minishell:
+total 8
+-rw-r--r-- 1 cxim1 cxim1 5282 Sep 28  2019 minishell_main.sh
+
+./42FileChecker/includes/utils:
+total 80
+-rw-r--r-- 1 cxim1 cxim1 6563 Sep 28  2019 utils.sh
+-rw-r--r-- 1 cxim1 cxim1 1682 Sep 28  2019 utils_auteur.sh
+-rw-r--r-- 1 cxim1 cxim1 1361 Sep 28  2019 utils_authorized_functions.sh
+-rw-r--r-- 1 cxim1 cxim1 3487 Sep 28  2019 utils_configure.sh
+-rw-r--r-- 1 cxim1 cxim1  305 Sep 28  2019 utils_exit.sh
+-rw-r--r-- 1 cxim1 cxim1 1082 Sep 28  2019 utils_fileexists.sh
+-rw-r--r-- 1 cxim1 cxim1 2974 Sep 28  2019 utils_forbidden_functions.sh
+-rw-r--r-- 1 cxim1 cxim1  493 Sep 28  2019 utils_get_inode.sh
+-rw-r--r-- 1 cxim1 cxim1 1655 Sep 28  2019 utils_launch_tests.sh
+-rw-r--r-- 1 cxim1 cxim1 2185 Sep 28  2019 utils_leaks.sh
+-rw-r--r-- 1 cxim1 cxim1 8448 Sep 28  2019 utils_makefile.sh
+-rw-r--r-- 1 cxim1 cxim1 1497 Sep 28  2019 utils_norme.sh
+-rw-r--r-- 1 cxim1 cxim1  527 Sep 28  2019 utils_signals.sh
+-rw-r--r-- 1 cxim1 cxim1 4151 Sep 28  2019 utils_speedtest.sh
+-rw-r--r-- 1 cxim1 cxim1 7653 Sep 28  2019 utils_update.sh
+
+./42FileChecker/maintest:
+total 16
+-rw-r--r-- 1 cxim1 cxim1  315 May  4 07:55 README.md
+drwxr-xr-x 3 cxim1 cxim1 4096 Jun 12 13:22 ft_ls
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:00 getnextline
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:00 libft
+
+./42FileChecker/maintest/ft_ls:
+total 20
+-rwxr-xr-x 1 cxim1 cxim1 13570 May  4 07:55 diff_me.sh
+drwxr-xr-x 2 cxim1 cxim1  4096 Jun  5 01:00 t_dir
+
+./42FileChecker/maintest/ft_ls/t_dir:
+total 8
+-rw-r--r-- 1 cxim1 cxim1   3 May  4 07:55 42
+-rw-r--r-- 1 cxim1 cxim1 759 May  4 07:55 couloir
+lrwxrwxrwx 1 cxim1 cxim1   7 Jun  5 01:00 ln_couloir -> couloir
+
+./42FileChecker/maintest/getnextline:
+total 36
+-rwxr-xr-x 1 cxim1 cxim1 30038 May  4 07:55 cmp.txt
+-rw-r--r-- 1 cxim1 cxim1  1944 May  4 07:55 main.c
+
+./42FileChecker/maintest/libft:
+total 44
+-rw-r--r-- 1 cxim1 cxim1 42402 May  4 07:55 main.c
+
+./42FileChecker/moulitest_42projects:
+total 44
+-rw-r--r-- 1 cxim1 cxim1 2824 Sep 28  2019 Makefile
+-rw-r--r-- 1 cxim1 cxim1  980 Sep 28  2019 README.md
+-rw-r--r-- 1 cxim1 cxim1   38 Jun 12 13:21 config.ini
+-rw-r--r-- 1 cxim1 cxim1  393 Sep 28  2019 config.ini.template
+drwxrwxrwx 5 cxim1 cxim1 4096 Jun 12 13:22 ft_ls_tests
+drwxr-xr-x 4 cxim1 cxim1 4096 Jun  5 01:01 ft_printf_tests
+drwxr-xr-x 5 cxim1 cxim1 4096 Jun  5 01:01 get_next_line_tests
+drwxr-xr-x 3 cxim1 cxim1 4096 Jun  5 01:01 libft_tests
+drwxr-xr-x 3 cxim1 cxim1 4096 Jun  5 01:01 libftasm_tests
+drwxr-xr-x 3 cxim1 cxim1 4096 Jun  5 01:01 template_tests
+drwxr-xr-x 6 cxim1 cxim1 4096 Jun  5 01:01 testframework
+
+./42FileChecker/moulitest_42projects/ft_ls_tests:
+total 332
+lrwxrwxrwx 1 cxim1 cxim1     50 Jun  5 01:00 Makefile -> ../testframework/v3_templates/Makefile_template.mk
+-rwxrwxrwx 1 cxim1 cxim1     46 Sep 28  2019 Makefile_cfg.mk
+-rwxrwxrwx 1 cxim1 cxim1 308624 Jun 12 13:21 ft_ls_test
+drwxrwxrwx 3 cxim1 cxim1   4096 Jun  5 01:00 ft_ls_test.dSYM
+-rwxrwxrwx 1 cxim1 cxim1    488 Sep 28  2019 main.c
+-rwxrwxrwx 1 cxim1 cxim1    436 Sep 28  2019 project.h
+drwxr-xr-x 3 cxim1 cxim1   4096 Jun 12 13:22 sandbox
+drwxrwxrwx 3 cxim1 cxim1   4096 Jun  9 05:47 tests
+-rwxrwxrwx 1 cxim1 cxim1   3172 Sep 28  2019 utils.c
+
+./42FileChecker/moulitest_42projects/ft_ls_tests/ft_ls_test.dSYM:
+total 4
+drwxrwxrwx 3 cxim1 cxim1 4096 Jun  5 01:00 Contents
+
+./42FileChecker/moulitest_42projects/ft_ls_tests/ft_ls_test.dSYM/Contents:
+total 8
+-rwxrwxrwx 1 cxim1 cxim1  639 May 10 15:18 Info.plist
+drwxrwxrwx 3 cxim1 cxim1 4096 Jun  5 01:00 Resources
+
+./42FileChecker/moulitest_42projects/ft_ls_tests/ft_ls_test.dSYM/Contents/Resources:
+total 4
+drwxrwxrwx 2 cxim1 cxim1 4096 Jun  5 01:00 DWARF
+
+./42FileChecker/moulitest_42projects/ft_ls_tests/ft_ls_test.dSYM/Contents/Resources/DWARF:
+total 148
+-rwxrwxrwx 1 cxim1 cxim1 150200 May 10 15:18 ft_ls_test
+
+./42FileChecker/moulitest_42projects/ft_ls_tests/sandbox:
+total 4
+d--S--S--T 2 cxim1 cxim1 4096 Jun 12 13:22 dir16
+
+./42FileChecker/moulitest_42projects/ft_ls_tests/tests:
+total 216
+-rwxrwxrwx 1 cxim1 cxim1  793 Sep 28  2019 00_test_without_opt.spec.c
+-rwxrwxrwx 1 cxim1 cxim1 1871 Sep 28  2019 01_test_opt_R.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  927 Sep 28  2019 02_test_sorted.spec.c
+-rwxrwxrwx 1 cxim1 cxim1 1455 Sep 28  2019 03_test_multiple_dir.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  574 Sep 28  2019 04_test_opt_a.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  796 Sep 28  2019 05_test_opt_r.spec.c
+-rwxrwxrwx 1 cxim1 cxim1 1093 Sep 28  2019 06_test_opt_rR.spec.c
+-rwxrwxrwx 1 cxim1 cxim1 2540 Sep 28  2019 07_test_opt_t.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  681 Sep 28  2019 07_test_opt_tR_bis.spec.c
+-rwxrwxrwx 1 cxim1 cxim1 2393 Sep 28  2019 08_test_opt_l.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  552 Sep 28  2019 09_test_opt_aR.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  299 Jun  7 21:33 10_test_opt_aRl.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  494 Sep 28  2019 11_test_single_file.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  704 Sep 28  2019 12_test_permissions.spec.c
+-rwxrwxrwx 1 cxim1 cxim1 2869 Sep 28  2019 13_test_hyphen_hard.spec.c
+-rwxrwxrwx 1 cxim1 cxim1 1921 Sep 28  2019 14_test_hyphen_harder.spec.c
+-rwxrwxrwx 1 cxim1 cxim1 7079 Sep 28  2019 20_test_error_handling.spec.c
+-rwxrwxrwx 1 cxim1 cxim1 1117 Sep 28  2019 21_test_symlink.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  289 Sep 28  2019 22_test_no_username.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  285 Sep 28  2019 23_test_no_groupname.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  814 Sep 28  2019 24_test_multiple_files.spec.c
+-rwxrwxrwx 1 cxim1 cxim1 3622 Sep 28  2019 25_perm_special_bits.spec.c
+-rwxrwxrwx 1 cxim1 cxim1 3606 Sep 28  2019 26_perm_special_bits_dir.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  549 Sep 28  2019 30_test_opt_mix.spec.c
+-rwxrwxrwx 1 cxim1 cxim1 2113 Sep 28  2019 bonus_01_test_opt_d.spec.c
+-rwxrwxrwx 1 cxim1 cxim1 1292 Sep 28  2019 bonus_02_test_opt_p.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  606 Sep 28  2019 bonus_03_test_opt_U.spec.c
+-rwxrwxrwx 1 cxim1 cxim1 1361 Sep 28  2019 bonus_04_test_opt_c.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  883 Sep 28  2019 bonus_05_test_opt_S.spec.c
+-rwxrwxrwx 1 cxim1 cxim1 4107 Jun  7 04:59 bonus_06_test_opt_u.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  731 Sep 28  2019 bonus_07_test_opt_A.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  421 Sep 28  2019 bonus_08_test_opt_1.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  419 Sep 28  2019 bonus_09_test_opt_f.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  273 Sep 28  2019 bonus_10_test_opt_T.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  560 Sep 28  2019 bonus_11_test_opt_g.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  704 Sep 28  2019 bonus_12_test_opt_o_og.spec.c
+-rwxrwxrwx 1 cxim1 cxim1 1397 Jun  9 05:47 bonus_13_test_opt_F_Fp.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  517 Sep 28  2019 bonus_20_test_opt_comb_aA.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  423 Sep 28  2019 bonus_21_test_opt_mix_sort.spec.c
+-rwxrwxrwx 1 cxim1 cxim1 1867 Sep 28  2019 bonus_22_test_sort_comb.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  316 Sep 28  2019 bonus_30_test_xattr.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  412 Sep 28  2019 bonus_31_test_usr_xattr.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  219 Sep 28  2019 bonus_32_test_ACL.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  281 Jun  7 21:55 bonus_34_test_redis.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  246 Sep 28  2019 bonus_40_dir_root.spec.c
+-rwxrwxrwx 1 cxim1 cxim1 1028 Sep 28  2019 buggy_ls_behaviors.c
+-rwxrwxrwx 1 cxim1 cxim1  802 Sep 28  2019 sys_00_test_user_bin.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  663 Sep 28  2019 sys_01_test_dev.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  244 Sep 28  2019 sys_02_test_etc.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  284 Sep 28  2019 sys_03_test_many_files.spec.c
+-rwxrwxrwx 1 cxim1 cxim1  252 Sep 28  2019 sys_04_test_var_run.spec.c
+drwxrwxrwx 2 cxim1 cxim1 4096 Jun  6 01:26 test
+
+./42FileChecker/moulitest_42projects/ft_ls_tests/tests/test:
+total 0
+
+./42FileChecker/moulitest_42projects/ft_printf_tests:
+total 304
+lrwxrwxrwx 1 cxim1 cxim1     50 Jun  5 01:00 Makefile -> ../testframework/v3_templates/Makefile_template.mk
+-rwxr-xr-x 1 cxim1 cxim1    160 Sep 28  2019 Makefile_cfg.mk
+-rwxr-xr-x 1 cxim1 cxim1 289992 Nov  6  2019 ft_printf_test
+-rw-r--r-- 1 cxim1 cxim1    313 Sep 28  2019 main.c
+-rw-r--r-- 1 cxim1 cxim1   2224 Sep 28  2019 project.h
+drwxr-xr-x 2 cxim1 cxim1   4096 Jun  5 01:01 tests
+-rw-r--r-- 1 cxim1 cxim1     80 Sep 28  2019 utils.c
+
+./42FileChecker/moulitest_42projects/ft_printf_tests/tests:
+total 200
+-rw-r--r-- 1 cxim1 cxim1  656 Sep 28  2019 00_no_conv.spec.c
+-rw-r--r-- 1 cxim1 cxim1  917 Sep 28  2019 01_conv_s_simple.spec.c
+-rw-r--r-- 1 cxim1 cxim1  590 Sep 28  2019 02_conv_s_multiple.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1125 Sep 28  2019 03_conv_d.spec.c
+-rw-r--r-- 1 cxim1 cxim1  812 Sep 28  2019 04_conv_p.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1510 Sep 28  2019 05_percent_escape.spec.c
+-rw-r--r-- 1 cxim1 cxim1  477 Sep 28  2019 06_mix_sdp_percent.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1209 Sep 28  2019 07_conv_S.spec.disabled.c
+-rw-r--r-- 1 cxim1 cxim1  796 Sep 28  2019 08_conv_D.spec.disabled.c
+-rw-r--r-- 1 cxim1 cxim1  837 Sep 28  2019 09_conv_i.spec.c
+-rw-r--r-- 1 cxim1 cxim1  712 Sep 28  2019 10_conv_o.spec.c
+-rw-r--r-- 1 cxim1 cxim1  994 Sep 28  2019 11_conv_O.spec.disabled.c
+-rw-r--r-- 1 cxim1 cxim1  865 Sep 28  2019 12_conv_u.spec.c
+-rw-r--r-- 1 cxim1 cxim1  583 Sep 28  2019 13_conv_U.spec.disabled.c
+-rw-r--r-- 1 cxim1 cxim1  864 Sep 28  2019 14_conv_x.spec.c
+-rw-r--r-- 1 cxim1 cxim1  864 Sep 28  2019 15_conv_X.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1279 Sep 28  2019 16_conv_c.spec.c
+-rw-r--r-- 1 cxim1 cxim1 2030 Sep 28  2019 17_conv_C.spec.disabled.c
+-rw-r--r-- 1 cxim1 cxim1  444 Sep 28  2019 18_mix_all_previous.spec.c
+-rw-r--r-- 1 cxim1 cxim1 3395 Sep 28  2019 40_length_modif_l.spec.c
+-rw-r--r-- 1 cxim1 cxim1 2412 Sep 28  2019 41_length_modif_ll.spec.c
+-rw-r--r-- 1 cxim1 cxim1 2174 Sep 28  2019 42_length_modif_h.spec.c
+-rw-r--r-- 1 cxim1 cxim1 3690 Sep 28  2019 43_length_modif_hh.spec.c
+-rw-r--r-- 1 cxim1 cxim1 2240 Sep 28  2019 43_length_modif_j.spec.disabled.c
+-rw-r--r-- 1 cxim1 cxim1 1935 Sep 28  2019 44_length_modif_z.spec.disabled.c
+-rw-r--r-- 1 cxim1 cxim1  406 Sep 28  2019 45_length_modif_edge_cases.spec.disabled.c
+-rw-r--r-- 1 cxim1 cxim1 2122 Sep 28  2019 50_min_width.spec.c
+-rw-r--r-- 1 cxim1 cxim1  604 Sep 28  2019 51_min_width_flag_minus.spec.c
+-rw-r--r-- 1 cxim1 cxim1 2224 Sep 28  2019 52_min_width_flag_zero.spec.c
+-rw-r--r-- 1 cxim1 cxim1  356 Sep 28  2019 53_min_width_non_valid_conv.spec.disabled.c
+-rw-r--r-- 1 cxim1 cxim1 1735 Sep 28  2019 60_flag_sharp.spec.c
+-rw-r--r-- 1 cxim1 cxim1 2671 Sep 28  2019 61_flag_plus.spec.c
+-rw-r--r-- 1 cxim1 cxim1 3233 Sep 28  2019 62_flag_space.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1671 Sep 28  2019 69_flag_mix.spec.c
+-rw-r--r-- 1 cxim1 cxim1 5831 Sep 28  2019 70_precision_for_diu.spec.c
+-rw-r--r-- 1 cxim1 cxim1 6218 Sep 28  2019 71_precision_for_oOxX.spec.c
+-rw-r--r-- 1 cxim1 cxim1 2914 Sep 28  2019 72_precision_for_sS.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1230 Sep 28  2019 73_precision_for_cC.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1234 Sep 28  2019 74_precision_for_p.spec.c
+-rw-r--r-- 1 cxim1 cxim1  339 Sep 28  2019 75_precision_for_percent.spec.disabled.c
+-rw-r--r-- 1 cxim1 cxim1 2233 Sep 28  2019 79_precision_mixed_with_flags.spec.c
+-rw-r--r-- 1 cxim1 cxim1  916 Sep 28  2019 90_incomptbl_values_sdpi.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1176 Sep 28  2019 91_incomptbl_values_uUSDcC.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1470 Sep 28  2019 92_incomptbl_values_oOxX.spec.c
+-rw-r--r-- 1 cxim1 cxim1  957 Sep 28  2019 93_conv_f.spec.c
+-rw-r--r-- 1 cxim1 cxim1 2409 Sep 28  2019 bonus_01_wildcard.spec.c
+-rw-r--r-- 1 cxim1 cxim1  292 Sep 28  2019 bonus_02_wildcard_multi.spec.c
+-rw-r--r-- 1 cxim1 cxim1  989 Sep 28  2019 bonus_03_wildcard_flag_mix.spec.c
+
+./42FileChecker/moulitest_42projects/get_next_line_tests:
+total 84
+lrwxrwxrwx 1 cxim1 cxim1    50 Jun  5 01:01 Makefile -> ../testframework/v3_templates/Makefile_template.mk
+-rwxr-xr-x 1 cxim1 cxim1   203 Sep 28  2019 Makefile_cfg.mk
+-rwxr-xr-x 1 cxim1 cxim1 59664 Sep 28  2019 get_next_line_tests
+drwxr-xr-x 3 cxim1 cxim1  4096 Jun  5 01:01 get_next_line_tests.dSYM
+-rw-r--r-- 1 cxim1 cxim1   284 Sep 28  2019 main.c
+-rw-r--r-- 1 cxim1 cxim1   613 Sep 28  2019 project.h
+drwxr-xr-x 2 cxim1 cxim1  4096 Jun  5 01:01 sandbox
+drwxr-xr-x 2 cxim1 cxim1  4096 Jun  5 01:01 tests
+-rw-r--r-- 1 cxim1 cxim1     0 Sep 28  2019 utils.c
+
+./42FileChecker/moulitest_42projects/get_next_line_tests/get_next_line_tests.dSYM:
+total 4
+drwxr-xr-x 3 cxim1 cxim1 4096 Jun  5 01:01 Contents
+
+./42FileChecker/moulitest_42projects/get_next_line_tests/get_next_line_tests.dSYM/Contents:
+total 8
+-rw-r--r-- 1 cxim1 cxim1  648 Sep 28  2019 Info.plist
+drwxr-xr-x 3 cxim1 cxim1 4096 Jun  5 01:01 Resources
+
+./42FileChecker/moulitest_42projects/get_next_line_tests/get_next_line_tests.dSYM/Contents/Resources:
+total 4
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 DWARF
+
+./42FileChecker/moulitest_42projects/get_next_line_tests/get_next_line_tests.dSYM/Contents/Resources/DWARF:
+total 76
+-rw-r--r-- 1 cxim1 cxim1 75941 Sep 28  2019 get_next_line_tests
+
+./42FileChecker/moulitest_42projects/get_next_line_tests/sandbox:
+total 168
+-rw-r--r-- 1 cxim1 cxim1     0 Sep 28  2019 large_file.diff
+-rw-r--r-- 1 cxim1 cxim1 50782 Sep 28  2019 large_file.txt
+-rwxr-xr-x 1 cxim1 cxim1 50782 Sep 28  2019 large_file.txt.mine
+-rw-r--r-- 1 cxim1 cxim1     0 Sep 28  2019 one_big_fat_line.diff
+-rw-r--r-- 1 cxim1 cxim1 30002 Sep 28  2019 one_big_fat_line.txt
+-rwxr-xr-x 1 cxim1 cxim1 30002 Sep 28  2019 one_big_fat_line.txt.mine
+
+./42FileChecker/moulitest_42projects/get_next_line_tests/tests:
+total 84
+-rw-r--r-- 1 cxim1 cxim1  591 Sep 28  2019 01_test_simple.spec.c
+-rw-r--r-- 1 cxim1 cxim1  445 Sep 28  2019 02_test_eof_with_close.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1197 Sep 28  2019 03_test_medium_string.spec.c
+-rw-r--r-- 1 cxim1 cxim1  873 Sep 28  2019 04_test_return_values.spec.c
+-rw-r--r-- 1 cxim1 cxim1  612 Sep 28  2019 05_test_error_handling.spec.c
+-rw-r--r-- 1 cxim1 cxim1  387 Sep 28  2019 06_test_line_of_08.spec.c
+-rw-r--r-- 1 cxim1 cxim1  494 Sep 28  2019 07_test_two_lines_of_08.spec.c
+-rw-r--r-- 1 cxim1 cxim1  998 Sep 28  2019 08_test_few_lines_of_08.spec.c
+-rw-r--r-- 1 cxim1 cxim1  472 Sep 28  2019 09_test_line_of_16.spec.c
+-rw-r--r-- 1 cxim1 cxim1  595 Sep 28  2019 10_test_two_lines_of_16.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1185 Sep 28  2019 11_test_few_lines_of_16.spec.c
+-rw-r--r-- 1 cxim1 cxim1  446 Sep 28  2019 12_test_line_of_4.spec.c
+-rw-r--r-- 1 cxim1 cxim1  544 Sep 28  2019 13_test_two_lines_of_4.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1009 Sep 28  2019 14_test_few_lines_of_4.spec.c
+-rw-r--r-- 1 cxim1 cxim1  382 Sep 28  2019 15_test_line_without_nl.spec.c
+-rw-r--r-- 1 cxim1 cxim1  395 Sep 28  2019 16_test_line_of_8_without_nl.spec.c
+-rw-r--r-- 1 cxim1 cxim1  413 Sep 28  2019 17_test_line_of_16_without_nl.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1521 Sep 28  2019 30_bonus_multiple_fd.spec.c
+-rw-r--r-- 1 cxim1 cxim1  736 Sep 28  2019 40_hard_test_medium_string.spec.c
+-rw-r--r-- 1 cxim1 cxim1  857 Sep 28  2019 41_hard_test_large_file.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1033 Sep 28  2019 42_hard_test_one_big_fat_line.spec.c
+
+./42FileChecker/moulitest_42projects/libft_tests:
+total 20
+lrwxrwxrwx 1 cxim1 cxim1   50 Jun  5 01:01 Makefile -> ../testframework/v3_templates/Makefile_template.mk
+-rw-r--r-- 1 cxim1 cxim1  552 Sep 28  2019 Makefile_cfg.mk
+-rwxr-xr-x 1 cxim1 cxim1  366 Sep 28  2019 main.c
+-rw-r--r-- 1 cxim1 cxim1 1312 Sep 28  2019 project.h
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 tests
+-rw-r--r-- 1 cxim1 cxim1  357 Sep 28  2019 utils.c
+
+./42FileChecker/moulitest_42projects/libft_tests/tests:
+total 232
+-rw-r--r-- 1 cxim1 cxim1 2364 Sep 28  2019 00_part1_ft_atoi.spec.c
+-rw-r--r-- 1 cxim1 cxim1  879 Sep 28  2019 00_part1_ft_bzero.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1519 Sep 28  2019 00_part1_ft_isalnum.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1527 Sep 28  2019 00_part1_ft_isalpha.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1592 Sep 28  2019 00_part1_ft_isascii.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1528 Sep 28  2019 00_part1_ft_isdigit.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1528 Sep 28  2019 00_part1_ft_isprint.spec.c
+-rw-r--r-- 1 cxim1 cxim1  836 Sep 28  2019 00_part1_ft_memccpy.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1183 Sep 28  2019 00_part1_ft_memchr.spec.c
+-rw-r--r-- 1 cxim1 cxim1  808 Sep 28  2019 00_part1_ft_memcmp.spec.c
+-rw-r--r-- 1 cxim1 cxim1  321 Sep 28  2019 00_part1_ft_memcpy.spec.c
+-rw-r--r-- 1 cxim1 cxim1  779 Sep 28  2019 00_part1_ft_memmove.spec.c
+-rw-r--r-- 1 cxim1 cxim1  710 Sep 28  2019 00_part1_ft_memset.spec.c
+-rw-r--r-- 1 cxim1 cxim1  373 Sep 28  2019 00_part1_ft_strcat.spec.c
+-rw-r--r-- 1 cxim1 cxim1  600 Sep 28  2019 00_part1_ft_strchr.spec.c
+-rw-r--r-- 1 cxim1 cxim1  654 Sep 28  2019 00_part1_ft_strcmp.spec.c
+-rw-r--r-- 1 cxim1 cxim1  490 Sep 28  2019 00_part1_ft_strcpy.spec.c
+-rw-r--r-- 1 cxim1 cxim1  452 Sep 28  2019 00_part1_ft_strdup.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1341 Sep 28  2019 00_part1_ft_strlcat.spec.c
+-rw-r--r-- 1 cxim1 cxim1  760 Sep 28  2019 00_part1_ft_strlen.spec.c
+-rw-r--r-- 1 cxim1 cxim1  582 Sep 28  2019 00_part1_ft_strncat.spec.c
+-rw-r--r-- 1 cxim1 cxim1  716 Sep 28  2019 00_part1_ft_strncmp.spec.c
+-rw-r--r-- 1 cxim1 cxim1  449 Sep 28  2019 00_part1_ft_strncpy.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1311 Sep 28  2019 00_part1_ft_strnstr.spec.c
+-rw-r--r-- 1 cxim1 cxim1  623 Sep 28  2019 00_part1_ft_strrchr.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1075 Sep 28  2019 00_part1_ft_strstr.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1501 Sep 28  2019 00_part1_ft_tolower.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1501 Sep 28  2019 00_part1_ft_toupper.spec.c
+-rw-r--r-- 1 cxim1 cxim1  586 Sep 28  2019 01_part2_ft_itoa.spec.c
+-rw-r--r-- 1 cxim1 cxim1  486 Sep 28  2019 01_part2_ft_memalloc.spec.c
+-rw-r--r-- 1 cxim1 cxim1  229 Sep 28  2019 01_part2_ft_memdel.spec.c
+-rw-r--r-- 1 cxim1 cxim1  414 Sep 28  2019 01_part2_ft_putchar.spec.c
+-rw-r--r-- 1 cxim1 cxim1  345 Sep 28  2019 01_part2_ft_putchar_fd.spec.c
+-rw-r--r-- 1 cxim1 cxim1  380 Sep 28  2019 01_part2_ft_putendl.spec.c
+-rw-r--r-- 1 cxim1 cxim1  341 Sep 28  2019 01_part2_ft_putendl_fd.spec.c
+-rw-r--r-- 1 cxim1 cxim1  543 Sep 28  2019 01_part2_ft_putnbr.spec.c
+-rw-r--r-- 1 cxim1 cxim1  546 Sep 28  2019 01_part2_ft_putnbr_fd.spec.c
+-rw-r--r-- 1 cxim1 cxim1  377 Sep 28  2019 01_part2_ft_putstr.spec.c
+-rw-r--r-- 1 cxim1 cxim1  337 Sep 28  2019 01_part2_ft_putstr_fd.spec.c
+-rw-r--r-- 1 cxim1 cxim1  243 Sep 28  2019 01_part2_ft_strclr.spec.c
+-rw-r--r-- 1 cxim1 cxim1  228 Sep 28  2019 01_part2_ft_strdel.spec.c
+-rw-r--r-- 1 cxim1 cxim1  408 Sep 28  2019 01_part2_ft_strequ.spec.c
+-rw-r--r-- 1 cxim1 cxim1  245 Sep 28  2019 01_part2_ft_striter.spec.c
+-rw-r--r-- 1 cxim1 cxim1  248 Sep 28  2019 01_part2_ft_striteri.spec.c
+-rw-r--r-- 1 cxim1 cxim1  319 Sep 28  2019 01_part2_ft_strjoin.spec.c
+-rw-r--r-- 1 cxim1 cxim1  287 Sep 28  2019 01_part2_ft_strmap.spec.c
+-rw-r--r-- 1 cxim1 cxim1  291 Sep 28  2019 01_part2_ft_strmapi.spec.c
+-rw-r--r-- 1 cxim1 cxim1  541 Sep 28  2019 01_part2_ft_strnequ.spec.c
+-rw-r--r-- 1 cxim1 cxim1  491 Sep 28  2019 01_part2_ft_strnew.spec.c
+-rw-r--r-- 1 cxim1 cxim1 1104 Sep 28  2019 01_part2_ft_strsplit.spec.c
+-rw-r--r-- 1 cxim1 cxim1  502 Sep 28  2019 01_part2_ft_strsub.spec.c
+-rw-r--r-- 1 cxim1 cxim1  580 Sep 28  2019 01_part2_ft_strtrim.spec.c
+-rw-r--r-- 1 cxim1 cxim1  383 Sep 28  2019 02_bonus_ft_lstadd.spec.c
+-rw-r--r-- 1 cxim1 cxim1  579 Sep 28  2019 02_bonus_ft_lstdel.spec.c
+-rw-r--r-- 1 cxim1 cxim1  492 Sep 28  2019 02_bonus_ft_lstdelone.spec.c
+-rw-r--r-- 1 cxim1 cxim1  455 Sep 28  2019 02_bonus_ft_lstiter.spec.c
+-rw-r--r-- 1 cxim1 cxim1  860 Sep 28  2019 02_bonus_ft_lstmap.spec.c
+-rw-r--r-- 1 cxim1 cxim1  346 Sep 28  2019 02_bonus_ft_lstnew.spec.c
+
+./42FileChecker/moulitest_42projects/libftasm_tests:
+total 24
+-rw-r--r-- 1 cxim1 cxim1 3550 Sep 28  2019 Makefile
+-rw-r--r-- 1 cxim1 cxim1  514 Sep 28  2019 Makefile_cfg.mk
+-rwxr-xr-x 1 cxim1 cxim1  366 Sep 28  2019 main.c
+-rw-r--r-- 1 cxim1 cxim1 4650 Sep 28  2019 project.h
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 tests
+-rw-r--r-- 1 cxim1 cxim1    0 Sep 28  2019 utils.c
+
+./42FileChecker/moulitest_42projects/libftasm_tests/tests:
+total 60
+-rw-r--r-- 1 cxim1 cxim1 879 Sep 28  2019 01_part1_ft_bzero.spec.c
+-rw-r--r-- 1 cxim1 cxim1  53 Sep 28  2019 01_part1_ft_isalnum.spec.c
+-rw-r--r-- 1 cxim1 cxim1  53 Sep 28  2019 01_part1_ft_isalpha.spec.c
+-rw-r--r-- 1 cxim1 cxim1  53 Sep 28  2019 01_part1_ft_isascii.spec.c
+-rw-r--r-- 1 cxim1 cxim1  53 Sep 28  2019 01_part1_ft_isdigit.spec.c
+-rw-r--r-- 1 cxim1 cxim1  53 Sep 28  2019 01_part1_ft_isprint.spec.c
+-rw-r--r-- 1 cxim1 cxim1  53 Sep 28  2019 01_part1_ft_tolower.spec.c
+-rw-r--r-- 1 cxim1 cxim1  53 Sep 28  2019 01_part1_ft_toupper.spec.c
+-rw-r--r-- 1 cxim1 cxim1 321 Sep 28  2019 02_part2_ft_memcpy.spec.c
+-rw-r--r-- 1 cxim1 cxim1 710 Sep 28  2019 02_part2_ft_memset.spec.c
+-rw-r--r-- 1 cxim1 cxim1 538 Sep 28  2019 02_part2_ft_puts.spec.c
+-rw-r--r-- 1 cxim1 cxim1 373 Sep 28  2019 02_part2_ft_strcat.spec.c
+-rw-r--r-- 1 cxim1 cxim1 477 Sep 28  2019 02_part2_ft_strdup.spec.c
+-rw-r--r-- 1 cxim1 cxim1 702 Sep 28  2019 02_part2_ft_strlen.spec.c
+-rw-r--r-- 1 cxim1 cxim1 596 Sep 28  2019 03_part3_ft_cat.spec.c
+
+./42FileChecker/moulitest_42projects/template_tests:
+total 24
+-rw-r--r-- 1 cxim1 cxim1 3517 Sep 28  2019 Makefile
+-rwxr-xr-x 1 cxim1 cxim1  182 Sep 28  2019 Makefile_cfg.mk
+-rw-r--r-- 1 cxim1 cxim1  196 Sep 28  2019 main.c
+-rw-r--r-- 1 cxim1 cxim1  981 Sep 28  2019 project.h
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 tests
+-rw-r--r-- 1 cxim1 cxim1   50 Sep 28  2019 utils.c
+
+./42FileChecker/moulitest_42projects/template_tests/tests:
+total 4
+-rw-r--r-- 1 cxim1 cxim1 300 Sep 28  2019 00_no_conv.spec.c
+
+./42FileChecker/moulitest_42projects/testframework:
+total 16
+drwxr-xr-x 12 cxim1 cxim1 4096 Jun  5 01:01 fake_rendu
+drwxr-xr-x  2 cxim1 cxim1 4096 Jun  5 01:01 v2
+drwxr-xr-x  4 cxim1 cxim1 4096 Jun 12 13:21 v3
+drwxr-xr-x  2 cxim1 cxim1 4096 Jun  5 01:01 v3_templates
+
+./42FileChecker/moulitest_42projects/testframework/fake_rendu:
+total 40
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 ft_ls
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 ft_printf
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 ft_printf_with_libft
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 get_next_line
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 get_next_line_with_libft
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 libft
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 libft_part1
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 libft_part2
+drwxr-xr-x 3 cxim1 cxim1 4096 Jun  5 01:01 libft_to_be_symliked
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 makefile_templates
+
+./42FileChecker/moulitest_42projects/testframework/fake_rendu/ft_ls:
+total 8
+lrwxrwxrwx 1 cxim1 cxim1  30 Jun  5 01:01 Makefile -> ../makefile_templates/Makefile
+-rw-r--r-- 1 cxim1 cxim1 924 Sep 28  2019 Makefile_cfg.mk
+-rw-r--r-- 1 cxim1 cxim1 113 Sep 28  2019 main.c
+
+./42FileChecker/moulitest_42projects/testframework/fake_rendu/ft_printf:
+total 8
+lrwxrwxrwx 1 cxim1 cxim1  30 Jun  5 01:01 Makefile -> ../makefile_templates/Makefile
+-rw-r--r-- 1 cxim1 cxim1 931 Sep 28  2019 Makefile_cfg.mk
+-rw-r--r-- 1 cxim1 cxim1 951 Sep 28  2019 ft_printf.c
+
+./42FileChecker/moulitest_42projects/testframework/fake_rendu/ft_printf_with_libft:
+total 8
+lrwxrwxrwx 1 cxim1 cxim1  30 Jun  5 01:01 Makefile -> ../makefile_templates/Makefile
+-rw-r--r-- 1 cxim1 cxim1 931 Sep 28  2019 Makefile_cfg.mk
+-rw-r--r-- 1 cxim1 cxim1 951 Sep 28  2019 ft_printf.c
+lrwxrwxrwx 1 cxim1 cxim1  23 Jun  5 01:01 libft -> ../libft_to_be_symliked
+
+./42FileChecker/moulitest_42projects/testframework/fake_rendu/get_next_line:
+total 8
+-rw-r--r-- 1 cxim1 cxim1 150 Sep 28  2019 get_next_line.c
+-rw-r--r-- 1 cxim1 cxim1 234 Sep 28  2019 get_next_line.h
+
+./42FileChecker/moulitest_42projects/testframework/fake_rendu/get_next_line_with_libft:
+total 0
+lrwxrwxrwx 1 cxim1 cxim1 32 Jun  5 01:01 get_next_line.c -> ../get_next_line/get_next_line.c
+lrwxrwxrwx 1 cxim1 cxim1 32 Jun  5 01:01 get_next_line.h -> ../get_next_line/get_next_line.h
+lrwxrwxrwx 1 cxim1 cxim1 23 Jun  5 01:01 libft -> ../libft_to_be_symliked
+
+./42FileChecker/moulitest_42projects/testframework/fake_rendu/libft:
+total 276
+lrwxrwxrwx 1 cxim1 cxim1   30 Jun  5 01:01 Makefile -> ../makefile_templates/Makefile
+-rw-r--r-- 1 cxim1 cxim1  925 Sep 28  2019 Makefile_cfg.mk
+-rwxr-xr-x 1 cxim1 cxim1   77 Sep 28  2019 ft_atoi.c
+-rwxr-xr-x 1 cxim1 cxim1   80 Sep 28  2019 ft_bzero.c
+-rwxr-xr-x 1 cxim1 cxim1   71 Sep 28  2019 ft_isalnum.c
+-rwxr-xr-x 1 cxim1 cxim1   68 Sep 28  2019 ft_isalpha.c
+-rwxr-xr-x 1 cxim1 cxim1   69 Sep 28  2019 ft_isascii.c
+-rwxr-xr-x 1 cxim1 cxim1   69 Sep 28  2019 ft_isblank.c
+-rwxr-xr-x 1 cxim1 cxim1   69 Sep 28  2019 ft_isdigit.c
+-rwxr-xr-x 1 cxim1 cxim1   69 Sep 28  2019 ft_islower.c
+-rwxr-xr-x 1 cxim1 cxim1   58 Sep 28  2019 ft_isprint.c
+-rwxr-xr-x 1 cxim1 cxim1   59 Sep 28  2019 ft_isspace.c
+-rwxr-xr-x 1 cxim1 cxim1   59 Sep 28  2019 ft_isupper.c
+-rwxr-xr-x 1 cxim1 cxim1   80 Sep 28  2019 ft_itoa.c
+-rwxr-xr-x 1 cxim1 cxim1   91 Sep 28  2019 ft_lstadd.c
+-rwxr-xr-x 1 cxim1 cxim1  107 Sep 28  2019 ft_lstdel.c
+-rwxr-xr-x 1 cxim1 cxim1  110 Sep 28  2019 ft_lstdelone.c
+-rwxr-xr-x 1 cxim1 cxim1   98 Sep 28  2019 ft_lstiter.c
+-rwxr-xr-x 1 cxim1 cxim1  120 Sep 28  2019 ft_lstmap.c
+-rwxr-xr-x 1 cxim1 cxim1  137 Sep 28  2019 ft_lstnew.c
+-rwxr-xr-x 1 cxim1 cxim1   83 Sep 28  2019 ft_memalloc.c
+-rwxr-xr-x 1 cxim1 cxim1  164 Sep 28  2019 ft_memccpy.c
+-rwxr-xr-x 1 cxim1 cxim1  117 Sep 28  2019 ft_memchr.c
+-rwxr-xr-x 1 cxim1 cxim1  125 Sep 28  2019 ft_memcmp.c
+-rwxr-xr-x 1 cxim1 cxim1  114 Sep 28  2019 ft_memcpy.c
+-rwxr-xr-x 1 cxim1 cxim1   60 Sep 28  2019 ft_memdel.c
+-rwxr-xr-x 1 cxim1 cxim1  121 Sep 28  2019 ft_memmove.c
+-rwxr-xr-x 1 cxim1 cxim1  102 Sep 28  2019 ft_memset.c
+-rwxr-xr-x 1 cxim1 cxim1   66 Sep 28  2019 ft_putchar.c
+-rwxr-xr-x 1 cxim1 cxim1  101 Sep 28  2019 ft_putchar_fd.c
+-rwxr-xr-x 1 cxim1 cxim1   85 Sep 28  2019 ft_putendl.c
+-rwxr-xr-x 1 cxim1 cxim1  108 Sep 28  2019 ft_putendl_fd.c
+-rwxr-xr-x 1 cxim1 cxim1   76 Sep 28  2019 ft_putnbr.c
+-rwxr-xr-x 1 cxim1 cxim1   99 Sep 28  2019 ft_putnbr_fd.c
+-rwxr-xr-x 1 cxim1 cxim1   79 Sep 28  2019 ft_putnendl.c
+-rwxr-xr-x 1 cxim1 cxim1   78 Sep 28  2019 ft_putnstr.c
+-rwxr-xr-x 1 cxim1 cxim1   74 Sep 28  2019 ft_putstr.c
+-rwxr-xr-x 1 cxim1 cxim1  107 Sep 28  2019 ft_putstr_fd.c
+-rwxr-xr-x 1 cxim1 cxim1   98 Sep 28  2019 ft_strcat.c
+-rwxr-xr-x 1 cxim1 cxim1   92 Sep 28  2019 ft_strchr.c
+-rwxr-xr-x 1 cxim1 cxim1   57 Sep 28  2019 ft_strclr.c
+-rwxr-xr-x 1 cxim1 cxim1  105 Sep 28  2019 ft_strcmp.c
+-rwxr-xr-x 1 cxim1 cxim1   94 Sep 28  2019 ft_strcpy.c
+-rwxr-xr-x 1 cxim1 cxim1   60 Sep 28  2019 ft_strdel.c
+-rwxr-xr-x 1 cxim1 cxim1   76 Sep 28  2019 ft_strdup.c
+-rwxr-xr-x 1 cxim1 cxim1  105 Sep 28  2019 ft_strequ.c
+-rwxr-xr-x 1 cxim1 cxim1   87 Sep 28  2019 ft_striter.c
+-rwxr-xr-x 1 cxim1 cxim1  102 Sep 28  2019 ft_striteri.c
+-rwxr-xr-x 1 cxim1 cxim1  105 Sep 28  2019 ft_strjoin.c
+-rwxr-xr-x 1 cxim1 cxim1  122 Sep 28  2019 ft_strlcat.c
+-rwxr-xr-x 1 cxim1 cxim1   78 Sep 28  2019 ft_strlen.c
+-rwxr-xr-x 1 cxim1 cxim1   69 Sep 28  2019 ft_strlowcase.c
+-rwxr-xr-x 1 cxim1 cxim1  122 Sep 28  2019 ft_strmap.c
+-rwxr-xr-x 1 cxim1 cxim1  117 Sep 28  2019 ft_strmapi.c
+-rwxr-xr-x 1 cxim1 cxim1  113 Sep 28  2019 ft_strncat.c
+-rwxr-xr-x 1 cxim1 cxim1  126 Sep 28  2019 ft_strncmp.c
+-rwxr-xr-x 1 cxim1 cxim1  115 Sep 28  2019 ft_strncpy.c
+-rwxr-xr-x 1 cxim1 cxim1  126 Sep 28  2019 ft_strnequ.c
+-rwxr-xr-x 1 cxim1 cxim1   79 Sep 28  2019 ft_strnew.c
+-rwxr-xr-x 1 cxim1 cxim1  148 Sep 28  2019 ft_strnstr.c
+-rwxr-xr-x 1 cxim1 cxim1   93 Sep 28  2019 ft_strrchr.c
+-rwxr-xr-x 1 cxim1 cxim1   65 Sep 28  2019 ft_strrev.c
+-rwxr-xr-x 1 cxim1 cxim1  347 Sep 28  2019 ft_strsplit.c
+-rwxr-xr-x 1 cxim1 cxim1  104 Sep 28  2019 ft_strstr.c
+-rwxr-xr-x 1 cxim1 cxim1  133 Sep 28  2019 ft_strsub.c
+-rwxr-xr-x 1 cxim1 cxim1   76 Sep 28  2019 ft_strtrim.c
+-rwxr-xr-x 1 cxim1 cxim1   68 Sep 28  2019 ft_strupcase.c
+-rwxr-xr-x 1 cxim1 cxim1   58 Sep 28  2019 ft_tolower.c
+-rwxr-xr-x 1 cxim1 cxim1   58 Sep 28  2019 ft_toupper.c
+-rw-r--r-- 1 cxim1 cxim1 3740 Sep 28  2019 libft.h
+
+./42FileChecker/moulitest_42projects/testframework/fake_rendu/libft_part1:
+total 276
+lrwxrwxrwx 1 cxim1 cxim1   30 Jun  5 01:01 Makefile -> ../makefile_templates/Makefile
+-rw-r--r-- 1 cxim1 cxim1  925 Sep 28  2019 Makefile_cfg.mk
+-rwxr-xr-x 1 cxim1 cxim1   77 Sep 28  2019 ft_atoi.c
+-rwxr-xr-x 1 cxim1 cxim1   80 Sep 28  2019 ft_bzero.c
+-rwxr-xr-x 1 cxim1 cxim1   71 Sep 28  2019 ft_isalnum.c
+-rwxr-xr-x 1 cxim1 cxim1   68 Sep 28  2019 ft_isalpha.c
+-rwxr-xr-x 1 cxim1 cxim1   69 Sep 28  2019 ft_isascii.c
+-rwxr-xr-x 1 cxim1 cxim1   69 Sep 28  2019 ft_isblank.c
+-rwxr-xr-x 1 cxim1 cxim1   69 Sep 28  2019 ft_isdigit.c
+-rwxr-xr-x 1 cxim1 cxim1   69 Sep 28  2019 ft_islower.c
+-rwxr-xr-x 1 cxim1 cxim1   58 Sep 28  2019 ft_isprint.c
+-rwxr-xr-x 1 cxim1 cxim1   59 Sep 28  2019 ft_isspace.c
+-rwxr-xr-x 1 cxim1 cxim1   59 Sep 28  2019 ft_isupper.c
+-rwxr-xr-x 1 cxim1 cxim1   80 Sep 28  2019 ft_itoa.c
+-rwxr-xr-x 1 cxim1 cxim1   91 Sep 28  2019 ft_lstadd.c
+-rwxr-xr-x 1 cxim1 cxim1  107 Sep 28  2019 ft_lstdel.c
+-rwxr-xr-x 1 cxim1 cxim1  110 Sep 28  2019 ft_lstdelone.c
+-rwxr-xr-x 1 cxim1 cxim1   98 Sep 28  2019 ft_lstiter.c
+-rwxr-xr-x 1 cxim1 cxim1  120 Sep 28  2019 ft_lstmap.c
+-rwxr-xr-x 1 cxim1 cxim1  137 Sep 28  2019 ft_lstnew.c
+-rwxr-xr-x 1 cxim1 cxim1   83 Sep 28  2019 ft_memalloc.c
+-rwxr-xr-x 1 cxim1 cxim1  164 Sep 28  2019 ft_memccpy.c
+-rwxr-xr-x 1 cxim1 cxim1  117 Sep 28  2019 ft_memchr.c
+-rwxr-xr-x 1 cxim1 cxim1  125 Sep 28  2019 ft_memcmp.c
+-rwxr-xr-x 1 cxim1 cxim1  114 Sep 28  2019 ft_memcpy.c
+-rwxr-xr-x 1 cxim1 cxim1   60 Sep 28  2019 ft_memdel.c
+-rwxr-xr-x 1 cxim1 cxim1  121 Sep 28  2019 ft_memmove.c
+-rwxr-xr-x 1 cxim1 cxim1  102 Sep 28  2019 ft_memset.c
+-rwxr-xr-x 1 cxim1 cxim1   66 Sep 28  2019 ft_putchar.c
+-rwxr-xr-x 1 cxim1 cxim1  101 Sep 28  2019 ft_putchar_fd.c
+-rwxr-xr-x 1 cxim1 cxim1   85 Sep 28  2019 ft_putendl.c
+-rwxr-xr-x 1 cxim1 cxim1  108 Sep 28  2019 ft_putendl_fd.c
+-rwxr-xr-x 1 cxim1 cxim1   76 Sep 28  2019 ft_putnbr.c
+-rwxr-xr-x 1 cxim1 cxim1   99 Sep 28  2019 ft_putnbr_fd.c
+-rwxr-xr-x 1 cxim1 cxim1   79 Sep 28  2019 ft_putnendl.c
+-rwxr-xr-x 1 cxim1 cxim1   78 Sep 28  2019 ft_putnstr.c
+-rwxr-xr-x 1 cxim1 cxim1   74 Sep 28  2019 ft_putstr.c
+-rwxr-xr-x 1 cxim1 cxim1  107 Sep 28  2019 ft_putstr_fd.c
+-rwxr-xr-x 1 cxim1 cxim1   98 Sep 28  2019 ft_strcat.c
+-rwxr-xr-x 1 cxim1 cxim1   92 Sep 28  2019 ft_strchr.c
+-rwxr-xr-x 1 cxim1 cxim1   57 Sep 28  2019 ft_strclr.c
+-rwxr-xr-x 1 cxim1 cxim1  105 Sep 28  2019 ft_strcmp.c
+-rwxr-xr-x 1 cxim1 cxim1   94 Sep 28  2019 ft_strcpy.c
+-rwxr-xr-x 1 cxim1 cxim1   60 Sep 28  2019 ft_strdel.c
+-rwxr-xr-x 1 cxim1 cxim1   76 Sep 28  2019 ft_strdup.c
+-rwxr-xr-x 1 cxim1 cxim1  105 Sep 28  2019 ft_strequ.c
+-rwxr-xr-x 1 cxim1 cxim1   87 Sep 28  2019 ft_striter.c
+-rwxr-xr-x 1 cxim1 cxim1  102 Sep 28  2019 ft_striteri.c
+-rwxr-xr-x 1 cxim1 cxim1  105 Sep 28  2019 ft_strjoin.c
+-rwxr-xr-x 1 cxim1 cxim1  122 Sep 28  2019 ft_strlcat.c
+-rwxr-xr-x 1 cxim1 cxim1   78 Sep 28  2019 ft_strlen.c
+-rwxr-xr-x 1 cxim1 cxim1   69 Sep 28  2019 ft_strlowcase.c
+-rwxr-xr-x 1 cxim1 cxim1  122 Sep 28  2019 ft_strmap.c
+-rwxr-xr-x 1 cxim1 cxim1  117 Sep 28  2019 ft_strmapi.c
+-rwxr-xr-x 1 cxim1 cxim1  113 Sep 28  2019 ft_strncat.c
+-rwxr-xr-x 1 cxim1 cxim1  126 Sep 28  2019 ft_strncmp.c
+-rwxr-xr-x 1 cxim1 cxim1  115 Sep 28  2019 ft_strncpy.c
+-rwxr-xr-x 1 cxim1 cxim1  126 Sep 28  2019 ft_strnequ.c
+-rwxr-xr-x 1 cxim1 cxim1   79 Sep 28  2019 ft_strnew.c
+-rwxr-xr-x 1 cxim1 cxim1  148 Sep 28  2019 ft_strnstr.c
+-rwxr-xr-x 1 cxim1 cxim1   93 Sep 28  2019 ft_strrchr.c
+-rwxr-xr-x 1 cxim1 cxim1   65 Sep 28  2019 ft_strrev.c
+-rwxr-xr-x 1 cxim1 cxim1  347 Sep 28  2019 ft_strsplit.c
+-rwxr-xr-x 1 cxim1 cxim1  104 Sep 28  2019 ft_strstr.c
+-rwxr-xr-x 1 cxim1 cxim1  133 Sep 28  2019 ft_strsub.c
+-rwxr-xr-x 1 cxim1 cxim1   76 Sep 28  2019 ft_strtrim.c
+-rwxr-xr-x 1 cxim1 cxim1   68 Sep 28  2019 ft_strupcase.c
+-rwxr-xr-x 1 cxim1 cxim1   58 Sep 28  2019 ft_tolower.c
+-rwxr-xr-x 1 cxim1 cxim1   58 Sep 28  2019 ft_toupper.c
+-rw-r--r-- 1 cxim1 cxim1 2367 Sep 28  2019 libft.h
+
+./42FileChecker/moulitest_42projects/testframework/fake_rendu/libft_part2:
+total 276
+lrwxrwxrwx 1 cxim1 cxim1   30 Jun  5 01:01 Makefile -> ../makefile_templates/Makefile
+-rw-r--r-- 1 cxim1 cxim1  925 Sep 28  2019 Makefile_cfg.mk
+-rwxr-xr-x 1 cxim1 cxim1   77 Sep 28  2019 ft_atoi.c
+-rwxr-xr-x 1 cxim1 cxim1   80 Sep 28  2019 ft_bzero.c
+-rwxr-xr-x 1 cxim1 cxim1   71 Sep 28  2019 ft_isalnum.c
+-rwxr-xr-x 1 cxim1 cxim1   68 Sep 28  2019 ft_isalpha.c
+-rwxr-xr-x 1 cxim1 cxim1   69 Sep 28  2019 ft_isascii.c
+-rwxr-xr-x 1 cxim1 cxim1   69 Sep 28  2019 ft_isblank.c
+-rwxr-xr-x 1 cxim1 cxim1   69 Sep 28  2019 ft_isdigit.c
+-rwxr-xr-x 1 cxim1 cxim1   69 Sep 28  2019 ft_islower.c
+-rwxr-xr-x 1 cxim1 cxim1   58 Sep 28  2019 ft_isprint.c
+-rwxr-xr-x 1 cxim1 cxim1   59 Sep 28  2019 ft_isspace.c
+-rwxr-xr-x 1 cxim1 cxim1   59 Sep 28  2019 ft_isupper.c
+-rwxr-xr-x 1 cxim1 cxim1   80 Sep 28  2019 ft_itoa.c
+-rwxr-xr-x 1 cxim1 cxim1   91 Sep 28  2019 ft_lstadd.c
+-rwxr-xr-x 1 cxim1 cxim1  107 Sep 28  2019 ft_lstdel.c
+-rwxr-xr-x 1 cxim1 cxim1  110 Sep 28  2019 ft_lstdelone.c
+-rwxr-xr-x 1 cxim1 cxim1   98 Sep 28  2019 ft_lstiter.c
+-rwxr-xr-x 1 cxim1 cxim1  120 Sep 28  2019 ft_lstmap.c
+-rwxr-xr-x 1 cxim1 cxim1  137 Sep 28  2019 ft_lstnew.c
+-rwxr-xr-x 1 cxim1 cxim1   83 Sep 28  2019 ft_memalloc.c
+-rwxr-xr-x 1 cxim1 cxim1  164 Sep 28  2019 ft_memccpy.c
+-rwxr-xr-x 1 cxim1 cxim1  117 Sep 28  2019 ft_memchr.c
+-rwxr-xr-x 1 cxim1 cxim1  125 Sep 28  2019 ft_memcmp.c
+-rwxr-xr-x 1 cxim1 cxim1  114 Sep 28  2019 ft_memcpy.c
+-rwxr-xr-x 1 cxim1 cxim1   60 Sep 28  2019 ft_memdel.c
+-rwxr-xr-x 1 cxim1 cxim1  121 Sep 28  2019 ft_memmove.c
+-rwxr-xr-x 1 cxim1 cxim1  102 Sep 28  2019 ft_memset.c
+-rwxr-xr-x 1 cxim1 cxim1   66 Sep 28  2019 ft_putchar.c
+-rwxr-xr-x 1 cxim1 cxim1  101 Sep 28  2019 ft_putchar_fd.c
+-rwxr-xr-x 1 cxim1 cxim1   85 Sep 28  2019 ft_putendl.c
+-rwxr-xr-x 1 cxim1 cxim1  108 Sep 28  2019 ft_putendl_fd.c
+-rwxr-xr-x 1 cxim1 cxim1   76 Sep 28  2019 ft_putnbr.c
+-rwxr-xr-x 1 cxim1 cxim1   99 Sep 28  2019 ft_putnbr_fd.c
+-rwxr-xr-x 1 cxim1 cxim1   79 Sep 28  2019 ft_putnendl.c
+-rwxr-xr-x 1 cxim1 cxim1   78 Sep 28  2019 ft_putnstr.c
+-rwxr-xr-x 1 cxim1 cxim1   74 Sep 28  2019 ft_putstr.c
+-rwxr-xr-x 1 cxim1 cxim1  107 Sep 28  2019 ft_putstr_fd.c
+-rwxr-xr-x 1 cxim1 cxim1   98 Sep 28  2019 ft_strcat.c
+-rwxr-xr-x 1 cxim1 cxim1   92 Sep 28  2019 ft_strchr.c
+-rwxr-xr-x 1 cxim1 cxim1   57 Sep 28  2019 ft_strclr.c
+-rwxr-xr-x 1 cxim1 cxim1  105 Sep 28  2019 ft_strcmp.c
+-rwxr-xr-x 1 cxim1 cxim1   94 Sep 28  2019 ft_strcpy.c
+-rwxr-xr-x 1 cxim1 cxim1   60 Sep 28  2019 ft_strdel.c
+-rwxr-xr-x 1 cxim1 cxim1   76 Sep 28  2019 ft_strdup.c
+-rwxr-xr-x 1 cxim1 cxim1  105 Sep 28  2019 ft_strequ.c
+-rwxr-xr-x 1 cxim1 cxim1   87 Sep 28  2019 ft_striter.c
+-rwxr-xr-x 1 cxim1 cxim1  102 Sep 28  2019 ft_striteri.c
+-rwxr-xr-x 1 cxim1 cxim1  105 Sep 28  2019 ft_strjoin.c
+-rwxr-xr-x 1 cxim1 cxim1  122 Sep 28  2019 ft_strlcat.c
+-rwxr-xr-x 1 cxim1 cxim1   78 Sep 28  2019 ft_strlen.c
+-rwxr-xr-x 1 cxim1 cxim1   69 Sep 28  2019 ft_strlowcase.c
+-rwxr-xr-x 1 cxim1 cxim1  122 Sep 28  2019 ft_strmap.c
+-rwxr-xr-x 1 cxim1 cxim1  117 Sep 28  2019 ft_strmapi.c
+-rwxr-xr-x 1 cxim1 cxim1  113 Sep 28  2019 ft_strncat.c
+-rwxr-xr-x 1 cxim1 cxim1  126 Sep 28  2019 ft_strncmp.c
+-rwxr-xr-x 1 cxim1 cxim1  115 Sep 28  2019 ft_strncpy.c
+-rwxr-xr-x 1 cxim1 cxim1  126 Sep 28  2019 ft_strnequ.c
+-rwxr-xr-x 1 cxim1 cxim1   79 Sep 28  2019 ft_strnew.c
+-rwxr-xr-x 1 cxim1 cxim1  148 Sep 28  2019 ft_strnstr.c
+-rwxr-xr-x 1 cxim1 cxim1   93 Sep 28  2019 ft_strrchr.c
+-rwxr-xr-x 1 cxim1 cxim1   65 Sep 28  2019 ft_strrev.c
+-rwxr-xr-x 1 cxim1 cxim1  347 Sep 28  2019 ft_strsplit.c
+-rwxr-xr-x 1 cxim1 cxim1  104 Sep 28  2019 ft_strstr.c
+-rwxr-xr-x 1 cxim1 cxim1  133 Sep 28  2019 ft_strsub.c
+-rwxr-xr-x 1 cxim1 cxim1   76 Sep 28  2019 ft_strtrim.c
+-rwxr-xr-x 1 cxim1 cxim1   68 Sep 28  2019 ft_strupcase.c
+-rwxr-xr-x 1 cxim1 cxim1   58 Sep 28  2019 ft_tolower.c
+-rwxr-xr-x 1 cxim1 cxim1   58 Sep 28  2019 ft_toupper.c
+-rw-r--r-- 1 cxim1 cxim1 3380 Sep 28  2019 libft.h
+
+./42FileChecker/moulitest_42projects/testframework/fake_rendu/libft_to_be_symliked:
+total 12
+lrwxrwxrwx 1 cxim1 cxim1   30 Jun  5 01:01 Makefile -> ../makefile_templates/Makefile
+-rw-r--r-- 1 cxim1 cxim1  924 Sep 28  2019 Makefile_cfg.mk
+-rw-r--r-- 1 cxim1 cxim1 1043 Sep 28  2019 ft_strcat.c
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 includes
+
+./42FileChecker/moulitest_42projects/testframework/fake_rendu/libft_to_be_symliked/includes:
+total 0
+-rw-r--r-- 1 cxim1 cxim1 0 Sep 28  2019 libft.h
+
+./42FileChecker/moulitest_42projects/testframework/fake_rendu/makefile_templates:
+total 4
+-rw-r--r-- 1 cxim1 cxim1 1237 Sep 28  2019 Makefile
+
+./42FileChecker/moulitest_42projects/testframework/v2:
+total 12
+-rw-r--r-- 1 cxim1 cxim1 2666 Sep 28  2019 testframework.c
+-rw-r--r-- 1 cxim1 cxim1 1444 Sep 28  2019 testframework.h
+-rw-r--r-- 1 cxim1 cxim1  662 Sep 28  2019 utils.c
+
+./42FileChecker/moulitest_42projects/testframework/v3:
+total 512
+-rw-r--r-- 1 cxim1 cxim1    495 Sep 28  2019 Makefile
+-rw-r--r-- 1 cxim1 cxim1   9824 Jun 12 13:21 capture.o
+drwxr-xr-x 2 cxim1 cxim1   4096 Jun  5 01:01 includes
+-rw-r--r-- 1 cxim1 cxim1 233298 Jun 12 13:21 libmt_framework.a
+-rw-r--r-- 1 cxim1 cxim1   6640 Jun 12 13:21 mt_count_failed_suites.o
+-rw-r--r-- 1 cxim1 cxim1   7544 Jun 12 13:21 mt_count_failed_tests.o
+-rw-r--r-- 1 cxim1 cxim1   7496 Jun 12 13:21 mt_count_tests.o
+-rw-r--r-- 1 cxim1 cxim1   6688 Jun 12 13:21 mt_create.o
+-rw-r--r-- 1 cxim1 cxim1   6616 Jun 12 13:21 mt_del.o
+-rw-r--r-- 1 cxim1 cxim1  10656 Jun 12 13:21 mt_exec.o
+-rw-r--r-- 1 cxim1 cxim1   3672 Jun 12 13:21 mt_lst__link.o
+-rw-r--r-- 1 cxim1 cxim1   3840 Jun 12 13:21 mt_lst_count.o
+-rw-r--r-- 1 cxim1 cxim1   4200 Jun 12 13:21 mt_lst_create_elem.o
+-rw-r--r-- 1 cxim1 cxim1   4376 Jun 12 13:21 mt_lst_del.o
+-rw-r--r-- 1 cxim1 cxim1   4504 Jun 12 13:21 mt_lst_del_elem.o
+-rw-r--r-- 1 cxim1 cxim1   3800 Jun 12 13:21 mt_lst_find.o
+-rw-r--r-- 1 cxim1 cxim1   3920 Jun 12 13:21 mt_lst_find_by_value.o
+-rw-r--r-- 1 cxim1 cxim1   3792 Jun 12 13:21 mt_lst_get.o
+-rw-r--r-- 1 cxim1 cxim1   4024 Jun 12 13:21 mt_lst_init.o
+-rw-r--r-- 1 cxim1 cxim1   3760 Jun 12 13:21 mt_lst_iter.o
+-rw-r--r-- 1 cxim1 cxim1   3752 Jun 12 13:21 mt_lst_len.o
+-rw-r--r-- 1 cxim1 cxim1   4080 Jun 12 13:21 mt_lst_map.o
+-rw-r--r-- 1 cxim1 cxim1   4088 Jun 12 13:21 mt_lst_pop.o
+-rw-r--r-- 1 cxim1 cxim1   4048 Jun 12 13:21 mt_lst_push.o
+-rw-r--r-- 1 cxim1 cxim1   3872 Jun 12 13:21 mt_lst_reduce.o
+-rw-r--r-- 1 cxim1 cxim1   3872 Jun 12 13:21 mt_lst_reducei.o
+-rw-r--r-- 1 cxim1 cxim1   4280 Jun 12 13:21 mt_lstelem_del.o
+-rw-r--r-- 1 cxim1 cxim1   6328 Jun 12 13:21 mt_xstdio_isempty.o
+drwxr-xr-x 9 cxim1 cxim1   4096 Jun  5 01:01 srcs
+-rw-r--r-- 1 cxim1 cxim1   4576 Jun 12 13:21 suite_count_failed_tests.o
+-rw-r--r-- 1 cxim1 cxim1   4456 Jun 12 13:21 suite_count_tests.o
+-rw-r--r-- 1 cxim1 cxim1   7024 Jun 12 13:21 suite_create.o
+-rw-r--r-- 1 cxim1 cxim1   4592 Jun 12 13:21 suite_del.o
+-rw-r--r-- 1 cxim1 cxim1  11696 Jun 12 13:21 suite_exec.o
+-rw-r--r-- 1 cxim1 cxim1   4552 Jun 12 13:21 suite_filter_failed.o
+-rw-r--r-- 1 cxim1 cxim1   6648 Jun 12 13:21 test_assert.o
+-rw-r--r-- 1 cxim1 cxim1   6456 Jun 12 13:21 test_assert_prep.o
+-rw-r--r-- 1 cxim1 cxim1   6792 Jun 12 13:21 test_create.o
+-rw-r--r-- 1 cxim1 cxim1   6464 Jun 12 13:21 test_del.o
+-rw-r--r-- 1 cxim1 cxim1   9160 Jun 12 13:21 test_exec.o
+-rw-r--r-- 1 cxim1 cxim1   3920 Jun 12 13:21 test_filter_failed.o
+-rw-r--r-- 1 cxim1 cxim1   7216 Jun 12 13:21 test_get_failure_type.o
+-rw-r--r-- 1 cxim1 cxim1   7664 Jun 12 13:21 test_print.o
+
+./42FileChecker/moulitest_42projects/testframework/v3/includes:
+total 32
+-rw-r--r-- 1 cxim1 cxim1  367 Sep 28  2019 capture.h
+-rw-r--r-- 1 cxim1 cxim1  276 Sep 28  2019 color.h
+-rw-r--r-- 1 cxim1 cxim1  885 Sep 28  2019 fw.h
+-rw-r--r-- 1 cxim1 cxim1  526 Sep 28  2019 mt.h
+-rw-r--r-- 1 cxim1 cxim1 2162 Sep 28  2019 mt_lst.h
+-rw-r--r-- 1 cxim1 cxim1  974 Sep 28  2019 mt_xstdio.h
+-rw-r--r-- 1 cxim1 cxim1  695 Sep 28  2019 suite.h
+-rw-r--r-- 1 cxim1 cxim1  820 Sep 28  2019 test.h
+
+./42FileChecker/moulitest_42projects/testframework/v3/srcs:
+total 28
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 capture
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 mt
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 mt_lst
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 mt_xstdio
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 suite
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 test
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 utils
+
+./42FileChecker/moulitest_42projects/testframework/v3/srcs/capture:
+total 4
+-rw-r--r-- 1 cxim1 cxim1 1866 Sep 28  2019 capture.c
+
+./42FileChecker/moulitest_42projects/testframework/v3/srcs/mt:
+total 24
+-rw-r--r-- 1 cxim1 cxim1  127 Sep 28  2019 mt_count_failed_suites.c
+-rw-r--r-- 1 cxim1 cxim1  271 Sep 28  2019 mt_count_failed_tests.c
+-rw-r--r-- 1 cxim1 cxim1  277 Sep 28  2019 mt_count_tests.c
+-rw-r--r-- 1 cxim1 cxim1  299 Sep 28  2019 mt_create.c
+-rw-r--r-- 1 cxim1 cxim1  188 Sep 28  2019 mt_del.c
+-rw-r--r-- 1 cxim1 cxim1 1592 Sep 28  2019 mt_exec.c
+
+./42FileChecker/moulitest_42projects/testframework/v3/srcs/mt_lst:
+total 68
+-rw-r--r-- 1 cxim1 cxim1 1052 Sep 28  2019 mt_lst__link.c
+-rw-r--r-- 1 cxim1 cxim1 1128 Sep 28  2019 mt_lst_count.c
+-rw-r--r-- 1 cxim1 cxim1 1165 Sep 28  2019 mt_lst_create_elem.c
+-rw-r--r-- 1 cxim1 cxim1 1155 Sep 28  2019 mt_lst_del.c
+-rw-r--r-- 1 cxim1 cxim1 1283 Sep 28  2019 mt_lst_del_elem.c
+-rw-r--r-- 1 cxim1 cxim1 1122 Sep 28  2019 mt_lst_find.c
+-rw-r--r-- 1 cxim1 cxim1 1173 Sep 28  2019 mt_lst_find_by_value.c
+-rw-r--r-- 1 cxim1 cxim1 1091 Sep 28  2019 mt_lst_get.c
+-rw-r--r-- 1 cxim1 cxim1 1080 Sep 28  2019 mt_lst_init.c
+-rw-r--r-- 1 cxim1 cxim1 1076 Sep 28  2019 mt_lst_iter.c
+-rw-r--r-- 1 cxim1 cxim1 1083 Sep 28  2019 mt_lst_len.c
+-rw-r--r-- 1 cxim1 cxim1 1181 Sep 28  2019 mt_lst_map.c
+-rw-r--r-- 1 cxim1 cxim1 1172 Sep 28  2019 mt_lst_pop.c
+-rw-r--r-- 1 cxim1 cxim1 1229 Sep 28  2019 mt_lst_push.c
+-rw-r--r-- 1 cxim1 cxim1 1161 Sep 28  2019 mt_lst_reduce.c
+-rw-r--r-- 1 cxim1 cxim1 1131 Sep 28  2019 mt_lst_reducei.c
+-rw-r--r-- 1 cxim1 cxim1 1191 Sep 28  2019 mt_lstelem_del.c
+
+./42FileChecker/moulitest_42projects/testframework/v3/srcs/mt_xstdio:
+total 4
+-rw-r--r-- 1 cxim1 cxim1 1143 Sep 28  2019 mt_xstdio_isempty.c
+
+./42FileChecker/moulitest_42projects/testframework/v3/srcs/suite:
+total 24
+-rw-r--r-- 1 cxim1 cxim1  139 Sep 28  2019 suite_count_failed_tests.c
+-rw-r--r-- 1 cxim1 cxim1  102 Sep 28  2019 suite_count_tests.c
+-rw-r--r-- 1 cxim1 cxim1  274 Sep 28  2019 suite_create.c
+-rw-r--r-- 1 cxim1 cxim1  129 Sep 28  2019 suite_del.c
+-rw-r--r-- 1 cxim1 cxim1 1872 Sep 28  2019 suite_exec.c
+-rw-r--r-- 1 cxim1 cxim1  138 Sep 28  2019 suite_filter_failed.c
+
+./42FileChecker/moulitest_42projects/testframework/v3/srcs/test:
+total 32
+-rw-r--r-- 1 cxim1 cxim1 174 Sep 28  2019 test_assert.c
+-rw-r--r-- 1 cxim1 cxim1 230 Sep 28  2019 test_assert_prep.c
+-rw-r--r-- 1 cxim1 cxim1 310 Sep 28  2019 test_create.c
+-rw-r--r-- 1 cxim1 cxim1 105 Sep 28  2019 test_del.c
+-rw-r--r-- 1 cxim1 cxim1 957 Sep 28  2019 test_exec.c
+-rw-r--r-- 1 cxim1 cxim1  86 Sep 28  2019 test_filter_failed.c
+-rw-r--r-- 1 cxim1 cxim1 461 Sep 28  2019 test_get_failure_type.c
+-rw-r--r-- 1 cxim1 cxim1 544 Sep 28  2019 test_print.c
+
+./42FileChecker/moulitest_42projects/testframework/v3/srcs/utils:
+total 4
+-rw-r--r-- 1 cxim1 cxim1 40 Sep 28  2019 utils.h
+
+./42FileChecker/moulitest_42projects/testframework/v3_templates:
+total 8
+-rw-r--r-- 1 cxim1 cxim1 4280 Sep 28  2019 Makefile_template.mk
+
+./42FileChecker/pft:
+total 292
+-rw-r--r-- 1 cxim1 cxim1   4990 Oct 11  2019 Makefile
+-rw-r--r-- 1 cxim1 cxim1   8521 Oct 11  2019 README.md
+drwxr-xr-x 3 cxim1 cxim1   4096 Jun  5 01:01 configurations
+-rwxr-xr-x 1 cxim1 cxim1   1961 Oct 11  2019 disable-test
+-rwxr-xr-x 1 cxim1 cxim1   1959 Oct 11  2019 enable-test
+-rw-r--r-- 1 cxim1 cxim1   4103 Oct 11  2019 options-config.ini
+-rwxr-xr-x 1 cxim1 cxim1   1458 Oct 11  2019 show-disabled-tests
+drwxr-xr-x 3 cxim1 cxim1   4096 Jun  5 01:01 src
+-rw-r--r-- 1 cxim1 cxim1    940 Oct 11  2019 test_pipes.sh
+-rw-r--r-- 1 cxim1 cxim1 241932 Oct 11  2019 unit_tests.c
+
+./42FileChecker/pft/configurations:
+total 4
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 42fc
+
+./42FileChecker/pft/configurations/42fc:
+total 252
+-rw-r--r-- 1 cxim1 cxim1   4023 Oct 11  2019 42fc.conf
+-rwxr-xr-x 1 cxim1 cxim1   3861 Oct 11  2019 42fc_enable_disable.sh
+-rwxr-xr-x 1 cxim1 cxim1    743 Oct 11  2019 configure_42fc.php
+-rw-r--r-- 1 cxim1 cxim1 242604 Oct 11  2019 unit_tests.42fc.c
+
+./42FileChecker/pft/src:
+total 156
+-rwxr-xr-x 1 cxim1 cxim1  3100 Oct 11  2019 create_index.php
+-rw-r--r-- 1 cxim1 cxim1 28723 Oct 11  2019 help.c
+-rw-r--r-- 1 cxim1 cxim1  2419 Oct 11  2019 help.h
+-rw-r--r-- 1 cxim1 cxim1  5735 Oct 11  2019 help_conf.c
+-rw-r--r-- 1 cxim1 cxim1  6427 Oct 11  2019 history.c
+drwxr-xr-x 2 cxim1 cxim1  4096 Jun  5 01:01 legacy
+-rw-r--r-- 1 cxim1 cxim1  3445 Oct 11  2019 main.c
+-rw-r--r-- 1 cxim1 cxim1 10818 Oct 11  2019 options.c
+-rw-r--r-- 1 cxim1 cxim1  7197 Oct 11  2019 print.c
+-rw-r--r-- 1 cxim1 cxim1  2501 Oct 11  2019 select_history.php
+-rwxr-xr-x 1 cxim1 cxim1  4259 Oct 11  2019 select_numeric.php
+-rwxr-xr-x 1 cxim1 cxim1  4000 Oct 11  2019 select_query.php
+-rwxr-xr-x 1 cxim1 cxim1  4066 Oct 11  2019 select_router.php
+-rw-r--r-- 1 cxim1 cxim1  1416 Oct 11  2019 show_disabled_postprocess.c
+-rw-r--r-- 1 cxim1 cxim1 22387 Oct 11  2019 test.c
+-rw-r--r-- 1 cxim1 cxim1 11975 Oct 11  2019 test.h
+-rwxr-xr-x 1 cxim1 cxim1  2170 Oct 11  2019 usage_statistics.php
+-rw-r--r-- 1 cxim1 cxim1  7344 Oct 11  2019 utils.c
+
+./42FileChecker/pft/src/legacy:
+total 8
+-rwxr-xr-x 1 cxim1 cxim1 2927 Oct 11  2019 disable-test
+-rwxr-xr-x 1 cxim1 cxim1 2968 Oct 11  2019 enable-test
+
+./42FileChecker/srcs:
+total 16
+drwxr-xr-x 3 cxim1 cxim1 4096 Jun  5 01:01 get_inode
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 gnl
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 libftasm
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 printf
+
+./42FileChecker/srcs/get_inode:
+total 24
+-rw-r--r-- 1 cxim1 cxim1  460 Sep 28  2019 Makefile
+-rwxr-xr-x 1 cxim1 cxim1 8836 Sep 30  2019 get_inode
+-rw-r--r-- 1 cxim1 cxim1  628 Sep 28  2019 main.c
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  5 01:01 obj
+
+./42FileChecker/srcs/get_inode/obj:
+total 4
+-rw-r--r-- 1 cxim1 cxim1 1492 Sep 30  2019 main.o
+
+./42FileChecker/srcs/gnl:
+total 196
+-rw-r--r-- 1 cxim1 cxim1   256 Sep 28  2019 gnl10.c
+-rw-r--r-- 1 cxim1 cxim1 11358 Sep 28  2019 gnl10.txt
+-rw-r--r-- 1 cxim1 cxim1  6595 Sep 28  2019 gnl11.c
+-rw-r--r-- 1 cxim1 cxim1   612 Sep 28  2019 gnl11_1.txt
+-rw-r--r-- 1 cxim1 cxim1   597 Sep 28  2019 gnl11_2.txt
+-rw-r--r-- 1 cxim1 cxim1   908 Sep 28  2019 gnl1_1.c
+-rw-r--r-- 1 cxim1 cxim1     8 Sep 28  2019 gnl1_1.txt
+-rw-r--r-- 1 cxim1 cxim1   973 Sep 28  2019 gnl1_2.c
+-rw-r--r-- 1 cxim1 cxim1    16 Sep 28  2019 gnl1_2.txt
+-rw-r--r-- 1 cxim1 cxim1  1145 Sep 28  2019 gnl1_3.c
+-rw-r--r-- 1 cxim1 cxim1    32 Sep 28  2019 gnl1_3.txt
+-rw-r--r-- 1 cxim1 cxim1   693 Sep 28  2019 gnl2_1.c
+-rw-r--r-- 1 cxim1 cxim1   756 Sep 28  2019 gnl2_2.c
+-rw-r--r-- 1 cxim1 cxim1   925 Sep 28  2019 gnl2_3.c
+-rw-r--r-- 1 cxim1 cxim1   925 Sep 28  2019 gnl3_1.c
+-rw-r--r-- 1 cxim1 cxim1    16 Sep 28  2019 gnl3_1.txt
+-rw-r--r-- 1 cxim1 cxim1  1006 Sep 28  2019 gnl3_2.c
+-rw-r--r-- 1 cxim1 cxim1    32 Sep 28  2019 gnl3_2.txt
+-rw-r--r-- 1 cxim1 cxim1  1211 Sep 28  2019 gnl3_3.c
+-rw-r--r-- 1 cxim1 cxim1    64 Sep 28  2019 gnl3_3.txt
+-rw-r--r-- 1 cxim1 cxim1   710 Sep 28  2019 gnl4_1.c
+-rw-r--r-- 1 cxim1 cxim1   789 Sep 28  2019 gnl4_2.c
+-rw-r--r-- 1 cxim1 cxim1   990 Sep 28  2019 gnl4_3.c
+-rw-r--r-- 1 cxim1 cxim1   898 Sep 28  2019 gnl5_1.c
+-rw-r--r-- 1 cxim1 cxim1     4 Sep 28  2019 gnl5_1.txt
+-rw-r--r-- 1 cxim1 cxim1   957 Sep 28  2019 gnl5_2.c
+-rw-r--r-- 1 cxim1 cxim1     8 Sep 28  2019 gnl5_2.txt
+-rw-r--r-- 1 cxim1 cxim1  1114 Sep 28  2019 gnl5_3.c
+-rw-r--r-- 1 cxim1 cxim1    16 Sep 28  2019 gnl5_3.txt
+-rw-r--r-- 1 cxim1 cxim1   685 Sep 28  2019 gnl6_1.c
+-rw-r--r-- 1 cxim1 cxim1   740 Sep 28  2019 gnl6_2.c
+-rw-r--r-- 1 cxim1 cxim1   893 Sep 28  2019 gnl6_3.c
+-rw-r--r-- 1 cxim1 cxim1   913 Sep 28  2019 gnl7_1.c
+-rw-r--r-- 1 cxim1 cxim1     8 Sep 28  2019 gnl7_1.txt
+-rw-r--r-- 1 cxim1 cxim1   978 Sep 28  2019 gnl7_2.c
+-rw-r--r-- 1 cxim1 cxim1    16 Sep 28  2019 gnl7_2.txt
+-rw-r--r-- 1 cxim1 cxim1  1155 Sep 28  2019 gnl7_3.c
+-rw-r--r-- 1 cxim1 cxim1    32 Sep 28  2019 gnl7_3.txt
+-rw-r--r-- 1 cxim1 cxim1   698 Sep 28  2019 gnl8_1.c
+-rw-r--r-- 1 cxim1 cxim1   759 Sep 28  2019 gnl8_2.c
+-rw-r--r-- 1 cxim1 cxim1   930 Sep 28  2019 gnl8_3.c
+-rw-r--r-- 1 cxim1 cxim1   348 Sep 28  2019 gnl9_1.c
+-rw-r--r-- 1 cxim1 cxim1   709 Sep 28  2019 gnl9_2.c
+-rw-r--r-- 1 cxim1 cxim1    24 Sep 28  2019 gnl9_2.txt
+-rw-r--r-- 1 cxim1 cxim1  1294 Sep 28  2019 gnl_to_free_or_not_to_free.c
+-rw-r--r-- 1 cxim1 cxim1    80 Sep 28  2019 gnl_to_free_or_not_to_free.txt
+
+./42FileChecker/srcs/libftasm:
+total 164
+-rwxr-xr-x 1 cxim1 cxim1 222 Sep 28  2019 atoi.c
+-rw-r--r-- 1 cxim1 cxim1 585 Sep 28  2019 bzero.c
+-rw-r--r-- 1 cxim1 cxim1 540 Sep 28  2019 cat.c
+-rwxr-xr-x 1 cxim1 cxim1 253 Sep 28  2019 ft_atoi.c
+-rw-r--r-- 1 cxim1 cxim1 611 Sep 28  2019 ft_bzero.c
+-rw-r--r-- 1 cxim1 cxim1 512 Sep 28  2019 ft_cat.c
+-rw-r--r-- 1 cxim1 cxim1 322 Sep 28  2019 ft_cat.txt
+-rw-r--r-- 1 cxim1 cxim1 801 Sep 28  2019 ft_is.c
+-rwxr-xr-x 1 cxim1 cxim1 359 Sep 28  2019 ft_isdigit.c
+-rwxr-xr-x 1 cxim1 cxim1 359 Sep 28  2019 ft_islower.c
+-rwxr-xr-x 1 cxim1 cxim1 361 Sep 28  2019 ft_isnumber.c
+-rwxr-xr-x 1 cxim1 cxim1 359 Sep 28  2019 ft_isspace.c
+-rwxr-xr-x 1 cxim1 cxim1 359 Sep 28  2019 ft_isupper.c
+-rwxr-xr-x 1 cxim1 cxim1 413 Sep 28  2019 ft_memalloc.c
+-rwxr-xr-x 1 cxim1 cxim1 386 Sep 28  2019 ft_memchr.c
+-rwxr-xr-x 1 cxim1 cxim1 424 Sep 28  2019 ft_memcmp.c
+-rw-r--r-- 1 cxim1 cxim1 401 Sep 28  2019 ft_memcpy.c
+-rw-r--r-- 1 cxim1 cxim1 484 Sep 28  2019 ft_memset.c
+-rw-r--r-- 1 cxim1 cxim1 620 Sep 28  2019 ft_puts.c
+-rw-r--r-- 1 cxim1 cxim1 414 Sep 28  2019 ft_strcat.c
+-rwxr-xr-x 1 cxim1 cxim1 332 Sep 28  2019 ft_strchr.c
+-rw-r--r-- 1 cxim1 cxim1 304 Sep 28  2019 ft_strdup.c
+-rw-r--r-- 1 cxim1 cxim1 251 Sep 28  2019 ft_strlen.c
+-rwxr-xr-x 1 cxim1 cxim1 334 Sep 28  2019 ft_strrchr.c
+-rw-r--r-- 1 cxim1 cxim1 616 Sep 28  2019 is.c
+-rwxr-xr-x 1 cxim1 cxim1 348 Sep 28  2019 isdigit.c
+-rwxr-xr-x 1 cxim1 cxim1 348 Sep 28  2019 islower.c
+-rwxr-xr-x 1 cxim1 cxim1 349 Sep 28  2019 isnumber.c
+-rwxr-xr-x 1 cxim1 cxim1 348 Sep 28  2019 isspace.c
+-rwxr-xr-x 1 cxim1 cxim1 348 Sep 28  2019 isupper.c
+-rwxr-xr-x 1 cxim1 cxim1 394 Sep 28  2019 memalloc.c
+-rwxr-xr-x 1 cxim1 cxim1 351 Sep 28  2019 memchr.c
+-rwxr-xr-x 1 cxim1 cxim1 356 Sep 28  2019 memcmp.c
+-rw-r--r-- 1 cxim1 cxim1 342 Sep 28  2019 memcpy.c
+-rw-r--r-- 1 cxim1 cxim1 450 Sep 28  2019 memset.c
+-rw-r--r-- 1 cxim1 cxim1 586 Sep 28  2019 puts.c
+-rw-r--r-- 1 cxim1 cxim1 364 Sep 28  2019 strcat.c
+-rwxr-xr-x 1 cxim1 cxim1 307 Sep 28  2019 strchr.c
+-rw-r--r-- 1 cxim1 cxim1 285 Sep 28  2019 strdup.c
+-rw-r--r-- 1 cxim1 cxim1 232 Sep 28  2019 strlen.c
+-rwxr-xr-x 1 cxim1 cxim1 308 Sep 28  2019 strrchr.c
+
+./42FileChecker/srcs/printf:
+total 68
+-rw-r--r-- 1 cxim1 cxim1  311 Sep 28  2019 ft_printf_0.c
+-rw-r--r-- 1 cxim1 cxim1  809 Sep 28  2019 ft_printf_d.c
+-rw-r--r-- 1 cxim1 cxim1  206 Sep 28  2019 ft_printf_f.c
+-rw-r--r-- 1 cxim1 cxim1 1021 Sep 28  2019 ft_printf_leaks.c
+-rw-r--r-- 1 cxim1 cxim1  200 Sep 28  2019 ft_printf_o.c
+-rw-r--r-- 1 cxim1 cxim1 1164 Sep 28  2019 ft_printf_s.c
+-rw-r--r-- 1 cxim1 cxim1  809 Sep 28  2019 ft_printf_u.c
+-rw-r--r-- 1 cxim1 cxim1  665 Sep 28  2019 ft_printf_x.c
+-rw-r--r-- 1 cxim1 cxim1  362 Sep 28  2019 printf_0.c
+-rw-r--r-- 1 cxim1 cxim1  758 Sep 28  2019 printf_d.c
+-rw-r--r-- 1 cxim1 cxim1  173 Sep 28  2019 printf_f.c
+-rw-r--r-- 1 cxim1 cxim1  167 Sep 28  2019 printf_o.c
+-rw-r--r-- 1 cxim1 cxim1 1119 Sep 28  2019 printf_s.c
+-rw-r--r-- 1 cxim1 cxim1  758 Sep 28  2019 printf_u.c
+-rw-r--r-- 1 cxim1 cxim1  620 Sep 28  2019 printf_x.c
+-rw-r--r-- 1 cxim1 cxim1  888 Sep 28  2019 speedtest_ft_printf.c
+-rw-r--r-- 1 cxim1 cxim1 1061 Sep 28  2019 speedtest_printf.c
+
+./42FileChecker/tmp:
+total 0
+
+./cmake-build-debug:
+total 428
+-rw-r--r-- 1 cxim1 cxim1  23207 Jun  3 11:31 CMakeCache.txt
+drwxr-xr-x 5 cxim1 cxim1   4096 Jun 12 15:03 CMakeFiles
+-rw-r--r-- 1 cxim1 cxim1 137710 Jun  3 11:31 Makefile
+-rw-r--r-- 1 cxim1 cxim1   1513 Jun  3 11:31 cmake_install.cmake
+-rwxr-xr-x 1 cxim1 cxim1 242824 Jun 12 15:03 ft_ls
+-rw-r--r-- 1 cxim1 cxim1  18447 Jun  3 11:31 ft_ls.cbp
+
+./cmake-build-debug/CMakeFiles:
+total 76
+drwxr-xr-x 3 cxim1 cxim1  4096 Jun  3 11:31 3.16.5
+-rw-r--r-- 1 cxim1 cxim1   638 Jun  3 11:31 CMakeDirectoryInformation.cmake
+-rw-r--r-- 1 cxim1 cxim1 21864 Jun  3 11:31 CMakeOutput.log
+drwxr-xr-x 2 cxim1 cxim1  4096 Jun  3 11:31 CMakeTmp
+-rw-r--r-- 1 cxim1 cxim1 10023 Jun  3 11:31 Makefile.cmake
+-rw-r--r-- 1 cxim1 cxim1  3642 Jun  3 11:31 Makefile2
+-rw-r--r-- 1 cxim1 cxim1   199 Jun  3 11:31 TargetDirectories.txt
+-rw-r--r-- 1 cxim1 cxim1    39 Jun  3 11:31 clion-environment.txt
+-rw-r--r-- 1 cxim1 cxim1   566 Jun  3 11:31 clion-log.txt
+-rw-r--r-- 1 cxim1 cxim1    85 Jun  3 11:31 cmake.check_cache
+drwxr-xr-x 3 cxim1 cxim1  4096 Jun 12 15:03 ft_ls.dir
+-rw-r--r-- 1 cxim1 cxim1     4 Jun  3 11:31 progress.marks
+
+./cmake-build-debug/CMakeFiles/3.16.5:
+total 32
+-rw-r--r-- 1 cxim1 cxim1  2424 Jun  3 11:31 CMakeCCompiler.cmake
+-rwxr-xr-x 1 cxim1 cxim1 16544 Jun  3 11:31 CMakeDetermineCompilerABI_C.bin
+-rw-r--r-- 1 cxim1 cxim1   402 Jun  3 11:31 CMakeSystem.cmake
+drwxr-xr-x 3 cxim1 cxim1  4096 Jun  3 11:31 CompilerIdC
+
+./cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC:
+total 44
+-rw-r--r-- 1 cxim1 cxim1 20271 Jun  3 11:31 CMakeCCompilerId.c
+-rwxr-xr-x 1 cxim1 cxim1 16704 Jun  3 11:31 a.out
+drwxr-xr-x 2 cxim1 cxim1  4096 Jun  3 11:31 tmp
+
+./cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/tmp:
+total 0
+
+./cmake-build-debug/CMakeFiles/CMakeTmp:
+total 0
+
+./cmake-build-debug/CMakeFiles/ft_ls.dir:
+total 348
+-rw-r--r-- 1 cxim1 cxim1    688 Jun 12 15:03 C.includecache
+-rw-r--r-- 1 cxim1 cxim1  18960 Jun  3 11:31 DependInfo.cmake
+-rw-r--r-- 1 cxim1 cxim1 175884 Jun  3 11:31 build.make
+-rw-r--r-- 1 cxim1 cxim1   7232 Jun  3 11:31 cmake_clean.cmake
+-rw-r--r-- 1 cxim1 cxim1  20468 Jun 12 15:03 depend.internal
+-rw-r--r-- 1 cxim1 cxim1  25048 Jun 12 15:03 depend.make
+-rw-r--r-- 1 cxim1 cxim1    306 Jun  3 11:31 flags.make
+-rw-r--r-- 1 cxim1 cxim1   9112 Jun 11 07:30 for_sort.c.o
+drwxr-xr-x 4 cxim1 cxim1   4096 Jun  3 11:31 ft_printf
+-rw-r--r-- 1 cxim1 cxim1  20472 Jun 12 15:03 ft_start.c.o
+-rw-r--r-- 1 cxim1 cxim1   6616 Jun  3 11:31 link.txt
+-rw-r--r-- 1 cxim1 cxim1  14480 Jun 12 15:00 main.c.o
+-rw-r--r-- 1 cxim1 cxim1  25952 Jun 12 15:00 prints.c.o
+-rw-r--r-- 1 cxim1 cxim1   2571 Jun  3 11:31 progress.make
+
+./cmake-build-debug/CMakeFiles/ft_ls.dir/ft_printf:
+total 8
+drwxr-xr-x 3 cxim1 cxim1 4096 Jun  3 11:31 includes
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  3 11:38 srcs
+
+./cmake-build-debug/CMakeFiles/ft_ls.dir/ft_printf/includes:
+total 4
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  6 04:33 libft
+
+./cmake-build-debug/CMakeFiles/ft_ls.dir/ft_printf/includes/libft:
+total 392
+-rw-r--r-- 1 cxim1 cxim1 4264 Jun  3 11:38 ft_atoi.c.o
+-rw-r--r-- 1 cxim1 cxim1 3864 Jun  3 11:38 ft_bzero.c.o
+-rw-r--r-- 1 cxim1 cxim1 3720 Jun  3 11:38 ft_char_in_string.c.o
+-rw-r--r-- 1 cxim1 cxim1 3880 Jun  3 11:38 ft_count_if.c.o
+-rw-r--r-- 1 cxim1 cxim1 3768 Jun  3 11:38 ft_cut_space.c.o
+-rw-r--r-- 1 cxim1 cxim1 4224 Jun  3 11:38 ft_get_integer.c.o
+-rw-r--r-- 1 cxim1 cxim1 3648 Jun  3 11:38 ft_isalnum.c.o
+-rw-r--r-- 1 cxim1 cxim1 3616 Jun  3 11:38 ft_isalpha.c.o
+-rw-r--r-- 1 cxim1 cxim1 3600 Jun  3 11:38 ft_isascii.c.o
+-rw-r--r-- 1 cxim1 cxim1 3600 Jun  3 11:38 ft_isdigit.c.o
+-rw-r--r-- 1 cxim1 cxim1 3600 Jun  3 11:38 ft_isprint.c.o
+-rw-r--r-- 1 cxim1 cxim1 3648 Jun  3 11:38 ft_isspace.c.o
+-rw-r--r-- 1 cxim1 cxim1 4624 Jun  3 11:38 ft_itoa.c.o
+-rw-r--r-- 1 cxim1 cxim1 5256 Jun  3 11:38 ft_itoa_long.c.o
+-rw-r--r-- 1 cxim1 cxim1 4088 Jun  3 11:38 ft_lstadd.c.o
+-rw-r--r-- 1 cxim1 cxim1 4424 Jun  3 11:38 ft_lstdel.c.o
+-rw-r--r-- 1 cxim1 cxim1 4352 Jun  3 11:38 ft_lstdelone.c.o
+-rw-r--r-- 1 cxim1 cxim1 4184 Jun  3 11:38 ft_lstiter.c.o
+-rw-r--r-- 1 cxim1 cxim1 4320 Jun  3 11:38 ft_lstmap.c.o
+-rw-r--r-- 1 cxim1 cxim1 4616 Jun  3 11:38 ft_lstnew.c.o
+-rw-r--r-- 1 cxim1 cxim1 4048 Jun  3 11:38 ft_memalloc.c.o
+-rw-r--r-- 1 cxim1 cxim1 4016 Jun  3 11:38 ft_memccpy.c.o
+-rw-r--r-- 1 cxim1 cxim1 3896 Jun  3 11:38 ft_memchr.c.o
+-rw-r--r-- 1 cxim1 cxim1 4032 Jun  3 11:38 ft_memcmp.c.o
+-rw-r--r-- 1 cxim1 cxim1 3904 Jun  3 11:38 ft_memcpy.c.o
+-rw-r--r-- 1 cxim1 cxim1 3800 Jun  3 11:38 ft_memdel.c.o
+-rw-r--r-- 1 cxim1 cxim1 3872 Jun  3 11:38 ft_memfree.c.o
+-rw-r--r-- 1 cxim1 cxim1 4040 Jun  3 11:38 ft_memmove.c.o
+-rw-r--r-- 1 cxim1 cxim1 3824 Jun  3 11:38 ft_memset.c.o
+-rw-r--r-- 1 cxim1 cxim1 3952 Jun  3 11:38 ft_new_integer_list.c.o
+-rw-r--r-- 1 cxim1 cxim1 3784 Jun  3 11:38 ft_numzero.c.o
+-rw-r--r-- 1 cxim1 cxim1 3992 Jun  3 11:38 ft_print_symbol.c.o
+-rw-r--r-- 1 cxim1 cxim1 3736 Jun  3 11:38 ft_putchar.c.o
+-rw-r--r-- 1 cxim1 cxim1 3776 Jun  3 11:38 ft_putchar_fd.c.o
+-rw-r--r-- 1 cxim1 cxim1 3904 Jun  3 11:38 ft_putchar_mod.c.o
+-rw-r--r-- 1 cxim1 cxim1 3824 Jun  3 11:38 ft_putendl.c.o
+-rw-r--r-- 1 cxim1 cxim1 3864 Jun  3 11:38 ft_putendl_fd.c.o
+-rw-r--r-- 1 cxim1 cxim1 4008 Jun  3 11:38 ft_putnbr.c.o
+-rw-r--r-- 1 cxim1 cxim1 4072 Jun  3 11:38 ft_putnbr_fd.c.o
+-rw-r--r-- 1 cxim1 cxim1 3792 Jun  3 11:38 ft_putstr.c.o
+-rw-r--r-- 1 cxim1 cxim1 3840 Jun  3 11:38 ft_putstr_fd.c.o
+-rw-r--r-- 1 cxim1 cxim1 4000 Jun  3 11:38 ft_putstr_mod.c.o
+-rw-r--r-- 1 cxim1 cxim1 5688 Jun  3 11:38 ft_split.c.o
+-rw-r--r-- 1 cxim1 cxim1 3728 Jun  3 11:38 ft_sqrt.c.o
+-rw-r--r-- 1 cxim1 cxim1 4400 Jun  3 11:38 ft_str_is_num.c.o
+-rw-r--r-- 1 cxim1 cxim1 3840 Jun  3 11:38 ft_strcat.c.o
+-rw-r--r-- 1 cxim1 cxim1 3720 Jun  3 11:38 ft_strchr.c.o
+-rw-r--r-- 1 cxim1 cxim1 3584 Jun  3 11:38 ft_strclr.c.o
+-rw-r--r-- 1 cxim1 cxim1 3680 Jun  3 11:38 ft_strcmp.c.o
+-rw-r--r-- 1 cxim1 cxim1 3824 Jun  3 11:38 ft_strcpy.c.o
+-rw-r--r-- 1 cxim1 cxim1 3776 Jun  3 11:38 ft_strdel.c.o
+-rw-r--r-- 1 cxim1 cxim1 4064 Jun  3 11:38 ft_strdup.c.o
+-rw-r--r-- 1 cxim1 cxim1 3680 Jun  3 11:38 ft_strequ.c.o
+-rw-r--r-- 1 cxim1 cxim1 3736 Jun  3 11:38 ft_striter.c.o
+-rw-r--r-- 1 cxim1 cxim1 3736 Jun  3 11:38 ft_striteri.c.o
+-rw-r--r-- 1 cxim1 cxim1 4496 Jun  3 11:38 ft_strjoin.c.o
+-rw-r--r-- 1 cxim1 cxim1 4272 Jun  3 11:38 ft_strlcat.c.o
+-rw-r--r-- 1 cxim1 cxim1 3752 Jun  3 11:38 ft_strlen.c.o
+-rw-r--r-- 1 cxim1 cxim1 3664 Jun  3 11:38 ft_strlen_mod.c.o
+-rw-r--r-- 1 cxim1 cxim1 3880 Jun  3 11:38 ft_strlen_unilsymb.c.o
+-rw-r--r-- 1 cxim1 cxim1 4200 Jun  3 11:38 ft_strmap.c.o
+-rw-r--r-- 1 cxim1 cxim1 4320 Jun  3 11:38 ft_strmapi.c.o
+-rw-r--r-- 1 cxim1 cxim1 4120 Jun  3 11:38 ft_strncat.c.o
+-rw-r--r-- 1 cxim1 cxim1 4016 Jun  3 11:38 ft_strncmp.c.o
+-rw-r--r-- 1 cxim1 cxim1 3912 Jun  3 11:38 ft_strncpy.c.o
+-rw-r--r-- 1 cxim1 cxim1 4072 Jun  3 11:38 ft_strnequ.c.o
+-rw-r--r-- 1 cxim1 cxim1 4048 Jun  3 11:38 ft_strnew.c.o
+-rw-r--r-- 1 cxim1 cxim1 4080 Jun  3 11:38 ft_strnstr.c.o
+-rw-r--r-- 1 cxim1 cxim1 3968 Jun  3 11:38 ft_strrchr.c.o
+-rw-r--r-- 1 cxim1 cxim1 4688 Jun  6 04:33 ft_strsplit.c.o
+-rw-r--r-- 1 cxim1 cxim1 3720 Jun  3 11:38 ft_strsplit_len.c.o
+-rw-r--r-- 1 cxim1 cxim1 3912 Jun  3 11:38 ft_strstr.c.o
+-rw-r--r-- 1 cxim1 cxim1 4176 Jun  3 11:38 ft_strsub.c.o
+-rw-r--r-- 1 cxim1 cxim1 5440 Jun  3 11:38 ft_strtrim.c.o
+-rw-r--r-- 1 cxim1 cxim1 3584 Jun  3 11:38 ft_tolower.c.o
+-rw-r--r-- 1 cxim1 cxim1 3584 Jun  3 11:38 ft_toupper.c.o
+-rw-r--r-- 1 cxim1 cxim1 3880 Jun  3 11:38 ft_word_count.c.o
+-rw-r--r-- 1 cxim1 cxim1 6144 Jun  3 11:38 get_next_line.c.o
+
+./cmake-build-debug/CMakeFiles/ft_ls.dir/ft_printf/srcs:
+total 316
+-rw-r--r-- 1 cxim1 cxim1  7600 Jun  3 11:38 base_n_p.c.o
+-rw-r--r-- 1 cxim1 cxim1 13424 Jun  3 11:38 bonus_color.c.o
+-rw-r--r-- 1 cxim1 cxim1  8960 Jun  3 11:38 bonus_fd.c.o
+-rw-r--r-- 1 cxim1 cxim1  7752 Jun  3 11:38 bonus_smile.c.o
+-rw-r--r-- 1 cxim1 cxim1  8184 Jun  3 11:38 color_option.c.o
+-rw-r--r-- 1 cxim1 cxim1  8696 Jun  3 11:38 format_checker.c.o
+-rw-r--r-- 1 cxim1 cxim1  6616 Jun  3 11:38 format_checker_one.c.o
+-rw-r--r-- 1 cxim1 cxim1 10008 Jun  3 11:38 ft_printf.c.o
+-rw-r--r-- 1 cxim1 cxim1 10952 Jun  3 11:38 ft_printf_one.c.o
+-rw-r--r-- 1 cxim1 cxim1  8240 Jun  3 11:38 print_some_wight_aruc.c.o
+-rw-r--r-- 1 cxim1 cxim1 10168 Jun  3 11:38 work_i_one.c.o
+-rw-r--r-- 1 cxim1 cxim1 11520 Jun  3 11:38 work_i_two.c.o
+-rw-r--r-- 1 cxim1 cxim1 10304 Jun  3 11:38 work_uxo_po_one.c.o
+-rw-r--r-- 1 cxim1 cxim1 10320 Jun  3 11:38 work_uxo_po_two.c.o
+-rw-r--r-- 1 cxim1 cxim1  9832 Jun  3 11:38 work_uxo_pt_one.c.o
+-rw-r--r-- 1 cxim1 cxim1  7280 Jun  3 11:38 work_with_errors.c.o
+-rw-r--r-- 1 cxim1 cxim1  8896 Jun  3 11:38 work_with_f_one.c.o
+-rw-r--r-- 1 cxim1 cxim1  9880 Jun  3 11:38 work_with_f_three.c.o
+-rw-r--r-- 1 cxim1 cxim1 11688 Jun  3 11:38 work_with_f_two.c.o
+-rw-r--r-- 1 cxim1 cxim1  8136 Jun  3 11:38 work_with_flags.c.o
+-rw-r--r-- 1 cxim1 cxim1  9360 Jun  3 11:38 work_with_floats.c.o
+-rw-r--r-- 1 cxim1 cxim1  7256 Jun  3 11:38 work_with_form_x.c.o
+-rw-r--r-- 1 cxim1 cxim1 10744 Jun  3 11:38 work_with_format_char_str.c.o
+-rw-r--r-- 1 cxim1 cxim1 10104 Jun  3 11:38 work_with_int.c.o
+-rw-r--r-- 1 cxim1 cxim1  7544 Jun  3 11:38 work_with_o.c.o
+-rw-r--r-- 1 cxim1 cxim1  7144 Jun  3 11:38 work_with_p.c.o
+-rw-r--r-- 1 cxim1 cxim1  7336 Jun  3 11:38 work_with_u.c.o
+-rw-r--r-- 1 cxim1 cxim1  7560 Jun  3 11:38 work_with_uxo_part_one.c.o
+-rw-r--r-- 1 cxim1 cxim1  8984 Jun  3 11:38 work_with_uxo_part_two.c.o
+-rw-r--r-- 1 cxim1 cxim1  7360 Jun  3 11:38 work_with_x_big.c.o
+
+./ft_printf:
+total 240
+-rwxr-xr-x 1 cxim1 cxim1   2235 Jun  3 11:31 Makefile
+drwxr-xr-x 3 cxim1 cxim1   4096 Jun  3 11:31 a.out.dSYM
+drwxr-xr-x 3 cxim1 cxim1   4096 Jun  3 11:31 includes
+-rw-r--r-- 1 cxim1 cxim1 221582 Jun  4 20:57 libftprintf.a
+drwxr-xr-x 2 cxim1 cxim1   4096 Jun  4 20:57 objs
+drwxr-xr-x 2 cxim1 cxim1   4096 Jun  3 11:31 srcs
+
+./ft_printf/a.out.dSYM:
+total 4
+drwxr-xr-x 3 cxim1 cxim1 4096 Jun  3 11:31 Contents
+
+./ft_printf/a.out.dSYM/Contents:
+total 8
+-rw-r--r-- 1 cxim1 cxim1  634 Jun  3 11:31 Info.plist
+drwxr-xr-x 3 cxim1 cxim1 4096 Jun  3 11:31 Resources
+
+./ft_printf/a.out.dSYM/Contents/Resources:
+total 4
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  3 11:31 DWARF
+
+./ft_printf/a.out.dSYM/Contents/Resources/DWARF:
+total 12
+-rw-r--r-- 1 cxim1 cxim1 8350 Jun  3 11:31 a.out
+
+./ft_printf/includes:
+total 12
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun  6 04:32 libft
+-rwxr-xr-x 1 cxim1 cxim1 4388 Jun  3 11:31 printf.h
+
+./ft_printf/includes/libft:
+total 752
+-rwxr-xr-x 1 cxim1 cxim1   2289 Jun  3 11:31 Makefile
+-rwxr-xr-x 1 cxim1 cxim1   1395 Jun  3 11:31 ft_atoi.c
+-rw-r--r-- 1 cxim1 cxim1   1552 Jun  4 20:57 ft_atoi.o
+-rwxr-xr-x 1 cxim1 cxim1    970 Jun  3 11:31 ft_bzero.c
+-rw-r--r-- 1 cxim1 cxim1   1424 Jun  4 20:57 ft_bzero.o
+-rwxr-xr-x 1 cxim1 cxim1   1051 Jun  3 11:31 ft_char_in_string.c
+-rw-r--r-- 1 cxim1 cxim1   1304 Jun  4 20:57 ft_char_in_string.o
+-rwxr-xr-x 1 cxim1 cxim1   1124 Jun  3 11:31 ft_count_if.c
+-rw-r--r-- 1 cxim1 cxim1   1344 Jun  4 20:57 ft_count_if.o
+-rwxr-xr-x 1 cxim1 cxim1   1109 Jun  3 11:31 ft_cut_space.c
+-rw-r--r-- 1 cxim1 cxim1   1280 Jun  4 20:57 ft_cut_space.o
+-rwxr-xr-x 1 cxim1 cxim1   1292 Jun  3 11:31 ft_get_integer.c
+-rw-r--r-- 1 cxim1 cxim1   1608 Jun  4 20:57 ft_get_integer.o
+-rwxr-xr-x 1 cxim1 cxim1   1026 Jun  3 11:31 ft_isalnum.c
+-rw-r--r-- 1 cxim1 cxim1   1272 Jun  4 20:57 ft_isalnum.o
+-rwxr-xr-x 1 cxim1 cxim1   1021 Jun  3 11:31 ft_isalpha.c
+-rw-r--r-- 1 cxim1 cxim1   1264 Jun  4 20:57 ft_isalpha.o
+-rwxr-xr-x 1 cxim1 cxim1    968 Jun  3 11:31 ft_isascii.c
+-rw-r--r-- 1 cxim1 cxim1   1248 Jun  4 20:57 ft_isascii.o
+-rwxr-xr-x 1 cxim1 cxim1    971 Jun  3 11:31 ft_isdigit.c
+-rw-r--r-- 1 cxim1 cxim1   1248 Jun  4 20:57 ft_isdigit.o
+-rwxr-xr-x 1 cxim1 cxim1    969 Jun  3 11:31 ft_isprint.c
+-rw-r--r-- 1 cxim1 cxim1   1248 Jun  4 20:57 ft_isprint.o
+-rwxr-xr-x 1 cxim1 cxim1   1062 Jun  3 11:31 ft_isspace.c
+-rw-r--r-- 1 cxim1 cxim1   1280 Jun  4 20:57 ft_isspace.o
+-rwxr-xr-x 1 cxim1 cxim1   1366 Jun  3 11:31 ft_itoa.c
+-rw-r--r-- 1 cxim1 cxim1   1800 Jun  4 20:57 ft_itoa.o
+-rwxr-xr-x 1 cxim1 cxim1   1670 Jun  3 11:31 ft_itoa_long.c
+-rw-r--r-- 1 cxim1 cxim1   2096 Jun  4 20:57 ft_itoa_long.o
+-rwxr-xr-x 1 cxim1 cxim1   1054 Jun  3 11:31 ft_lstadd.c
+-rw-r--r-- 1 cxim1 cxim1   1280 Jun  4 20:57 ft_lstadd.o
+-rwxr-xr-x 1 cxim1 cxim1   1117 Jun  3 11:31 ft_lstdel.c
+-rw-r--r-- 1 cxim1 cxim1   1496 Jun  4 20:57 ft_lstdel.o
+-rwxr-xr-x 1 cxim1 cxim1   1080 Jun  3 11:31 ft_lstdelone.c
+-rw-r--r-- 1 cxim1 cxim1   1480 Jun  4 20:57 ft_lstdelone.o
+-rwxr-xr-x 1 cxim1 cxim1   1053 Jun  3 11:31 ft_lstiter.c
+-rw-r--r-- 1 cxim1 cxim1   1392 Jun  4 20:57 ft_lstiter.o
+-rwxr-xr-x 1 cxim1 cxim1   1289 Jun  3 11:31 ft_lstmap.c
+-rw-r--r-- 1 cxim1 cxim1   1376 Jun  4 20:57 ft_lstmap.o
+-rwxr-xr-x 1 cxim1 cxim1   1390 Jun  3 11:31 ft_lstnew.c
+-rw-r--r-- 1 cxim1 cxim1   1728 Jun  4 20:57 ft_lstnew.o
+-rwxr-xr-x 1 cxim1 cxim1   1101 Jun  3 11:31 ft_memalloc.c
+-rw-r--r-- 1 cxim1 cxim1   1520 Jun  4 20:57 ft_memalloc.o
+-rwxr-xr-x 1 cxim1 cxim1   1229 Jun  3 11:31 ft_memccpy.c
+-rw-r--r-- 1 cxim1 cxim1   1352 Jun  4 20:57 ft_memccpy.o
+-rwxr-xr-x 1 cxim1 cxim1   1179 Jun  3 11:31 ft_memchr.c
+-rw-r--r-- 1 cxim1 cxim1   1312 Jun  4 20:57 ft_memchr.o
+-rwxr-xr-x 1 cxim1 cxim1   1220 Jun  3 11:31 ft_memcmp.c
+-rw-r--r-- 1 cxim1 cxim1   1352 Jun  4 20:57 ft_memcmp.o
+-rwxr-xr-x 1 cxim1 cxim1   1178 Jun  3 11:31 ft_memcpy.c
+-rw-r--r-- 1 cxim1 cxim1   1320 Jun  4 20:57 ft_memcpy.o
+-rwxr-xr-x 1 cxim1 cxim1    991 Jun  3 11:31 ft_memdel.c
+-rw-r--r-- 1 cxim1 cxim1   1448 Jun  4 20:57 ft_memdel.o
+-rwxr-xr-x 1 cxim1 cxim1   1063 Jun  3 11:31 ft_memfree.c
+-rw-r--r-- 1 cxim1 cxim1   1504 Jun  4 20:57 ft_memfree.o
+-rwxr-xr-x 1 cxim1 cxim1   1204 Jun  3 11:31 ft_memmove.c
+-rw-r--r-- 1 cxim1 cxim1   1416 Jun  4 20:57 ft_memmove.o
+-rwxr-xr-x 1 cxim1 cxim1   1065 Jun  3 11:31 ft_memset.c
+-rw-r--r-- 1 cxim1 cxim1   1280 Jun  4 20:57 ft_memset.o
+-rwxr-xr-x 1 cxim1 cxim1   1104 Jun  3 11:31 ft_new_integer_list.c
+-rw-r--r-- 1 cxim1 cxim1   1520 Jun  4 20:57 ft_new_integer_list.o
+-rwxr-xr-x 1 cxim1 cxim1   1049 Jun  3 11:31 ft_numzero.c
+-rw-r--r-- 1 cxim1 cxim1   1312 Jun  4 20:57 ft_numzero.o
+-rwxr-xr-x 1 cxim1 cxim1   1102 Jun  3 11:31 ft_print_symbol.c
+-rw-r--r-- 1 cxim1 cxim1   1544 Jun  4 20:57 ft_print_symbol.o
+-rwxr-xr-x 1 cxim1 cxim1    978 Jun  3 11:31 ft_putchar.c
+-rw-r--r-- 1 cxim1 cxim1   1424 Jun  4 20:57 ft_putchar.o
+-rwxr-xr-x 1 cxim1 cxim1    970 Jun  3 11:31 ft_putchar_fd.c
+-rw-r--r-- 1 cxim1 cxim1   1432 Jun  4 20:57 ft_putchar_fd.o
+-rwxr-xr-x 1 cxim1 cxim1   1045 Jun  3 11:31 ft_putchar_mod.c
+-rw-r--r-- 1 cxim1 cxim1   1504 Jun  4 20:57 ft_putchar_mod.o
+-rwxr-xr-x 1 cxim1 cxim1    981 Jun  3 11:31 ft_putendl.c
+-rw-r--r-- 1 cxim1 cxim1   1488 Jun  4 20:57 ft_putendl.o
+-rwxr-xr-x 1 cxim1 cxim1   1006 Jun  3 11:31 ft_putendl_fd.c
+-rw-r--r-- 1 cxim1 cxim1   1504 Jun  4 20:57 ft_putendl_fd.o
+-rwxr-xr-x 1 cxim1 cxim1   1100 Jun  3 11:31 ft_putnbr.c
+-rw-r--r-- 1 cxim1 cxim1   1632 Jun  4 20:57 ft_putnbr.o
+-rwxr-xr-x 1 cxim1 cxim1   1139 Jun  3 11:31 ft_putnbr_fd.c
+-rw-r--r-- 1 cxim1 cxim1   1672 Jun  4 20:57 ft_putnbr_fd.o
+-rwxr-xr-x 1 cxim1 cxim1   1008 Jun  3 11:31 ft_putstr.c
+-rw-r--r-- 1 cxim1 cxim1   1440 Jun  4 20:57 ft_putstr.o
+-rwxr-xr-x 1 cxim1 cxim1   1041 Jun  3 11:31 ft_putstr_fd.c
+-rw-r--r-- 1 cxim1 cxim1   1472 Jun  4 20:57 ft_putstr_fd.o
+-rwxr-xr-x 1 cxim1 cxim1   1130 Jun  3 11:31 ft_putstr_mod.c
+-rw-r--r-- 1 cxim1 cxim1   1568 Jun  4 20:57 ft_putstr_mod.o
+-rwxr-xr-x 1 cxim1 cxim1   1965 Jun  3 11:31 ft_split.c
+-rw-r--r-- 1 cxim1 cxim1   2464 Jun  4 20:57 ft_split.o
+-rwxr-xr-x 1 cxim1 cxim1   1199 Jun  3 11:31 ft_sqrt.c
+-rwxr-xr-x 1 cxim1 cxim1   1208 Jun  3 11:31 ft_str_is_num.c
+-rw-r--r-- 1 cxim1 cxim1   1920 Jun  4 20:57 ft_str_is_num.o
+-rwxr-xr-x 1 cxim1 cxim1   1125 Jun  3 11:31 ft_strcat.c
+-rw-r--r-- 1 cxim1 cxim1   1344 Jun  4 20:57 ft_strcat.o
+-rwxr-xr-x 1 cxim1 cxim1   1078 Jun  3 11:31 ft_strchr.c
+-rw-r--r-- 1 cxim1 cxim1   1288 Jun  4 20:57 ft_strchr.o
+-rwxr-xr-x 1 cxim1 cxim1    997 Jun  3 11:31 ft_strclr.c
+-rw-r--r-- 1 cxim1 cxim1   1256 Jun  4 20:57 ft_strclr.o
+-rwxr-xr-x 1 cxim1 cxim1   1067 Jun  3 11:31 ft_strcmp.c
+-rw-r--r-- 1 cxim1 cxim1   1288 Jun  4 20:57 ft_strcmp.o
+-rwxr-xr-x 1 cxim1 cxim1   1136 Jun  3 11:31 ft_strcpy.c
+-rw-r--r-- 1 cxim1 cxim1   1312 Jun  4 20:57 ft_strcpy.o
+-rwxr-xr-x 1 cxim1 cxim1    991 Jun  3 11:31 ft_strdel.c
+-rw-r--r-- 1 cxim1 cxim1   1448 Jun  4 20:57 ft_strdel.o
+-rwxr-xr-x 1 cxim1 cxim1   1182 Jun  3 11:31 ft_strdup.c
+-rw-r--r-- 1 cxim1 cxim1   1632 Jun  4 20:57 ft_strdup.o
+-rwxr-xr-x 1 cxim1 cxim1   1080 Jun  3 11:31 ft_strequ.c
+-rw-r--r-- 1 cxim1 cxim1   1288 Jun  4 20:57 ft_strequ.o
+-rwxr-xr-x 1 cxim1 cxim1   1049 Jun  3 11:31 ft_striter.c
+-rw-r--r-- 1 cxim1 cxim1   1304 Jun  4 20:57 ft_striter.o
+-rwxr-xr-x 1 cxim1 cxim1   1061 Jun  3 11:31 ft_striteri.c
+-rw-r--r-- 1 cxim1 cxim1   1296 Jun  4 20:57 ft_striteri.o
+-rwxr-xr-x 1 cxim1 cxim1   1356 Jun  3 11:31 ft_strjoin.c
+-rw-r--r-- 1 cxim1 cxim1   1840 Jun  4 20:57 ft_strjoin.o
+-rwxr-xr-x 1 cxim1 cxim1   1213 Jun  3 11:31 ft_strlcat.c
+-rw-r--r-- 1 cxim1 cxim1   1608 Jun  4 20:57 ft_strlcat.o
+-rwxr-xr-x 1 cxim1 cxim1   1013 Jun  3 11:31 ft_strlen.c
+-rw-r--r-- 1 cxim1 cxim1   1256 Jun  4 20:57 ft_strlen.o
+-rwxr-xr-x 1 cxim1 cxim1   1019 Jun  3 11:31 ft_strlen_mod.c
+-rw-r--r-- 1 cxim1 cxim1   1256 Jun  4 20:57 ft_strlen_mod.o
+-rwxr-xr-x 1 cxim1 cxim1   1081 Jun  3 11:31 ft_strlen_unilsymb.c
+-rw-r--r-- 1 cxim1 cxim1   1312 Jun  4 20:57 ft_strlen_unilsymb.o
+-rwxr-xr-x 1 cxim1 cxim1   1244 Jun  3 11:31 ft_strmap.c
+-rw-r--r-- 1 cxim1 cxim1   1696 Jun  4 20:57 ft_strmap.o
+-rwxr-xr-x 1 cxim1 cxim1   1264 Jun  3 11:31 ft_strmapi.c
+-rw-r--r-- 1 cxim1 cxim1   1696 Jun  4 20:57 ft_strmapi.o
+-rwxr-xr-x 1 cxim1 cxim1   1211 Jun  3 11:31 ft_strncat.c
+-rw-r--r-- 1 cxim1 cxim1   1376 Jun  4 20:57 ft_strncat.o
+-rwxr-xr-x 1 cxim1 cxim1   1236 Jun  3 11:31 ft_strncmp.c
+-rw-r--r-- 1 cxim1 cxim1   1400 Jun  4 20:57 ft_strncmp.o
+-rwxr-xr-x 1 cxim1 cxim1   1116 Jun  3 11:31 ft_strncpy.c
+-rw-r--r-- 1 cxim1 cxim1   1344 Jun  4 20:57 ft_strncpy.o
+-rwxr-xr-x 1 cxim1 cxim1   1159 Jun  3 11:31 ft_strnequ.c
+-rw-r--r-- 1 cxim1 cxim1   1496 Jun  4 20:57 ft_strnequ.o
+-rwxr-xr-x 1 cxim1 cxim1   1116 Jun  3 11:31 ft_strnew.c
+-rw-r--r-- 1 cxim1 cxim1   1536 Jun  4 20:57 ft_strnew.o
+-rwxr-xr-x 1 cxim1 cxim1   1241 Jun  3 11:31 ft_strnstr.c
+-rw-r--r-- 1 cxim1 cxim1   1400 Jun  4 20:57 ft_strnstr.o
+-rwxr-xr-x 1 cxim1 cxim1   1157 Jun  3 11:31 ft_strrchr.c
+-rw-r--r-- 1 cxim1 cxim1   1528 Jun  4 20:57 ft_strrchr.o
+-rwxr-xr-x 1 cxim1 cxim1   1439 Jun  6 04:32 ft_strsplit.c
+-rw-r--r-- 1 cxim1 cxim1   2040 Jun  4 20:57 ft_strsplit.o
+-rwxr-xr-x 1 cxim1 cxim1   1089 Jun  3 11:31 ft_strsplit_len.c
+-rw-r--r-- 1 cxim1 cxim1   1304 Jun  4 20:57 ft_strsplit_len.o
+-rwxr-xr-x 1 cxim1 cxim1   1019 Jun  3 11:31 ft_strstr.c
+-rw-r--r-- 1 cxim1 cxim1   1504 Jun  4 20:57 ft_strstr.o
+-rwxr-xr-x 1 cxim1 cxim1   1217 Jun  3 11:31 ft_strsub.c
+-rw-r--r-- 1 cxim1 cxim1   1576 Jun  4 20:57 ft_strsub.o
+-rwxr-xr-x 1 cxim1 cxim1   1647 Jun  3 11:31 ft_strtrim.c
+-rw-r--r-- 1 cxim1 cxim1   2376 Jun  4 20:57 ft_strtrim.o
+-rwxr-xr-x 1 cxim1 cxim1    989 Jun  3 11:31 ft_tolower.c
+-rw-r--r-- 1 cxim1 cxim1   1248 Jun  4 20:57 ft_tolower.o
+-rwxr-xr-x 1 cxim1 cxim1    989 Jun  3 11:31 ft_toupper.c
+-rw-r--r-- 1 cxim1 cxim1   1248 Jun  4 20:57 ft_toupper.o
+-rwxr-xr-x 1 cxim1 cxim1   1192 Jun  3 11:31 ft_word_count.c
+-rw-r--r-- 1 cxim1 cxim1   1352 Jun  4 20:57 ft_word_count.o
+-rwxr-xr-x 1 cxim1 cxim1   1816 Jun  3 11:31 get_next_line.c
+-rw-r--r-- 1 cxim1 cxim1   3008 Jun  4 20:57 get_next_line.o
+-rw-r--r-- 1 cxim1 cxim1 121070 Jun  4 20:57 libft.a
+-rwxr-xr-x 1 cxim1 cxim1   4605 Jun  3 11:31 libft.h
+
+./ft_printf/objs:
+total 136
+-rw-r--r-- 1 cxim1 cxim1 2232 Jun  4 20:57 base_n_p.o
+-rw-r--r-- 1 cxim1 cxim1 7544 Jun  4 20:57 bonus_color.o
+-rw-r--r-- 1 cxim1 cxim1 2784 Jun  4 20:57 bonus_fd.o
+-rw-r--r-- 1 cxim1 cxim1 2456 Jun  4 20:57 bonus_smile.o
+-rw-r--r-- 1 cxim1 cxim1 2816 Jun  4 20:57 color_option.o
+-rw-r--r-- 1 cxim1 cxim1 2752 Jun  4 20:57 format_checker.o
+-rw-r--r-- 1 cxim1 cxim1 1680 Jun  4 20:57 format_checker_one.o
+-rw-r--r-- 1 cxim1 cxim1 3264 Jun  4 20:57 ft_printf.o
+-rw-r--r-- 1 cxim1 cxim1 4304 Jun  4 20:57 ft_printf_one.o
+-rw-r--r-- 1 cxim1 cxim1 2784 Jun  4 20:57 print_some_wight_aruc.o
+-rw-r--r-- 1 cxim1 cxim1 3880 Jun  4 20:57 work_i_one.o
+-rw-r--r-- 1 cxim1 cxim1 4848 Jun  4 20:57 work_i_two.o
+-rw-r--r-- 1 cxim1 cxim1 4032 Jun  4 20:57 work_uxo_po_one.o
+-rw-r--r-- 1 cxim1 cxim1 3880 Jun  4 20:57 work_uxo_po_two.o
+-rw-r--r-- 1 cxim1 cxim1 3728 Jun  4 20:57 work_uxo_pt_one.o
+-rw-r--r-- 1 cxim1 cxim1 2352 Jun  4 20:57 work_with_errors.o
+-rw-r--r-- 1 cxim1 cxim1 2824 Jun  4 20:57 work_with_f_one.o
+-rw-r--r-- 1 cxim1 cxim1 3848 Jun  4 20:57 work_with_f_three.o
+-rw-r--r-- 1 cxim1 cxim1 5296 Jun  4 20:57 work_with_f_two.o
+-rw-r--r-- 1 cxim1 cxim1 2592 Jun  4 20:57 work_with_flags.o
+-rw-r--r-- 1 cxim1 cxim1 3232 Jun  4 20:57 work_with_floats.o
+-rw-r--r-- 1 cxim1 cxim1 2000 Jun  4 20:57 work_with_form_x.o
+-rw-r--r-- 1 cxim1 cxim1 3960 Jun  4 20:57 work_with_format_char_str.o
+-rw-r--r-- 1 cxim1 cxim1 3792 Jun  4 20:57 work_with_int.o
+-rw-r--r-- 1 cxim1 cxim1 2200 Jun  4 20:57 work_with_o.o
+-rw-r--r-- 1 cxim1 cxim1 1888 Jun  4 20:57 work_with_p.o
+-rw-r--r-- 1 cxim1 cxim1 2048 Jun  4 20:57 work_with_u.o
+-rw-r--r-- 1 cxim1 cxim1 2272 Jun  4 20:57 work_with_uxo_part_one.o
+-rw-r--r-- 1 cxim1 cxim1 3184 Jun  4 20:57 work_with_uxo_part_two.o
+-rw-r--r-- 1 cxim1 cxim1 2056 Jun  4 20:57 work_with_x_big.o
+
+./ft_printf/srcs:
+total 120
+-rwxr-xr-x 1 cxim1 cxim1 1717 Jun  3 11:31 base_n_p.c
+-rwxr-xr-x 1 cxim1 cxim1 3907 Jun  3 11:31 bonus_color.c
+-rwxr-xr-x 1 cxim1 cxim1 2071 Jun  3 11:31 bonus_fd.c
+-rwxr-xr-x 1 cxim1 cxim1 1720 Jun  3 11:31 bonus_smile.c
+-rwxr-xr-x 1 cxim1 cxim1 1728 Jun  3 11:31 color_option.c
+-rwxr-xr-x 1 cxim1 cxim1 2332 Jun  3 11:31 format_checker.c
+-rwxr-xr-x 1 cxim1 cxim1 1279 Jun  3 11:31 format_checker_one.c
+-rwxr-xr-x 1 cxim1 cxim1 2500 Jun  3 11:31 ft_printf.c
+-rwxr-xr-x 1 cxim1 cxim1 3188 Jun  3 11:31 ft_printf_one.c
+-rwxr-xr-x 1 cxim1 cxim1 1870 Jun  3 11:31 print_some_wight_aruc.c
+-rwxr-xr-x 1 cxim1 cxim1 2381 Jun  3 11:31 work_i_one.c
+-rwxr-xr-x 1 cxim1 cxim1 3592 Jun  3 11:31 work_i_two.c
+-rwxr-xr-x 1 cxim1 cxim1 2895 Jun  3 11:31 work_uxo_po_one.c
+-rwxr-xr-x 1 cxim1 cxim1 3069 Jun  3 11:31 work_uxo_po_two.c
+-rwxr-xr-x 1 cxim1 cxim1 2693 Jun  3 11:31 work_uxo_pt_one.c
+-rwxr-xr-x 1 cxim1 cxim1 1518 Jun  3 11:31 work_with_errors.c
+-rwxr-xr-x 1 cxim1 cxim1 2234 Jun  3 11:31 work_with_f_one.c
+-rwxr-xr-x 1 cxim1 cxim1 2724 Jun  3 11:31 work_with_f_three.c
+-rwxr-xr-x 1 cxim1 cxim1 3112 Jun  3 11:31 work_with_f_two.c
+-rwxr-xr-x 1 cxim1 cxim1 1934 Jun  3 11:31 work_with_flags.c
+-rwxr-xr-x 1 cxim1 cxim1 2260 Jun  3 11:31 work_with_floats.c
+-rwxr-xr-x 1 cxim1 cxim1 1432 Jun  3 11:31 work_with_form_x.c
+-rwxr-xr-x 1 cxim1 cxim1 3057 Jun  3 11:31 work_with_format_char_str.c
+-rwxr-xr-x 1 cxim1 cxim1 2654 Jun  3 11:31 work_with_int.c
+-rwxr-xr-x 1 cxim1 cxim1 1592 Jun  3 11:31 work_with_o.c
+-rwxr-xr-x 1 cxim1 cxim1 1280 Jun  3 11:31 work_with_p.c
+-rwxr-xr-x 1 cxim1 cxim1 1507 Jun  3 11:31 work_with_u.c
+-rwxr-xr-x 1 cxim1 cxim1 1605 Jun  3 11:31 work_with_uxo_part_one.c
+-rwxr-xr-x 1 cxim1 cxim1 2393 Jun  3 11:31 work_with_uxo_part_two.c
+-rwxr-xr-x 1 cxim1 cxim1 1511 Jun  3 11:31 work_with_x_big.c
+
+./get_next_line:
+total 184
+drwxr-xr-x 5 cxim1 cxim1   4096 Jun  8 22:34 42TESTERS-GNL
+-rw-r--r-- 1 cxim1 cxim1    209 Jun  8 22:07 CMakeLists.txt
+-rwxr-xr-x 1 cxim1 cxim1  17512 Jun  8 22:00 a.out
+drwxr-xr-x 3 cxim1 cxim1   4096 Jun  8 22:07 cmake-build-debug
+-rw-r--r-- 1 cxim1 cxim1      0 Jun  8 21:46 file
+drwxr-xr-x 2 cxim1 cxim1   4096 Jun  8 05:03 files
+-rw-r--r-- 1 cxim1 cxim1   1804 Jun  8 22:24 get_next_line.c
+-rw-r--r-- 1 cxim1 cxim1    283 Jun  8 07:56 get_next_line.h
+-rw-r--r-- 1 cxim1 cxim1   1086 Jun  8 04:13 get_next_line_utils.c
+-rw-r--r-- 1 cxim1 cxim1   6629 Jun  8 04:27 gnl_tester.c
+drwxr-xr-x 2 cxim1 cxim1   4096 Jun  8 21:57 libft
+-rw-r--r-- 1 cxim1 cxim1 121070 Jun  4 20:57 libft.a
+-rw-r--r-- 1 cxim1 cxim1    296 Jun  8 22:00 main.c
+
+./get_next_line/42TESTERS-GNL:
+total 116
+-rw-r--r-- 1 cxim1 cxim1   342 Jun  8 04:14 README.md
+-rwxr-xr-x 1 cxim1 cxim1 17360 Jun  8 22:34 a.out
+-rwxr-xr-x 1 cxim1 cxim1  3196 Jun  8 04:14 all_tests.sh
+-rwxr-xr-x 1 cxim1 cxim1  5555 Jun  8 04:14 all_tests_with_bonus.sh
+-rwxr-xr-x 1 cxim1 cxim1   153 Jun  8 04:14 bonusrun1.sh
+-rwxr-xr-x 1 cxim1 cxim1   154 Jun  8 04:14 bonusrun2.sh
+-rwxr-xr-x 1 cxim1 cxim1   153 Jun  8 04:14 bonusrun3.sh
+-rwxr-xr-x 1 cxim1 cxim1   154 Jun  8 04:14 bonusrun42.sh
+-rwxr-xr-x 1 cxim1 cxim1   157 Jun  8 04:14 bonusrun9999.sh
+-rwxr-xr-x 1 cxim1 cxim1   158 Jun  8 04:14 bonusrunDEV_RANDOM.sh
+-rwxr-xr-x 1 cxim1 cxim1   162 Jun  8 04:14 bonusrunHUGE.sh
+-rwxr-xr-x 1 cxim1 cxim1   631 Jun  8 04:14 bonusrunSTDIN+LEAKS.sh
+-rw-r--r-- 1 cxim1 cxim1   399 Jun  8 22:34 diff.txt
+drwxr-xr-x 2 cxim1 cxim1  4096 Jun  8 07:55 files
+drwxr-xr-x 2 cxim1 cxim1  4096 Jun  8 22:34 results
+-rwxr-xr-x 1 cxim1 cxim1   135 Jun  8 04:14 run1.sh
+-rwxr-xr-x 1 cxim1 cxim1   135 Jun  8 04:14 run2.sh
+-rwxr-xr-x 1 cxim1 cxim1   135 Jun  8 04:14 run3.sh
+-rwxr-xr-x 1 cxim1 cxim1   136 Jun  8 04:14 run42.sh
+-rwxr-xr-x 1 cxim1 cxim1   138 Jun  8 04:14 run9999.sh
+-rwxr-xr-x 1 cxim1 cxim1   146 Jun  8 04:14 runDEV_RANDOM.sh
+-rwxr-xr-x 1 cxim1 cxim1   143 Jun  8 04:14 runHUGE.sh
+-rwxr-xr-x 1 cxim1 cxim1   630 Jun  8 04:14 runSTDIN+LEAKS.sh
+drwxr-xr-x 2 cxim1 cxim1  4096 Jun  8 07:55 srcs
+
+./get_next_line/42TESTERS-GNL/files:
+total 348
+-rw-r--r-- 1 cxim1 cxim1      1 Jun  8 04:14 1_newline
+-rw-r--r-- 1 cxim1 cxim1     41 Jun  8 04:14 41_char
+-rw-r--r-- 1 cxim1 cxim1     42 Jun  8 04:14 42_char
+-rw-r--r-- 1 cxim1 cxim1     43 Jun  8 04:14 43_char
+-rw-r--r-- 1 cxim1 cxim1      4 Jun  8 04:14 4_newlines
+-rw-r--r-- 1 cxim1 cxim1   1220 Jun  8 04:14 alphabet
+-rw-r--r-- 1 cxim1 cxim1      0 Jun  8 04:14 empty_file
+-rw-r--r-- 1 cxim1 cxim1    130 Jun  8 04:14 empty_lines
+-rw-r--r-- 1 cxim1 cxim1    238 Jun  8 04:14 half_marge_bottom
+-rw-r--r-- 1 cxim1 cxim1    160 Jun  8 04:14 half_marge_top
+-rw-r--r-- 1 cxim1 cxim1  19535 Jun  8 04:14 huge_alphabet
+-rw-r--r-- 1 cxim1 cxim1 189539 Jun  8 04:14 huge_file
+-rw-r--r-- 1 cxim1 cxim1  29312 Jun  8 04:14 huge_line
+-rw-r--r-- 1 cxim1 cxim1  30119 Jun  8 04:14 huge_lines
+-rw-r--r-- 1 cxim1 cxim1  30051 Jun  8 04:14 huge_lines2
+-rw-r--r-- 1 cxim1 cxim1    275 Jun  8 04:14 mix_marge1
+-rw-r--r-- 1 cxim1 cxim1    298 Jun  8 04:14 mix_marge2
+
+./get_next_line/42TESTERS-GNL/results:
+total 1952
+-rw-r--r-- 1 cxim1 cxim1    3216 Jun  8 04:14 expected_result.txt
+-rw-r--r-- 1 cxim1 cxim1  242824 Jun  8 04:14 expected_result_huge.txt
+-rw-r--r-- 1 cxim1 cxim1 1477099 Jun  8 04:14 expected_result_hugeb.txt
+-rw-r--r-- 1 cxim1 cxim1    3399 Jun  8 04:14 expected_resultb.txt
+-rw-r--r-- 1 cxim1 cxim1    3216 Jun  8 22:34 result1.txt
+-rw-r--r-- 1 cxim1 cxim1       0 Jun  8 07:59 result1b.txt
+-rw-r--r-- 1 cxim1 cxim1    3216 Jun  8 22:34 result2.txt
+-rw-r--r-- 1 cxim1 cxim1       0 Jun  8 07:59 result2b.txt
+-rw-r--r-- 1 cxim1 cxim1    3216 Jun  8 22:34 result3.txt
+-rw-r--r-- 1 cxim1 cxim1       0 Jun  8 07:59 result3b.txt
+-rw-r--r-- 1 cxim1 cxim1    3216 Jun  8 22:34 result42.txt
+-rw-r--r-- 1 cxim1 cxim1       0 Jun  8 07:59 result42b.txt
+-rw-r--r-- 1 cxim1 cxim1    3216 Jun  8 22:34 result9999.txt
+-rw-r--r-- 1 cxim1 cxim1       0 Jun  8 07:59 result9999b.txt
+-rw-r--r-- 1 cxim1 cxim1  242824 Jun  8 22:34 result_huge.txt
+-rw-r--r-- 1 cxim1 cxim1       0 Jun  8 07:59 result_huge_b.txt
+
+./get_next_line/42TESTERS-GNL/srcs:
+total 32
+-rw-r--r-- 1 cxim1 cxim1 6629 Jun  8 04:14 gnl_tester.c
+-rw-r--r-- 1 cxim1 cxim1 7466 Jun  8 04:14 gnl_tester_bonus.c
+-rw-r--r-- 1 cxim1 cxim1 1281 Jun  8 04:14 gnl_tester_devrandom.c
+-rw-r--r-- 1 cxim1 cxim1 2985 Jun  8 04:14 gnl_tester_huge.c
+-rw-r--r-- 1 cxim1 cxim1 3648 Jun  8 04:14 gnl_tester_huge_bonus.c
+-rw-r--r-- 1 cxim1 cxim1 1188 Jun  8 04:14 gnl_tester_stdin.c
+
+./get_next_line/cmake-build-debug:
+total 72
+-rw-r--r-- 1 cxim1 cxim1 23301 Jun  8 21:44 CMakeCache.txt
+drwxr-xr-x 6 cxim1 cxim1  4096 Jun  8 22:12 CMakeFiles
+-rw-r--r-- 1 cxim1 cxim1  6314 Jun  8 22:07 Makefile
+-rw-r--r-- 1 cxim1 cxim1  1541 Jun  8 21:44 cmake_install.cmake
+-rwxr-xr-x 1 cxim1 cxim1 22552 Jun  8 22:07 get_next_line
+-rw-r--r-- 1 cxim1 cxim1  5614 Jun  8 22:07 get_next_line.cbp
+
+./get_next_line/cmake-build-debug/CMakeFiles:
+total 72
+drwxr-xr-x 3 cxim1 cxim1  4096 Jun  8 21:44 3.16.5
+-rw-r--r-- 1 cxim1 cxim1   666 Jun  8 21:44 CMakeDirectoryInformation.cmake
+-rw-r--r-- 1 cxim1 cxim1 22004 Jun  8 21:44 CMakeOutput.log
+drwxr-xr-x 2 cxim1 cxim1  4096 Jun  8 21:44 CMakeTmp
+-rw-r--r-- 1 cxim1 cxim1  3154 Jun  8 22:07 Makefile.cmake
+-rw-r--r-- 1 cxim1 cxim1  3584 Jun  8 22:07 Makefile2
+drwxr-xr-x 2 cxim1 cxim1  4096 Jun  8 22:12 Progress
+-rw-r--r-- 1 cxim1 cxim1   249 Jun  8 22:07 TargetDirectories.txt
+-rw-r--r-- 1 cxim1 cxim1    39 Jun  8 22:07 clion-environment.txt
+-rw-r--r-- 1 cxim1 cxim1   305 Jun  8 22:07 clion-log.txt
+-rw-r--r-- 1 cxim1 cxim1    85 Jun  8 22:07 cmake.check_cache
+drwxr-xr-x 3 cxim1 cxim1  4096 Jun  8 22:12 get_next_line.dir
+-rw-r--r-- 1 cxim1 cxim1     2 Jun  8 22:07 progress.marks
+
+./get_next_line/cmake-build-debug/CMakeFiles/3.16.5:
+total 32
+-rw-r--r-- 1 cxim1 cxim1  2424 Jun  8 21:44 CMakeCCompiler.cmake
+-rwxr-xr-x 1 cxim1 cxim1 16544 Jun  8 21:44 CMakeDetermineCompilerABI_C.bin
+-rw-r--r-- 1 cxim1 cxim1   402 Jun  8 21:44 CMakeSystem.cmake
+drwxr-xr-x 3 cxim1 cxim1  4096 Jun  8 21:44 CompilerIdC
+
+./get_next_line/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC:
+total 44
+-rw-r--r-- 1 cxim1 cxim1 20271 Jun  8 21:44 CMakeCCompilerId.c
+-rwxr-xr-x 1 cxim1 cxim1 16704 Jun  8 21:44 a.out
+drwxr-xr-x 2 cxim1 cxim1  4096 Jun  8 21:44 tmp
+
+./get_next_line/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/tmp:
+total 0
+
+./get_next_line/cmake-build-debug/CMakeFiles/CMakeTmp:
+total 0
+
+./get_next_line/cmake-build-debug/CMakeFiles/Progress:
+total 8
+-rw-r--r-- 1 cxim1 cxim1 5 Jun  8 22:12 1
+-rw-r--r-- 1 cxim1 cxim1 2 Jun  8 22:12 count.txt
+
+./get_next_line/cmake-build-debug/CMakeFiles/get_next_line.dir:
+total 76
+-rw-r--r-- 1 cxim1 cxim1   372 Jun  8 22:12 C.includecache
+-rw-r--r-- 1 cxim1 cxim1   796 Jun  8 22:07 DependInfo.cmake
+-rw-r--r-- 1 cxim1 cxim1  5900 Jun  8 22:07 build.make
+-rw-r--r-- 1 cxim1 cxim1   328 Jun  8 22:07 cmake_clean.cmake
+-rw-r--r-- 1 cxim1 cxim1   422 Jun  8 22:12 depend.internal
+-rw-r--r-- 1 cxim1 cxim1   388 Jun  8 22:12 depend.make
+-rw-r--r-- 1 cxim1 cxim1   226 Jun  8 22:07 flags.make
+-rw-r--r-- 1 cxim1 cxim1  5616 Jun  8 22:07 get_next_line_utils.c.o
+-rw-r--r-- 1 cxim1 cxim1 15368 Jun  8 21:51 gnl_tester.c.o
+drwxr-xr-x 2 cxim1 cxim1  4096 Jun  8 22:02 libft
+-rw-r--r-- 1 cxim1 cxim1   136 Jun  8 22:07 link.txt
+-rw-r--r-- 1 cxim1 cxim1  6544 Jun  8 22:02 main.c.o
+-rw-r--r-- 1 cxim1 cxim1    64 Jun  8 22:07 progress.make
+
+./get_next_line/cmake-build-debug/CMakeFiles/get_next_line.dir/libft:
+total 392
+-rw-r--r-- 1 cxim1 cxim1 4264 Jun  8 22:02 ft_atoi.c.o
+-rw-r--r-- 1 cxim1 cxim1 3872 Jun  8 22:02 ft_bzero.c.o
+-rw-r--r-- 1 cxim1 cxim1 3728 Jun  8 22:02 ft_char_in_string.c.o
+-rw-r--r-- 1 cxim1 cxim1 3880 Jun  8 22:02 ft_count_if.c.o
+-rw-r--r-- 1 cxim1 cxim1 3776 Jun  8 22:02 ft_cut_space.c.o
+-rw-r--r-- 1 cxim1 cxim1 4224 Jun  8 22:02 ft_get_integer.c.o
+-rw-r--r-- 1 cxim1 cxim1 3656 Jun  8 22:02 ft_isalnum.c.o
+-rw-r--r-- 1 cxim1 cxim1 3624 Jun  8 22:02 ft_isalpha.c.o
+-rw-r--r-- 1 cxim1 cxim1 3608 Jun  8 22:02 ft_isascii.c.o
+-rw-r--r-- 1 cxim1 cxim1 3608 Jun  8 22:02 ft_isdigit.c.o
+-rw-r--r-- 1 cxim1 cxim1 3608 Jun  8 22:02 ft_isprint.c.o
+-rw-r--r-- 1 cxim1 cxim1 3656 Jun  8 22:02 ft_isspace.c.o
+-rw-r--r-- 1 cxim1 cxim1 4624 Jun  8 22:02 ft_itoa.c.o
+-rw-r--r-- 1 cxim1 cxim1 5264 Jun  8 22:02 ft_itoa_long.c.o
+-rw-r--r-- 1 cxim1 cxim1 4096 Jun  8 22:02 ft_lstadd.c.o
+-rw-r--r-- 1 cxim1 cxim1 4424 Jun  8 22:02 ft_lstdel.c.o
+-rw-r--r-- 1 cxim1 cxim1 4360 Jun  8 22:02 ft_lstdelone.c.o
+-rw-r--r-- 1 cxim1 cxim1 4192 Jun  8 22:02 ft_lstiter.c.o
+-rw-r--r-- 1 cxim1 cxim1 4328 Jun  8 22:02 ft_lstmap.c.o
+-rw-r--r-- 1 cxim1 cxim1 4624 Jun  8 22:02 ft_lstnew.c.o
+-rw-r--r-- 1 cxim1 cxim1 4048 Jun  8 22:02 ft_memalloc.c.o
+-rw-r--r-- 1 cxim1 cxim1 4024 Jun  8 22:02 ft_memccpy.c.o
+-rw-r--r-- 1 cxim1 cxim1 3904 Jun  8 22:02 ft_memchr.c.o
+-rw-r--r-- 1 cxim1 cxim1 4032 Jun  8 22:02 ft_memcmp.c.o
+-rw-r--r-- 1 cxim1 cxim1 3912 Jun  8 22:02 ft_memcpy.c.o
+-rw-r--r-- 1 cxim1 cxim1 3800 Jun  8 22:02 ft_memdel.c.o
+-rw-r--r-- 1 cxim1 cxim1 3872 Jun  8 22:02 ft_memfree.c.o
+-rw-r--r-- 1 cxim1 cxim1 4040 Jun  8 22:02 ft_memmove.c.o
+-rw-r--r-- 1 cxim1 cxim1 3832 Jun  8 22:02 ft_memset.c.o
+-rw-r--r-- 1 cxim1 cxim1 3952 Jun  8 22:02 ft_new_integer_list.c.o
+-rw-r--r-- 1 cxim1 cxim1 3784 Jun  8 22:02 ft_numzero.c.o
+-rw-r--r-- 1 cxim1 cxim1 4000 Jun  8 22:02 ft_print_symbol.c.o
+-rw-r--r-- 1 cxim1 cxim1 3744 Jun  8 22:02 ft_putchar.c.o
+-rw-r--r-- 1 cxim1 cxim1 3776 Jun  8 22:02 ft_putchar_fd.c.o
+-rw-r--r-- 1 cxim1 cxim1 3904 Jun  8 22:02 ft_putchar_mod.c.o
+-rw-r--r-- 1 cxim1 cxim1 3824 Jun  8 22:02 ft_putendl.c.o
+-rw-r--r-- 1 cxim1 cxim1 3872 Jun  8 22:02 ft_putendl_fd.c.o
+-rw-r--r-- 1 cxim1 cxim1 4016 Jun  8 22:02 ft_putnbr.c.o
+-rw-r--r-- 1 cxim1 cxim1 4080 Jun  8 22:02 ft_putnbr_fd.c.o
+-rw-r--r-- 1 cxim1 cxim1 3792 Jun  8 22:02 ft_putstr.c.o
+-rw-r--r-- 1 cxim1 cxim1 3848 Jun  8 22:02 ft_putstr_fd.c.o
+-rw-r--r-- 1 cxim1 cxim1 4000 Jun  8 22:02 ft_putstr_mod.c.o
+-rw-r--r-- 1 cxim1 cxim1 5688 Jun  8 22:02 ft_split.c.o
+-rw-r--r-- 1 cxim1 cxim1 3736 Jun  8 22:02 ft_sqrt.c.o
+-rw-r--r-- 1 cxim1 cxim1 4408 Jun  8 22:02 ft_str_is_num.c.o
+-rw-r--r-- 1 cxim1 cxim1 3840 Jun  8 22:02 ft_strcat.c.o
+-rw-r--r-- 1 cxim1 cxim1 3720 Jun  8 22:02 ft_strchr.c.o
+-rw-r--r-- 1 cxim1 cxim1 3592 Jun  8 22:02 ft_strclr.c.o
+-rw-r--r-- 1 cxim1 cxim1 3688 Jun  8 22:02 ft_strcmp.c.o
+-rw-r--r-- 1 cxim1 cxim1 3832 Jun  8 22:02 ft_strcpy.c.o
+-rw-r--r-- 1 cxim1 cxim1 3784 Jun  8 22:02 ft_strdel.c.o
+-rw-r--r-- 1 cxim1 cxim1 4064 Jun  8 22:02 ft_strdup.c.o
+-rw-r--r-- 1 cxim1 cxim1 3688 Jun  8 22:02 ft_strequ.c.o
+-rw-r--r-- 1 cxim1 cxim1 3744 Jun  8 22:02 ft_striter.c.o
+-rw-r--r-- 1 cxim1 cxim1 3744 Jun  8 22:02 ft_striteri.c.o
+-rw-r--r-- 1 cxim1 cxim1 4504 Jun  8 22:02 ft_strjoin.c.o
+-rw-r--r-- 1 cxim1 cxim1 4280 Jun  8 22:02 ft_strlcat.c.o
+-rw-r--r-- 1 cxim1 cxim1 3760 Jun  8 22:02 ft_strlen.c.o
+-rw-r--r-- 1 cxim1 cxim1 3672 Jun  8 22:02 ft_strlen_mod.c.o
+-rw-r--r-- 1 cxim1 cxim1 3888 Jun  8 22:02 ft_strlen_unilsymb.c.o
+-rw-r--r-- 1 cxim1 cxim1 4208 Jun  8 22:02 ft_strmap.c.o
+-rw-r--r-- 1 cxim1 cxim1 4328 Jun  8 22:02 ft_strmapi.c.o
+-rw-r--r-- 1 cxim1 cxim1 4120 Jun  8 22:02 ft_strncat.c.o
+-rw-r--r-- 1 cxim1 cxim1 4016 Jun  8 22:02 ft_strncmp.c.o
+-rw-r--r-- 1 cxim1 cxim1 3912 Jun  8 22:02 ft_strncpy.c.o
+-rw-r--r-- 1 cxim1 cxim1 4072 Jun  8 22:02 ft_strnequ.c.o
+-rw-r--r-- 1 cxim1 cxim1 4048 Jun  8 22:02 ft_strnew.c.o
+-rw-r--r-- 1 cxim1 cxim1 4088 Jun  8 22:02 ft_strnstr.c.o
+-rw-r--r-- 1 cxim1 cxim1 3976 Jun  8 22:02 ft_strrchr.c.o
+-rw-r--r-- 1 cxim1 cxim1 4688 Jun  8 22:02 ft_strsplit.c.o
+-rw-r--r-- 1 cxim1 cxim1 3720 Jun  8 22:02 ft_strsplit_len.c.o
+-rw-r--r-- 1 cxim1 cxim1 3920 Jun  8 22:02 ft_strstr.c.o
+-rw-r--r-- 1 cxim1 cxim1 4184 Jun  8 22:02 ft_strsub.c.o
+-rw-r--r-- 1 cxim1 cxim1 5440 Jun  8 22:02 ft_strtrim.c.o
+-rw-r--r-- 1 cxim1 cxim1 3592 Jun  8 22:02 ft_tolower.c.o
+-rw-r--r-- 1 cxim1 cxim1 3592 Jun  8 22:02 ft_toupper.c.o
+-rw-r--r-- 1 cxim1 cxim1 3880 Jun  8 22:02 ft_word_count.c.o
+-rw-r--r-- 1 cxim1 cxim1 6144 Jun  8 22:02 get_next_line.c.o
+
+./get_next_line/files:
+total 348
+-rw-r--r-- 1 cxim1 cxim1      1 Jun  8 04:14 1_newline
+-rw-r--r-- 1 cxim1 cxim1     41 Jun  8 04:14 41_char
+-rw-r--r-- 1 cxim1 cxim1     42 Jun  8 04:14 42_char
+-rw-r--r-- 1 cxim1 cxim1     43 Jun  8 04:14 43_char
+-rw-r--r-- 1 cxim1 cxim1      4 Jun  8 04:14 4_newlines
+-rw-r--r-- 1 cxim1 cxim1   1220 Jun  8 04:14 alphabet
+-rw-r--r-- 1 cxim1 cxim1      0 Jun  8 04:14 empty_file
+-rw-r--r-- 1 cxim1 cxim1    130 Jun  8 04:14 empty_lines
+-rw-r--r-- 1 cxim1 cxim1    238 Jun  8 04:14 half_marge_bottom
+-rw-r--r-- 1 cxim1 cxim1    160 Jun  8 04:14 half_marge_top
+-rw-r--r-- 1 cxim1 cxim1  19535 Jun  8 04:14 huge_alphabet
+-rw-r--r-- 1 cxim1 cxim1 189539 Jun  8 04:14 huge_file
+-rw-r--r-- 1 cxim1 cxim1  29312 Jun  8 04:14 huge_line
+-rw-r--r-- 1 cxim1 cxim1  30119 Jun  8 04:14 huge_lines
+-rw-r--r-- 1 cxim1 cxim1  30051 Jun  8 04:14 huge_lines2
+-rw-r--r-- 1 cxim1 cxim1    275 Jun  8 04:14 mix_marge1
+-rw-r--r-- 1 cxim1 cxim1    298 Jun  8 04:14 mix_marge2
+
+./get_next_line/libft:
+total 752
+-rwxr-xr-x 1 cxim1 cxim1   2289 Jun  3 11:31 Makefile
+-rwxr-xr-x 1 cxim1 cxim1   1395 Jun  3 11:31 ft_atoi.c
+-rw-r--r-- 1 cxim1 cxim1   1552 Jun  4 20:57 ft_atoi.o
+-rwxr-xr-x 1 cxim1 cxim1    970 Jun  3 11:31 ft_bzero.c
+-rw-r--r-- 1 cxim1 cxim1   1424 Jun  4 20:57 ft_bzero.o
+-rwxr-xr-x 1 cxim1 cxim1   1051 Jun  3 11:31 ft_char_in_string.c
+-rw-r--r-- 1 cxim1 cxim1   1304 Jun  4 20:57 ft_char_in_string.o
+-rwxr-xr-x 1 cxim1 cxim1   1124 Jun  3 11:31 ft_count_if.c
+-rw-r--r-- 1 cxim1 cxim1   1344 Jun  4 20:57 ft_count_if.o
+-rwxr-xr-x 1 cxim1 cxim1   1109 Jun  3 11:31 ft_cut_space.c
+-rw-r--r-- 1 cxim1 cxim1   1280 Jun  4 20:57 ft_cut_space.o
+-rwxr-xr-x 1 cxim1 cxim1   1292 Jun  3 11:31 ft_get_integer.c
+-rw-r--r-- 1 cxim1 cxim1   1608 Jun  4 20:57 ft_get_integer.o
+-rwxr-xr-x 1 cxim1 cxim1   1026 Jun  3 11:31 ft_isalnum.c
+-rw-r--r-- 1 cxim1 cxim1   1272 Jun  4 20:57 ft_isalnum.o
+-rwxr-xr-x 1 cxim1 cxim1   1021 Jun  3 11:31 ft_isalpha.c
+-rw-r--r-- 1 cxim1 cxim1   1264 Jun  4 20:57 ft_isalpha.o
+-rwxr-xr-x 1 cxim1 cxim1    968 Jun  3 11:31 ft_isascii.c
+-rw-r--r-- 1 cxim1 cxim1   1248 Jun  4 20:57 ft_isascii.o
+-rwxr-xr-x 1 cxim1 cxim1    971 Jun  3 11:31 ft_isdigit.c
+-rw-r--r-- 1 cxim1 cxim1   1248 Jun  4 20:57 ft_isdigit.o
+-rwxr-xr-x 1 cxim1 cxim1    969 Jun  3 11:31 ft_isprint.c
+-rw-r--r-- 1 cxim1 cxim1   1248 Jun  4 20:57 ft_isprint.o
+-rwxr-xr-x 1 cxim1 cxim1   1062 Jun  3 11:31 ft_isspace.c
+-rw-r--r-- 1 cxim1 cxim1   1280 Jun  4 20:57 ft_isspace.o
+-rwxr-xr-x 1 cxim1 cxim1   1366 Jun  3 11:31 ft_itoa.c
+-rw-r--r-- 1 cxim1 cxim1   1800 Jun  4 20:57 ft_itoa.o
+-rwxr-xr-x 1 cxim1 cxim1   1670 Jun  3 11:31 ft_itoa_long.c
+-rw-r--r-- 1 cxim1 cxim1   2096 Jun  4 20:57 ft_itoa_long.o
+-rwxr-xr-x 1 cxim1 cxim1   1054 Jun  3 11:31 ft_lstadd.c
+-rw-r--r-- 1 cxim1 cxim1   1280 Jun  4 20:57 ft_lstadd.o
+-rwxr-xr-x 1 cxim1 cxim1   1117 Jun  3 11:31 ft_lstdel.c
+-rw-r--r-- 1 cxim1 cxim1   1496 Jun  4 20:57 ft_lstdel.o
+-rwxr-xr-x 1 cxim1 cxim1   1080 Jun  3 11:31 ft_lstdelone.c
+-rw-r--r-- 1 cxim1 cxim1   1480 Jun  4 20:57 ft_lstdelone.o
+-rwxr-xr-x 1 cxim1 cxim1   1053 Jun  3 11:31 ft_lstiter.c
+-rw-r--r-- 1 cxim1 cxim1   1392 Jun  4 20:57 ft_lstiter.o
+-rwxr-xr-x 1 cxim1 cxim1   1289 Jun  3 11:31 ft_lstmap.c
+-rw-r--r-- 1 cxim1 cxim1   1376 Jun  4 20:57 ft_lstmap.o
+-rwxr-xr-x 1 cxim1 cxim1   1390 Jun  3 11:31 ft_lstnew.c
+-rw-r--r-- 1 cxim1 cxim1   1728 Jun  4 20:57 ft_lstnew.o
+-rwxr-xr-x 1 cxim1 cxim1   1101 Jun  3 11:31 ft_memalloc.c
+-rw-r--r-- 1 cxim1 cxim1   1520 Jun  4 20:57 ft_memalloc.o
+-rwxr-xr-x 1 cxim1 cxim1   1229 Jun  3 11:31 ft_memccpy.c
+-rw-r--r-- 1 cxim1 cxim1   1352 Jun  4 20:57 ft_memccpy.o
+-rwxr-xr-x 1 cxim1 cxim1   1179 Jun  3 11:31 ft_memchr.c
+-rw-r--r-- 1 cxim1 cxim1   1312 Jun  4 20:57 ft_memchr.o
+-rwxr-xr-x 1 cxim1 cxim1   1220 Jun  3 11:31 ft_memcmp.c
+-rw-r--r-- 1 cxim1 cxim1   1352 Jun  4 20:57 ft_memcmp.o
+-rwxr-xr-x 1 cxim1 cxim1   1178 Jun  3 11:31 ft_memcpy.c
+-rw-r--r-- 1 cxim1 cxim1   1320 Jun  4 20:57 ft_memcpy.o
+-rwxr-xr-x 1 cxim1 cxim1    991 Jun  3 11:31 ft_memdel.c
+-rw-r--r-- 1 cxim1 cxim1   1448 Jun  4 20:57 ft_memdel.o
+-rwxr-xr-x 1 cxim1 cxim1   1063 Jun  3 11:31 ft_memfree.c
+-rw-r--r-- 1 cxim1 cxim1   1504 Jun  4 20:57 ft_memfree.o
+-rwxr-xr-x 1 cxim1 cxim1   1204 Jun  3 11:31 ft_memmove.c
+-rw-r--r-- 1 cxim1 cxim1   1416 Jun  4 20:57 ft_memmove.o
+-rwxr-xr-x 1 cxim1 cxim1   1065 Jun  3 11:31 ft_memset.c
+-rw-r--r-- 1 cxim1 cxim1   1280 Jun  4 20:57 ft_memset.o
+-rwxr-xr-x 1 cxim1 cxim1   1104 Jun  3 11:31 ft_new_integer_list.c
+-rw-r--r-- 1 cxim1 cxim1   1520 Jun  4 20:57 ft_new_integer_list.o
+-rwxr-xr-x 1 cxim1 cxim1   1049 Jun  3 11:31 ft_numzero.c
+-rw-r--r-- 1 cxim1 cxim1   1312 Jun  4 20:57 ft_numzero.o
+-rwxr-xr-x 1 cxim1 cxim1   1102 Jun  3 11:31 ft_print_symbol.c
+-rw-r--r-- 1 cxim1 cxim1   1544 Jun  4 20:57 ft_print_symbol.o
+-rwxr-xr-x 1 cxim1 cxim1    978 Jun  3 11:31 ft_putchar.c
+-rw-r--r-- 1 cxim1 cxim1   1424 Jun  4 20:57 ft_putchar.o
+-rwxr-xr-x 1 cxim1 cxim1    970 Jun  3 11:31 ft_putchar_fd.c
+-rw-r--r-- 1 cxim1 cxim1   1432 Jun  4 20:57 ft_putchar_fd.o
+-rwxr-xr-x 1 cxim1 cxim1   1045 Jun  3 11:31 ft_putchar_mod.c
+-rw-r--r-- 1 cxim1 cxim1   1504 Jun  4 20:57 ft_putchar_mod.o
+-rwxr-xr-x 1 cxim1 cxim1    981 Jun  3 11:31 ft_putendl.c
+-rw-r--r-- 1 cxim1 cxim1   1488 Jun  4 20:57 ft_putendl.o
+-rwxr-xr-x 1 cxim1 cxim1   1006 Jun  3 11:31 ft_putendl_fd.c
+-rw-r--r-- 1 cxim1 cxim1   1504 Jun  4 20:57 ft_putendl_fd.o
+-rwxr-xr-x 1 cxim1 cxim1   1100 Jun  3 11:31 ft_putnbr.c
+-rw-r--r-- 1 cxim1 cxim1   1632 Jun  4 20:57 ft_putnbr.o
+-rwxr-xr-x 1 cxim1 cxim1   1139 Jun  3 11:31 ft_putnbr_fd.c
+-rw-r--r-- 1 cxim1 cxim1   1672 Jun  4 20:57 ft_putnbr_fd.o
+-rwxr-xr-x 1 cxim1 cxim1   1008 Jun  3 11:31 ft_putstr.c
+-rw-r--r-- 1 cxim1 cxim1   1440 Jun  4 20:57 ft_putstr.o
+-rwxr-xr-x 1 cxim1 cxim1   1041 Jun  3 11:31 ft_putstr_fd.c
+-rw-r--r-- 1 cxim1 cxim1   1472 Jun  4 20:57 ft_putstr_fd.o
+-rwxr-xr-x 1 cxim1 cxim1   1130 Jun  3 11:31 ft_putstr_mod.c
+-rw-r--r-- 1 cxim1 cxim1   1568 Jun  4 20:57 ft_putstr_mod.o
+-rwxr-xr-x 1 cxim1 cxim1   1965 Jun  3 11:31 ft_split.c
+-rw-r--r-- 1 cxim1 cxim1   2464 Jun  4 20:57 ft_split.o
+-rwxr-xr-x 1 cxim1 cxim1   1199 Jun  3 11:31 ft_sqrt.c
+-rwxr-xr-x 1 cxim1 cxim1   1208 Jun  3 11:31 ft_str_is_num.c
+-rw-r--r-- 1 cxim1 cxim1   1920 Jun  4 20:57 ft_str_is_num.o
+-rwxr-xr-x 1 cxim1 cxim1   1125 Jun  3 11:31 ft_strcat.c
+-rw-r--r-- 1 cxim1 cxim1   1344 Jun  4 20:57 ft_strcat.o
+-rwxr-xr-x 1 cxim1 cxim1   1078 Jun  3 11:31 ft_strchr.c
+-rw-r--r-- 1 cxim1 cxim1   1288 Jun  4 20:57 ft_strchr.o
+-rwxr-xr-x 1 cxim1 cxim1    997 Jun  3 11:31 ft_strclr.c
+-rw-r--r-- 1 cxim1 cxim1   1256 Jun  4 20:57 ft_strclr.o
+-rwxr-xr-x 1 cxim1 cxim1   1067 Jun  3 11:31 ft_strcmp.c
+-rw-r--r-- 1 cxim1 cxim1   1288 Jun  4 20:57 ft_strcmp.o
+-rwxr-xr-x 1 cxim1 cxim1   1136 Jun  3 11:31 ft_strcpy.c
+-rw-r--r-- 1 cxim1 cxim1   1312 Jun  4 20:57 ft_strcpy.o
+-rwxr-xr-x 1 cxim1 cxim1    991 Jun  3 11:31 ft_strdel.c
+-rw-r--r-- 1 cxim1 cxim1   1448 Jun  4 20:57 ft_strdel.o
+-rwxr-xr-x 1 cxim1 cxim1   1182 Jun  3 11:31 ft_strdup.c
+-rw-r--r-- 1 cxim1 cxim1   1632 Jun  4 20:57 ft_strdup.o
+-rwxr-xr-x 1 cxim1 cxim1   1080 Jun  3 11:31 ft_strequ.c
+-rw-r--r-- 1 cxim1 cxim1   1288 Jun  4 20:57 ft_strequ.o
+-rwxr-xr-x 1 cxim1 cxim1   1049 Jun  3 11:31 ft_striter.c
+-rw-r--r-- 1 cxim1 cxim1   1304 Jun  4 20:57 ft_striter.o
+-rwxr-xr-x 1 cxim1 cxim1   1061 Jun  3 11:31 ft_striteri.c
+-rw-r--r-- 1 cxim1 cxim1   1296 Jun  4 20:57 ft_striteri.o
+-rwxr-xr-x 1 cxim1 cxim1   1356 Jun  3 11:31 ft_strjoin.c
+-rw-r--r-- 1 cxim1 cxim1   1840 Jun  4 20:57 ft_strjoin.o
+-rwxr-xr-x 1 cxim1 cxim1   1213 Jun  3 11:31 ft_strlcat.c
+-rw-r--r-- 1 cxim1 cxim1   1608 Jun  4 20:57 ft_strlcat.o
+-rwxr-xr-x 1 cxim1 cxim1   1013 Jun  3 11:31 ft_strlen.c
+-rw-r--r-- 1 cxim1 cxim1   1256 Jun  4 20:57 ft_strlen.o
+-rwxr-xr-x 1 cxim1 cxim1   1019 Jun  3 11:31 ft_strlen_mod.c
+-rw-r--r-- 1 cxim1 cxim1   1256 Jun  4 20:57 ft_strlen_mod.o
+-rwxr-xr-x 1 cxim1 cxim1   1081 Jun  3 11:31 ft_strlen_unilsymb.c
+-rw-r--r-- 1 cxim1 cxim1   1312 Jun  4 20:57 ft_strlen_unilsymb.o
+-rwxr-xr-x 1 cxim1 cxim1   1244 Jun  3 11:31 ft_strmap.c
+-rw-r--r-- 1 cxim1 cxim1   1696 Jun  4 20:57 ft_strmap.o
+-rwxr-xr-x 1 cxim1 cxim1   1264 Jun  3 11:31 ft_strmapi.c
+-rw-r--r-- 1 cxim1 cxim1   1696 Jun  4 20:57 ft_strmapi.o
+-rwxr-xr-x 1 cxim1 cxim1   1211 Jun  3 11:31 ft_strncat.c
+-rw-r--r-- 1 cxim1 cxim1   1376 Jun  4 20:57 ft_strncat.o
+-rwxr-xr-x 1 cxim1 cxim1   1236 Jun  3 11:31 ft_strncmp.c
+-rw-r--r-- 1 cxim1 cxim1   1400 Jun  4 20:57 ft_strncmp.o
+-rwxr-xr-x 1 cxim1 cxim1   1116 Jun  3 11:31 ft_strncpy.c
+-rw-r--r-- 1 cxim1 cxim1   1344 Jun  4 20:57 ft_strncpy.o
+-rwxr-xr-x 1 cxim1 cxim1   1159 Jun  3 11:31 ft_strnequ.c
+-rw-r--r-- 1 cxim1 cxim1   1496 Jun  4 20:57 ft_strnequ.o
+-rwxr-xr-x 1 cxim1 cxim1   1116 Jun  3 11:31 ft_strnew.c
+-rw-r--r-- 1 cxim1 cxim1   1536 Jun  4 20:57 ft_strnew.o
+-rwxr-xr-x 1 cxim1 cxim1   1241 Jun  3 11:31 ft_strnstr.c
+-rw-r--r-- 1 cxim1 cxim1   1400 Jun  4 20:57 ft_strnstr.o
+-rwxr-xr-x 1 cxim1 cxim1   1157 Jun  3 11:31 ft_strrchr.c
+-rw-r--r-- 1 cxim1 cxim1   1528 Jun  4 20:57 ft_strrchr.o
+-rwxr-xr-x 1 cxim1 cxim1   1439 Jun  6 04:32 ft_strsplit.c
+-rw-r--r-- 1 cxim1 cxim1   2040 Jun  4 20:57 ft_strsplit.o
+-rwxr-xr-x 1 cxim1 cxim1   1089 Jun  3 11:31 ft_strsplit_len.c
+-rw-r--r-- 1 cxim1 cxim1   1304 Jun  4 20:57 ft_strsplit_len.o
+-rwxr-xr-x 1 cxim1 cxim1   1019 Jun  3 11:31 ft_strstr.c
+-rw-r--r-- 1 cxim1 cxim1   1504 Jun  4 20:57 ft_strstr.o
+-rwxr-xr-x 1 cxim1 cxim1   1217 Jun  3 11:31 ft_strsub.c
+-rw-r--r-- 1 cxim1 cxim1   1576 Jun  4 20:57 ft_strsub.o
+-rwxr-xr-x 1 cxim1 cxim1   1647 Jun  3 11:31 ft_strtrim.c
+-rw-r--r-- 1 cxim1 cxim1   2376 Jun  4 20:57 ft_strtrim.o
+-rwxr-xr-x 1 cxim1 cxim1    989 Jun  3 11:31 ft_tolower.c
+-rw-r--r-- 1 cxim1 cxim1   1248 Jun  4 20:57 ft_tolower.o
+-rwxr-xr-x 1 cxim1 cxim1    989 Jun  3 11:31 ft_toupper.c
+-rw-r--r-- 1 cxim1 cxim1   1248 Jun  4 20:57 ft_toupper.o
+-rwxr-xr-x 1 cxim1 cxim1   1192 Jun  3 11:31 ft_word_count.c
+-rw-r--r-- 1 cxim1 cxim1   1352 Jun  4 20:57 ft_word_count.o
+-rwxr-xr-x 1 cxim1 cxim1   1816 Jun  3 11:31 get_next_line.c
+-rw-r--r-- 1 cxim1 cxim1   3008 Jun  4 20:57 get_next_line.o
+-rw-r--r-- 1 cxim1 cxim1 121070 Jun  4 20:57 libft.a
+-rwxr-xr-x 1 cxim1 cxim1   4605 Jun  3 11:31 libft.h
+
+./test:
+total 344
+-rw-r--r-- 1 cxim1 cxim1    212 Jun 12 15:24 a
+-rw-r--r-- 1 cxim1 cxim1   1257 Jun 12 15:24 a1
+-rw-r--r-- 1 cxim1 cxim1   1453 Jun 12 15:24 a2
+-rw-r--r-- 1 cxim1 cxim1   1453 Jun 12 15:24 a3
+-rw-r--r-- 1 cxim1 cxim1   1453 Jun 12 15:24 a4
+-rw-r--r-- 1 cxim1 cxim1   1453 Jun 12 15:24 a5
+-rw-r--r-- 1 cxim1 cxim1     45 Jun 12 15:24 a6
+-rw-r--r-- 1 cxim1 cxim1  17555 Jun 12 15:24 a7
+-rw-r--r-- 1 cxim1 cxim1  14801 Jun 12 15:24 a8
+-rw-r--r-- 1 cxim1 cxim1 109045 Jun 12 15:24 a9
+-rw-r--r-- 1 cxim1 cxim1    212 Jun 12 15:24 b
+-rw-r--r-- 1 cxim1 cxim1   1257 Jun 12 15:24 b1
+-rw-r--r-- 1 cxim1 cxim1   1453 Jun 12 15:24 b2
+-rw-r--r-- 1 cxim1 cxim1   1453 Jun 12 15:24 b3
+-rw-r--r-- 1 cxim1 cxim1   1453 Jun 12 15:24 b4
+-rw-r--r-- 1 cxim1 cxim1   1453 Jun 12 15:24 b5
+-rw-r--r-- 1 cxim1 cxim1     45 Jun 12 15:24 b6
+-rw-r--r-- 1 cxim1 cxim1  17555 Jun 12 15:24 b7
+-rw-r--r-- 1 cxim1 cxim1  14801 Jun 12 15:24 b8
+-rw-r--r-- 1 cxim1 cxim1 103372 Jun 12 15:24 b9
+drwxr-xr-x 2 cxim1 cxim1   4096 Jun  9 05:57 test
+
+./test/test:
+total 4
+-rw-r--r-- 1 cxim1 cxim1 212 Jun  9 05:46 a
+
+./test2:
+total 4
+drwxr-xr-x 2 cxim1 cxim1 4096 Jun 11 11:06 dir
+-rwx------ 1 cxim1 cxim1    0 Jun  8 00:17 exe
+----rwx--- 1 cxim1 cxim1    0 Jun  8 00:17 exe1
+-------rwx 1 cxim1 cxim1    0 Jun  8 00:17 exe2
+prw-r--r-- 1 cxim1 cxim1    0 Jun  8 00:17 fifo
+-rw-r--r-- 1 cxim1 cxim1    0 Jun  8 00:17 file
+lrwxrwxrwx 1 cxim1 cxim1    4 Jun  8 00:17 link -> file
+-rw-r--r-- 1 cxim1 cxim1    0 Jun 11 10:41 link1
+lrwxrwxrwx 1 cxim1 cxim1    3 Jun  8 00:17 link2 -> dir
+lrwxrwxrwx 1 cxim1 cxim1    8 Jun  8 00:17 link3 -> testfifo
+lrwxrwxrwx 1 cxim1 cxim1    4 Jun  8 00:32 link4 -> fifo
+-rw-r--r-- 1 cxim1 cxim1    0 Jun 11 11:05 link5
+lrwxrwxrwx 1 cxim1 cxim1    7 Jun 11 11:08 link6 -> dir/exe
+
+./test2/dir:
+total 0
+lrwxrwxrwx 1 cxim1 cxim1 5 Jun 11 11:06 exe -> link5
+lrwxrwxrwx 1 cxim1 cxim1 5 Jun 11 10:59 link -> link1
+lrwxrwxrwx 1 cxim1 cxim1 5 Jun 11 10:42 link1 -> link1

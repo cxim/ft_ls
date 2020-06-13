@@ -83,13 +83,15 @@ void	get_prem_for_f(char *str, struct stat fstat, t_dir *tmp)
 char	*path_link(char *str1, char *str2)
 {
 	char	*tmp;
-	char	*res;
-
-	res = str1;
+//	char	*res;
+//
+//	res = str1;
 	str1 = ft_strjoin(str1, "/");
 	tmp = sek_j(str1, str2);
 	free(str1);
-	return (tmp);
+	str1 = ft_strdup(tmp);
+	free(tmp);
+	return (str1);
 }
 
 void	get_time(struct stat fstat, t_dir *tmp, t_inc *inc, int flag)
@@ -134,30 +136,18 @@ void	get_time(struct stat fstat, t_dir *tmp, t_inc *inc, int flag)
 	ft_putstr(tmp->dir);
 	if (S_ISLNK(fstat.st_mode))
 	{
-		i = 1;
+		//i = 1;
 		ft_putstr(" -> ");
 		if (flag == 1)
 			len = readlink(tmp->dir, buf, 64);
 		else
 			len = readlink(tmp->full_path, buf, 64);
 		buf[len] = '\0';
+//		if (inc->f_big == 1)
+//			inc->dump_dir_tmp = ft_strdup(buf);
 		ft_putstr(buf);
 	}
-	if (inc->f_big)
-	{
-		if (i == 1)
-		{
-			str = NULL;
-			str = path_link(inc->dump_dir, buf);
-			free(tmp->full_path);
-			tmp->full_path = ft_strdup(str);
-			print_sign_ff(tmp->full_path, 1);
-			free(str);
-			//free(inc->dump_dir_tmp);
-		}
-		else
-			print_sign_f(tmp->full_path, 1);
-	}
+
 }
 
 void	print_ow_gr(char *name, char *g_name, t_inc *inc)
@@ -277,6 +267,8 @@ void	get_lens(t_dir *dir, t_inc *inc)
 	}
 }
 
+
+
 void	print_l(t_dir *lst, t_inc *inc)
 {
 	t_dir			*tmp;
@@ -285,6 +277,7 @@ void	print_l(t_dir *lst, t_inc *inc)
 	int 			len;
 	int 			i;
 	int				some;
+	char			*str;
 
 	tmp = lst;
 	print_blocks(tmp);
@@ -309,6 +302,31 @@ void	print_l(t_dir *lst, t_inc *inc)
 			ft_putchar(' ');
 		ft_printf("%d%s", fstat.st_size, " ");
 		get_time(fstat, tmp, inc, 0);
+		if (inc->f_big)
+		{
+			if (S_ISLNK(fstat.st_mode))
+			{
+//				printf("1");
+//				str = NULL;
+//				str = path_link(inc->dump_dir, inc->dump_dir_tmp);
+//				str = ft_strjoin(str, tmp->dir);
+//				if (inc->rr == 0)
+//					free(tmp->full_path);
+//				if (str)
+//					tmp->full_path = ft_strdup(str);
+				print_sign_ff(tmp->full_path, 1, inc);
+//				free(str);
+//				free(tmp->full_path);
+				//free(inc->dump_dir_tmp);
+			}
+			else
+			{
+				print_sign_f(tmp->full_path, 1, inc);
+			}
+		}
+		//if (inc->dump_dir_tmp)
+		free(inc->dump_dir_tmp);
+		inc->dump_dir_tmp = ft_strnew(1);
 		tmp = tmp->next;
 		if(tmp != NULL)
 			ft_putchar('\n');
@@ -416,7 +434,7 @@ void	ft_print_ls(t_dir **lst, t_inc *inc, char *path)
 			if (inc->f_big == 1)
 			{
 				lstat(tmp->dir, &inc->sb);
-				print_sign_f(tmp->full_path, 1);
+				print_sign_f(tmp->full_path, 1, inc);
 			}
 			tmp = tmp->next;
 			if (tmp != NULL)
