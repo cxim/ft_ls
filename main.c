@@ -55,6 +55,8 @@ int		add_args(t_inc *inc, char *str)
 			inc->f_big = 1;
 		else if (str[i] == 'p')
 			inc->p = check_p(str);
+		else if (str[i] == 'd')
+			inc->d = 1;
 		else
 		{
 			tmp = ft_strjoin(str, ": Invalid argument\n");
@@ -101,6 +103,7 @@ void	free_lst(t_dir *dir)
 void	free_l(t_inc *inc)
 {
 	t_dir *tmp;
+
 	if (inc->lst)
 	{
 		while (inc->lst != NULL)
@@ -108,7 +111,7 @@ void	free_l(t_inc *inc)
 			tmp = inc->lst;
 
 			inc->lst = inc->lst->next;
-
+			free(tmp->some);
 //			if (tmp->dir)
 			free(tmp->dir);
 //			if (tmp->full_path)
@@ -122,7 +125,7 @@ void	free_l(t_inc *inc)
 //	if (inc->dump_dir_tmp)
 	free(inc->dump_dir_tmp);
 //	if (inc->dirp && inc->rr == 0)
-	closedir(inc->dirp);
+//	closedir(inc->dirp);
 	free(inc);
 	inc = NULL;
 }
@@ -156,11 +159,11 @@ int main(int argc, char **argv)
 	{
 		if (argv[i][0] != '-')
 		{
-			tmp =(t_dir *)ft_memalloc(sizeof(t_dir));
+			tmp = (t_dir *)ft_memalloc(sizeof(t_dir));
 			str_tmp = argv[i];
 			tmp->dir = ft_strdup(str_tmp);
 			tmp->next = inc->lst;
-			inc->dump_dir = ft_strdup(str_tmp);
+			//inc->dump_dir = ft_strdup(str_tmp);
 			inc->lst = tmp;
 		}
 		else if (add_args(inc, argv[i]) == 0)
@@ -179,7 +182,7 @@ int main(int argc, char **argv)
 		ft_putstr("cannot access '");
 		ft_putstr(inc->lst->dir);
 		ft_putendl("': No such file or directory");
-		free(inc->dump_dir_tmp);
+//		free(inc->dump_dir_tmp);
 		free_l(inc);
 		return (-1);
 	}

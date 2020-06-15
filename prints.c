@@ -75,9 +75,10 @@ void	get_prem_for_f(char *str, struct stat fstat, t_dir *tmp)
 {
 	if (S_ISFIFO(fstat.st_mode))
 		ft_putchar('|');
-	else if (tmp->true_dir && !(S_ISFIFO(fstat.st_mode)))
+	else if ((tmp->true_dir && !(S_ISFIFO(fstat.st_mode))) || tmp->d == 1)
 		ft_putchar('/');
-	//else
+//	else if (tmp->d == 1)
+//		ft_putchar('/');
 }
 
 char	*path_link(char *str1, char *str2)

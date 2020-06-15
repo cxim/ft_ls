@@ -4,6 +4,71 @@
 
 #include "ft_ls.h"
 
+
+char	*some_str_two(char *str, t_inc *inc)
+{
+	char	*tmp;
+	char	*res;
+
+	res = str;
+	str = ft_strjoin(str, "/");
+	//free(res);
+	if (inc->dp != NULL)
+		tmp = sek_j(str, inc->dp->d_name);
+	else
+		tmp = sek_j(str, "\0");
+	//tmp = ft_strjoin(str, inc->dp->d_name);
+	free(str);
+	return (tmp);
+}
+void	print_info_two(t_dir *dir, int flag, t_inc *inc)
+{
+	//tmp->dir = ft_strdup(inc->dp->d_name);
+	char *str_tmp;
+	char 	str[100];
+	int 	len;
+	struct stat fstat;
+	t_inc *new;
+
+	new = (t_inc*)ft_memalloc(sizeof(t_inc));
+	lstat(dir->dir, &fstat);
+	str_tmp = some_str(dir->dir, inc);
+	dir->full_path = str_tmp;
+	get_p(dir, fstat);
+	//ft_putchar(' ');
+	ft_putnbr(fstat.st_nlink);
+	ft_putstr(" ");
+	get_user(new, fstat, 1);
+	ft_printf(" %d%s", fstat.st_size, " ");
+	dir->time = fstat.st_mtime;
+	dir->time_u = fstat.st_atime;
+	dir->size_f = fstat.st_size;
+	dir->time_m = fstat.st_mtim.tv_nsec;
+	dir->time_u_m = fstat.st_atim.tv_nsec;
+	get_time(fstat, dir, inc, flag);
+	if (inc->f_big == 1)
+	{
+		if (S_ISLNK(fstat.st_mode))
+		{
+//			len = readlink(inc->dump_dir, str, 100);
+//			str[len] = '\0';
+//			str = path_link(inc->dump_dir, inc->dump_dir_tmp);
+//			free(inc->lst->full_path);
+//			inc->lst->full_path = ft_strdup(str);
+			print_sign_ff(dir->dir, 2, inc);
+			//free(str);
+			free(inc->dump_dir_tmp);
+		}
+		else
+		{
+			get_prem_for_f(dir->dir, fstat, dir);
+			free(inc->dump_dir_tmp);
+		}
+	}
+	ft_putchar('\n');
+	free_l(new);
+}
+
 void	get_p(t_dir *tmp, struct stat fstat)
 {
 	if (S_ISFIFO(fstat.st_mode))
@@ -163,6 +228,7 @@ void	do_operation(char *str, t_inc *inc)
 			sort_lst(&lst, compare_strs, 0);
 		ft_print_ls(&lst, inc, str);
 		free_lst(lst);
+		closedir(inc->dirp);
 		//free(inc->dirp);
 		//free(str_tmp);
 		//free(inc->dirp);
@@ -250,12 +316,13 @@ void	print_sign_f(char *path, int flag, t_inc *inc)
 		ft_putchar('@');
 	else if (get_exec(sb) && !S_ISDIR(sb.st_mode) && inc->p != 2)
 		ft_putchar('*');
-	else if (S_ISDIR(sb.st_mode) != 0 && flag == 1)
+	else if (S_ISDIR(sb.st_mode) != 0 && (flag == 1 || inc->d == 1))
 		ft_putchar('/');
 }
 
 void	ft_ls(t_inc *inc, char *str_tmp, int flag) {
 	t_dir *tmp;
+	t_inc *inc_tmp;
 	//struct stat		fstat;
 	//if ((inc->dirp = opendir(str)) != NULL)
 	int 			i;
@@ -266,24 +333,59 @@ void	ft_ls(t_inc *inc, char *str_tmp, int flag) {
 //	if (inc->sb.st_mtim.tv_nsec != 0) //st_mtim.tv_sec?
 //	{
 //		if ( (S_ISDIR(inc->sb.st_mode) == 0)) //(inc->dirp = opendir(tmp->dir)) != NULL &&
-	if (flag == 0) // flag == 1 dir path
+	if (inc->d == 1 && flag == 1)
+	{
+		sort_lst(&inc->lst, compare_strs, 0);
+		tmp = inc->lst;
+		while (tmp != NULL)
 		{
+//			ft_printf("%s", tmp->dir);
+//			if (inc->f_big == 1)
+//				print_sign_f(str_tmp, 0, inc);
+//			ft_putchar('\n');
 			if (inc->l == 1)
-				print_info(inc, 1);
+			{
+				if (inc->f_big == 1)
+					tmp->d = 1;
+//				inc->lst = tmp;
+//				inc_tmp = inc;
+				print_info_two(tmp, 1, inc);
+				//free_lst(inc->lst);
+			}
 			else if (inc->l == 0)
 			{
-				ft_putstr(str_tmp);
+				ft_printf("%s", tmp->dir);
 				if (inc->f_big == 1)
 					print_sign_f(str_tmp, 0, inc);
 				ft_putchar('\n');
 			}
+			tmp = tmp->next;
 		}
-
+	}
+	else if (flag == 0) // flag == 1 dir path
+	{
+		sort_lst(&inc->lst, compare_strs, 0);
+		tmp = inc->lst;
+		while (tmp != NULL)
+		{
+			if (inc->l == 1)
+				print_info_two(tmp, 1, inc);
+			else if (inc->l == 0)
+			{
+				ft_putstr(tmp->dir);
+				if (inc->f_big == 1)
+					print_sign_f(tmp->dir, 0, inc);
+				ft_putchar('\n');
+			}
+			tmp = tmp->next;
+		}
+	}
 	else if (flag == 1)
 	{
 		while (tmp != NULL)
 		{
-			do_operation(tmp->dir, inc);
+			inc_tmp = inc;
+			do_operation(tmp->dir, inc_tmp);
 			tmp = tmp->next;
 		}
 	}

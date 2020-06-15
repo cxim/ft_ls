@@ -22,6 +22,7 @@ typedef struct		s_dir
 	char 			*full_path;
 	char 			*some;
 	int 			size_f;
+	int 			d;
 	time_t 			time;
 	time_t			time_u;
 	time_t			time_c;
@@ -46,6 +47,7 @@ typedef struct		s_inc
 	int				u;
 	int				c;
 	int				one;
+	int				d;
 	int				u_big;
 	int 			f_big;
 	int				s_big;
@@ -76,5 +78,5 @@ char 	*sek_j(char *s1, char *s2);
 void	print_sign_ff(char *path, int flag, t_inc *inc);
 int 	dir_file(t_inc *inc, char *name);
 char	*path_link(char *str1, char *str2);
-
+void	get_p(t_dir *tmp, struct stat fstat);
 #endif //FT_LS_FT_LS_H
