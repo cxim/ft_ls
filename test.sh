@@ -14,8 +14,8 @@ ls  -latuS > test/b5
 ls  zzzz -1lu > test/b6
 ./ft_ls -1ltc /usr/share > test/a7
 ls -1ltc /usr/share > test/b7
-./ft_ls -lRa ft_printf > test/a8
-ls -lRa ft_printf > test/b8
+#./ft_ls -lRa ft_printf > test/a8
+#ls -lRa ft_printf > test/b8
 ./ft_ls -lR > test/a9
 ls -lR > test/b9
 diff  test/a test/b
@@ -26,6 +26,6 @@ diff  test/a4 test/b4
 diff  test/a5 test/b5
 diff  test/a6 test/b6
 diff  test/a7 test/b7
-diff  test/a8 test/b8
-diff  test/a9 test/b9
+#diff  test/a8 test/b8
+#diff  test/a9 test/b9
 

@@ -111,7 +111,7 @@ void	free_l(t_inc *inc)
 			tmp = inc->lst;
 
 			inc->lst = inc->lst->next;
-			free(tmp->some);
+			//free(tmp->some);
 //			if (tmp->dir)
 			free(tmp->dir);
 //			if (tmp->full_path)
@@ -125,12 +125,12 @@ void	free_l(t_inc *inc)
 //	if (inc->dump_dir_tmp)
 	free(inc->dump_dir_tmp);
 //	if (inc->dirp && inc->rr == 0)
-//	closedir(inc->dirp);
+	closedir(inc->dirp);
 	free(inc);
 	inc = NULL;
 }
 
-int 	dir_file(t_inc *inc, char *name)
+int 	dir_file(t_inc *inc)
 {
 	lstat(inc->lst->dir, &inc->sb);
 	if (inc->sb.st_mtim.tv_sec != 0)
@@ -160,8 +160,8 @@ int main(int argc, char **argv)
 		if (argv[i][0] != '-')
 		{
 			tmp = (t_dir *)ft_memalloc(sizeof(t_dir));
-			str_tmp = argv[i];
-			tmp->dir = ft_strdup(str_tmp);
+			//str_tmp = argv[i];
+			tmp->dir = ft_strdup(argv[i]);
 			tmp->next = inc->lst;
 			//inc->dump_dir = ft_strdup(str_tmp);
 			inc->lst = tmp;
@@ -172,10 +172,10 @@ int main(int argc, char **argv)
 	}
 	if (inc->lst == NULL)
 		make_lst(inc);
-	i = dir_file(inc, str_tmp);
+	i = dir_file(inc);
 	//ft_printf("%d\n", i);
 	if (i >= 0)
-		ft_ls(inc, str_tmp, i);
+		ft_ls(inc, i);
 	else
 	{
 		ft_putstr("/bin/ls: "); //потом исправить как фт_лс

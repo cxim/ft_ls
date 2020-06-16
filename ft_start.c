@@ -228,7 +228,8 @@ void	do_operation(char *str, t_inc *inc)
 			sort_lst(&lst, compare_strs, 0);
 		ft_print_ls(&lst, inc, str);
 		free_lst(lst);
-		closedir(inc->dirp);
+//		if (inc->rr == 0)
+//			closedir(inc->dirp);
 		//free(inc->dirp);
 		//free(str_tmp);
 		//free(inc->dirp);
@@ -320,7 +321,7 @@ void	print_sign_f(char *path, int flag, t_inc *inc)
 		ft_putchar('/');
 }
 
-void	ft_ls(t_inc *inc, char *str_tmp, int flag) {
+void	ft_ls(t_inc *inc, int flag) {
 	t_dir *tmp;
 	t_inc *inc_tmp;
 	//struct stat		fstat;
@@ -356,7 +357,7 @@ void	ft_ls(t_inc *inc, char *str_tmp, int flag) {
 			{
 				ft_printf("%s", tmp->dir);
 				if (inc->f_big == 1)
-					print_sign_f(str_tmp, 0, inc);
+					print_sign_f(tmp->dir, 0, inc);
 				ft_putchar('\n');
 			}
 			tmp = tmp->next;
@@ -390,7 +391,7 @@ void	ft_ls(t_inc *inc, char *str_tmp, int flag) {
 		}
 	}
 	else
-		ft_check(inc, str_tmp);
+		ft_check(inc, tmp->dir);
 	//free(str);
 
 	//free_lst(tmp);

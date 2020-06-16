@@ -60,7 +60,7 @@ typedef struct		s_inc
 	t_dir			*lst;
 }					t_inc;
 
-void	ft_ls(t_inc *inc, char *str, int flag);
+void	ft_ls(t_inc *inc, int flag);
 void	ft_print_ls(t_dir **lst, t_inc *inc, char *path);
 void	sort_lst(t_dir **lst, int (*cmp)(t_dir, t_dir), int i);
 int		compare_strs(t_dir str1, t_dir str2);
@@ -76,7 +76,7 @@ void	get_prem_for_f(char *str, struct stat fstat, t_dir *tmp);
 void	print_sign_f(char *path, int flag, t_inc *inc);
 char 	*sek_j(char *s1, char *s2);
 void	print_sign_ff(char *path, int flag, t_inc *inc);
-int 	dir_file(t_inc *inc, char *name);
+int 	dir_file(t_inc *inc);
 char	*path_link(char *str1, char *str2);
 void	get_p(t_dir *tmp, struct stat fstat);
 #endif //FT_LS_FT_LS_H

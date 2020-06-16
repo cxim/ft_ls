@@ -13,11 +13,13 @@ ft_start.o
 get_next_line
 main.c
 main.o
+mydir
+mydir2
+nets3
 printf.h
 prints.c
 prints.o
 test
 test.sh
-test2
 zfz
 zzzz
