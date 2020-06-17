@@ -18,6 +18,7 @@
 typedef struct		s_dir
 {
 	char 			*dir;
+	char 			*name_dir;
 	int 			true_dir;
 	char 			*full_path;
 	char 			*some;

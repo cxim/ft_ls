@@ -91,6 +91,7 @@ void	free_lst(t_dir *dir)
 			free(tmp->dir);
 //			if (dir->full_path)
 			free(tmp->full_path);
+			free(tmp->name_dir);
 			//free(dir);
 
 			free(tmp);

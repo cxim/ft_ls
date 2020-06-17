@@ -206,6 +206,8 @@ void	do_operation(char *str, t_inc *inc)
 			{
 				tmp = (t_dir *)ft_memalloc(sizeof(t_dir));
 				tmp->dir = ft_strdup(inc->dp->d_name);
+				if (str)
+					tmp->name_dir = ft_strdup(str);
 				str_tmp = some_str(str, inc);
 				tmp->full_path = str_tmp;
 				lstat(tmp->full_path, &inc->sb);
@@ -329,6 +331,7 @@ void	ft_ls(t_inc *inc, int flag) {
 	int 			i;
 
 	i = 0;
+	sort_lst(&inc->lst, compare_strs, 0);
 	tmp = inc->lst;
 	lstat(tmp->dir, &inc->sb);
 //	if (inc->sb.st_mtim.tv_nsec != 0) //st_mtim.tv_sec?
@@ -383,11 +386,16 @@ void	ft_ls(t_inc *inc, int flag) {
 	}
 	else if (flag == 1)
 	{
+		inc_tmp = inc;
 		while (tmp != NULL)
 		{
-			inc_tmp = inc;
 			do_operation(tmp->dir, inc_tmp);
 			tmp = tmp->next;
+			if (tmp != NULL)
+			{
+				closedir(inc_tmp->dirp);
+				ft_putchar('\n');
+			}
 		}
 	}
 	else
