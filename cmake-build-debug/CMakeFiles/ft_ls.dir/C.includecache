@@ -48,6 +48,10 @@ fcntl.h
 libft/libft.h
 /home/cxim1/unix/ft_ls/ft_printf/includes/libft/libft.h
 
+/home/cxim1/unix/ft_ls/ft_start.c
+ft_ls.h
+/home/cxim1/unix/ft_ls/ft_ls.h
+
 /home/cxim1/unix/ft_ls/main.c
 ft_ls.h
 /home/cxim1/unix/ft_ls/ft_ls.h

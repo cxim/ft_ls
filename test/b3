@@ -1,20 +1,20 @@
-total 344
--rwxr-xr-x  1 root  root  93488 Jun 16 11:52 ft_ls
-drwxr-xr-x 12 cxim1 cxim1  4096 Jun 16 11:52 .
--rw-r--r--  1 root  root   5744 Jun 16 11:52 for_sort.o
--rw-r--r--  1 root  root  24352 Jun 16 11:52 prints.o
--rw-r--r--  1 root  root  21632 Jun 16 11:52 ft_start.o
--rw-r--r--  1 root  root  12472 Jun 16 11:52 main.o
-drwxr-xr-x  2 cxim1 cxim1  4096 Jun 16 11:51 .idea
-drwxr-xr-x  3 cxim1 cxim1  4096 Jun 16 11:43 cmake-build-debug
--rw-r--r--  1 cxim1 cxim1  9344 Jun 16 11:43 ft_start.c
--rw-r--r--  1 cxim1 cxim1  3306 Jun 16 11:42 main.c
+total 348
+-rwxr-xr-x  1 root  root  93656 Jun 17 16:24 ft_ls
+drwxr-xr-x 12 cxim1 cxim1  4096 Jun 17 16:24 .
+-rw-r--r--  1 root  root   5816 Jun 17 16:24 for_sort.o
+-rw-r--r--  1 root  root  24656 Jun 17 16:24 prints.o
+-rw-r--r--  1 root  root  22000 Jun 17 16:24 ft_start.o
+-rw-r--r--  1 root  root  12424 Jun 17 16:24 main.o
+-rw-r--r--  1 cxim1 cxim1  9592 Jun 17 16:24 ft_start.c
+drwxr-xr-x  3 cxim1 cxim1  4096 Jun 17 16:22 cmake-build-debug
+-rw-r--r--  1 cxim1 cxim1  3334 Jun 17 16:22 main.c
+-rw-r--r--  1 cxim1 cxim1  1826 Jun 17 16:18 ft_ls.h
+drwxr-xr-x  2 cxim1 cxim1  4096 Jun 17 16:11 .idea
+drwxr-xr-x  8 cxim1 cxim1  4096 Jun 17 14:35 .git
+-rw-r--r--  1 cxim1 cxim1  8940 Jun 17 14:30 prints.c
+drwxr-xr-x 11 cxim1 cxim1  4096 Jun 16 11:54 42FileChecker
 -rwxrwxrwx  1 cxim1 cxim1   687 Jun 16 11:37 test.sh
--rw-r--r--  1 cxim1 cxim1  1825 Jun 16 11:30 ft_ls.h
-drwxr-xr-x  8 cxim1 cxim1  4096 Jun 15 14:53 .git
 drwxr-xr-x  2 cxim1 cxim1  4096 Jun 15 14:45 mydir2
-drwxr-xr-x 11 cxim1 cxim1  4096 Jun 14 12:53 42FileChecker
--rw-r--r--  1 cxim1 cxim1  8640 Jun 14 12:52 prints.c
 drwxr-xr-x  2 cxim1 cxim1  4096 Jun 14 12:17 mydir
 drwxr-xr-x  3 cxim1 cxim1  4096 Jun 13 12:02 nets3
 drwxr-xr-x  5 cxim1 cxim1  4096 Jun 12 15:24 test

@@ -74,7 +74,7 @@ void	make_lst(t_inc *inc)
 {
 	inc->lst = (t_dir*)malloc(sizeof(t_dir));
 	inc->lst->dir = ft_strdup(".");
-	inc->lst->full_path = ft_strnew(0);
+//	inc->lst->full_path = ft_strnew(0);
 	inc->lst->next = NULL;
 }
 
@@ -116,7 +116,7 @@ void	free_l(t_inc *inc)
 //			if (tmp->dir)
 			free(tmp->dir);
 //			if (tmp->full_path)
-			free(tmp->full_path);
+//			free(tmp->full_path);
 			free(tmp);
 		}
 	}

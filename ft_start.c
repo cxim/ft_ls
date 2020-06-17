@@ -34,7 +34,7 @@ void	print_info_two(t_dir *dir, int flag, t_inc *inc)
 	lstat(dir->dir, &fstat);
 	str_tmp = some_str(dir->dir, inc);
 	dir->full_path = str_tmp;
-	get_p(dir, fstat);
+	get_p(dir);
 	//ft_putchar(' ');
 	ft_putnbr(fstat.st_nlink);
 	ft_putstr(" ");
@@ -67,26 +67,32 @@ void	print_info_two(t_dir *dir, int flag, t_inc *inc)
 	}
 	ft_putchar('\n');
 	free_l(new);
+	free(str_tmp);
 }
 
-void	get_p(t_dir *tmp, struct stat fstat)
+void	get_p(t_dir *tmp)
 {
-	if (S_ISFIFO(fstat.st_mode))
-		ft_putchar('p');
-	else if (tmp->true_dir && !(S_ISFIFO(fstat.st_mode)))
-		ft_putchar('d');
-	else
-		ft_putchar((S_ISLNK(fstat.st_mode)) ? 'l' : '-');
-	ft_putchar((fstat.st_mode & S_IRUSR) ? 'r' : '-');
-	ft_putchar((fstat.st_mode & S_IWUSR) ? 'w' : '-');
-	ft_putchar((fstat.st_mode & S_IXUSR) ? 'x' : '-');
-	ft_putchar((fstat.st_mode & S_IRGRP) ? 'r' : '-');
-	ft_putchar((fstat.st_mode & S_IWGRP) ? 'w' : '-');
-	ft_putchar((fstat.st_mode & S_IXGRP) ? 'x' : '-');
-	ft_putchar((fstat.st_mode & S_IROTH) ? 'r' : '-');
-	ft_putchar((fstat.st_mode & S_IWOTH) ? 'w' : '-');
-	ft_putchar((fstat.st_mode & S_IXOTH) ? 'x' : '-');
-	ft_putstr(" "); // 1 || 2?
+	struct stat fstat;
+
+	if (lstat(tmp->dir, &fstat) != -1)
+	{
+		if (S_ISFIFO(fstat.st_mode))
+			ft_putchar('p');
+		else if (tmp->true_dir && (S_ISFIFO(fstat.st_mode) != 0))
+			ft_putchar('d');
+		else
+			ft_putchar((S_ISLNK(fstat.st_mode)) ? 'l' : '-');
+		ft_putchar((fstat.st_mode & S_IRUSR) ? 'r' : '-');
+		ft_putchar((fstat.st_mode & S_IWUSR) ? 'w' : '-');
+		ft_putchar((fstat.st_mode & S_IXUSR) ? 'x' : '-');
+		ft_putchar((fstat.st_mode & S_IRGRP) ? 'r' : '-');
+		ft_putchar((fstat.st_mode & S_IWGRP) ? 'w' : '-');
+		ft_putchar((fstat.st_mode & S_IXGRP) ? 'x' : '-');
+		ft_putchar((fstat.st_mode & S_IROTH) ? 'r' : '-');
+		ft_putchar((fstat.st_mode & S_IWOTH) ? 'w' : '-');
+		ft_putchar((fstat.st_mode & S_IXOTH) ? 'x' : '-');
+		ft_putstr(" "); // 1 || 2?
+	}
 }
 
 void	print_info(t_inc *inc, int flag)
@@ -98,7 +104,7 @@ void	print_info(t_inc *inc, int flag)
 
 	str_tmp = some_str(inc->lst->dir, inc);
 	inc->lst->full_path = str_tmp;
-	get_p(inc->lst, inc->sb);
+	get_p(inc->lst);
 	//ft_putchar(' ');
 	ft_putnbr(inc->sb.st_nlink);
 	ft_putstr(" ");
@@ -353,8 +359,9 @@ void	ft_ls(t_inc *inc, int flag) {
 					tmp->d = 1;
 //				inc->lst = tmp;
 //				inc_tmp = inc;
+				tmp->true_dir = 0;
 				print_info_two(tmp, 1, inc);
-				//free_lst(inc->lst);
+
 			}
 			else if (inc->l == 0)
 			{
@@ -365,6 +372,7 @@ void	ft_ls(t_inc *inc, int flag) {
 			}
 			tmp = tmp->next;
 		}
+		free_lst(tmp);
 	}
 	else if (flag == 0) // flag == 1 dir path
 	{

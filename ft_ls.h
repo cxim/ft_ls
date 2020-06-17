@@ -79,5 +79,5 @@ char 	*sek_j(char *s1, char *s2);
 void	print_sign_ff(char *path, int flag, t_inc *inc);
 int 	dir_file(t_inc *inc);
 char	*path_link(char *str1, char *str2);
-void	get_p(t_dir *tmp, struct stat fstat);
+void	get_p(t_dir *tmp);
 #endif //FT_LS_FT_LS_H
