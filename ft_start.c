@@ -34,7 +34,10 @@ void	print_info_two(t_dir *dir, int flag, t_inc *inc)
 	lstat(dir->dir, &fstat);
 	str_tmp = some_str(dir->dir, inc);
 	dir->full_path = str_tmp;
-	get_p(dir);
+	if (inc->d == 1)
+		get_p(dir, 1);
+	else
+		get_p(dir, 0);
 	//ft_putchar(' ');
 	ft_putnbr(fstat.st_nlink);
 	ft_putstr(" ");
@@ -70,7 +73,7 @@ void	print_info_two(t_dir *dir, int flag, t_inc *inc)
 	free(str_tmp);
 }
 
-void	get_p(t_dir *tmp)
+void	get_p(t_dir *tmp, int flag)
 {
 	struct stat fstat;
 
@@ -79,6 +82,8 @@ void	get_p(t_dir *tmp)
 		if (S_ISFIFO(fstat.st_mode))
 			ft_putchar('p');
 		else if (tmp->true_dir && (S_ISFIFO(fstat.st_mode) != 0))
+			ft_putchar('d');
+		else if (S_ISDIR(fstat.st_mode) && flag == 1)
 			ft_putchar('d');
 		else
 			ft_putchar((S_ISLNK(fstat.st_mode)) ? 'l' : '-');
@@ -104,7 +109,7 @@ void	print_info(t_inc *inc, int flag)
 
 	str_tmp = some_str(inc->lst->dir, inc);
 	inc->lst->full_path = str_tmp;
-	get_p(inc->lst);
+	get_p(inc->lst, 0);
 	//ft_putchar(' ');
 	ft_putnbr(inc->sb.st_nlink);
 	ft_putstr(" ");

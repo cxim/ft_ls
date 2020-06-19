@@ -280,8 +280,8 @@ void	print_l(t_dir *lst, t_inc *inc)
 	char			*str;
 
 	tmp = lst;
-	if (inc->lst->next != NULL)
-		ft_printf("%s:\n", tmp->name_dir);
+	if (inc->lst->next != NULL && inc->rr != 1)
+		ft_printf("%s:\n", lst->name_dir);
 	print_blocks(tmp);
 	get_lens(tmp, inc);
 	while (tmp != NULL)
@@ -426,11 +426,15 @@ void	ft_print_ls(t_dir **lst, t_inc *inc, char *path)
 		sort_lst(lst, compare_size, 0);
 
 	if (inc->l == 1)
+	{
+		if (inc->rr == 1)
+			ft_printf("%s:\n", path);
 		print_l(*lst, inc);
+	}
 	else
 	{
 		tmp = *lst;
-		if (inc->lst->next != NULL)
+		if (inc->lst->next != NULL || inc->rr == 1)
 			ft_printf("%s:\n", path);
 		while (tmp != NULL)
 		{
