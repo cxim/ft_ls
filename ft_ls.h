@@ -24,6 +24,7 @@ typedef struct		s_dir
 	char 			*some;
 	int 			size_f;
 	int 			d;
+	int 			type;
 	time_t 			time;
 	time_t			time_u;
 	time_t			time_c;
@@ -52,6 +53,7 @@ typedef struct		s_inc
 	int				u_big;
 	int 			f_big;
 	int				s_big;
+	int				count;
 	char 			*path;
 	char 			*dump_dir;
 	char 			*dump_dir_tmp;

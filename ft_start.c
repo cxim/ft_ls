@@ -332,33 +332,22 @@ void	print_sign_f(char *path, int flag, t_inc *inc)
 void	ft_ls(t_inc *inc, int flag) {
 	t_dir *tmp;
 	t_inc *inc_tmp;
-	//struct stat		fstat;
-	//if ((inc->dirp = opendir(str)) != NULL)
 	int 			i;
 
 	i = 0;
-	sort_lst(&inc->lst, compare_strs, 0);
+	//sort_lst(&inc->lst, compare_strs, 0);
 	tmp = inc->lst;
 	lstat(tmp->dir, &inc->sb);
-//	if (inc->sb.st_mtim.tv_nsec != 0) //st_mtim.tv_sec?
-//	{
-//		if ( (S_ISDIR(inc->sb.st_mode) == 0)) //(inc->dirp = opendir(tmp->dir)) != NULL &&
 	if (inc->d == 1 && flag == 1)
 	{
 		sort_lst(&inc->lst, compare_strs, 0);
 		tmp = inc->lst;
 		while (tmp != NULL)
 		{
-//			ft_printf("%s", tmp->dir);
-//			if (inc->f_big == 1)
-//				print_sign_f(str_tmp, 0, inc);
-//			ft_putchar('\n');
 			if (inc->l == 1)
 			{
 				if (inc->f_big == 1)
 					tmp->d = 1;
-//				inc->lst = tmp;
-//				inc_tmp = inc;
 				tmp->true_dir = 0;
 				print_info_two(tmp, 1, inc);
 
@@ -374,42 +363,54 @@ void	ft_ls(t_inc *inc, int flag) {
 		}
 		free_lst(tmp);
 	}
-	else if (flag == 0) // flag == 1 dir path
-	{
-		sort_lst(&inc->lst, compare_strs, 0);
-		tmp = inc->lst;
-		while (tmp != NULL)
-		{
-			if (inc->l == 1)
-				print_info_two(tmp, 1, inc);
-			else if (inc->l == 0)
-			{
-				ft_putstr(tmp->dir);
-				if (inc->f_big == 1)
-					print_sign_f(tmp->dir, 0, inc);
-				ft_putchar('\n');
-			}
-			tmp = tmp->next;
-		}
-	}
-	else if (flag == 1)
+//	else if (flag == 1) // flag == 1 dir path
+//	{
+////		sort_lst(&inc->lst, compare_strs, 0);
+//		tmp = inc->lst;
+//		while (tmp != NULL)
+//		{
+//			if (inc->l == 1)
+//				print_info_two(tmp, 1, inc);
+//			else if (inc->l == 0)
+//			{
+//				ft_putstr(tmp->dir);
+//				if (inc->f_big == 1)
+//					print_sign_f(tmp->dir, 0, inc);
+//				ft_putchar('\n');
+//			}
+//			tmp = tmp->next;
+//		}
+//	}
+	else if (flag == 0 || flag == 1)
 	{
 		inc_tmp = inc;
 		while (tmp != NULL)
 		{
-			do_operation(tmp->dir, inc_tmp);
-			tmp = tmp->next;
-			if (tmp != NULL)
+			if (tmp->type == 0 && flag != 1)
 			{
-				closedir(inc_tmp->dirp);
-				ft_putchar('\n');
+				if (inc->l == 1)
+					print_info_two(tmp, 1, inc);
+				else if (inc->l == 0)
+				{
+					ft_putstr(tmp->dir);
+					if (inc->f_big == 1)
+						print_sign_f(tmp->dir, 0, inc);
+					ft_putchar('\n');
+				}
 			}
+			else
+			{
+				do_operation(tmp->dir, inc_tmp);
+				if (tmp != NULL) {
+					closedir(inc_tmp->dirp);
+					//ft_putchar('\n'); //временно и решить проблему с R \n
+				}
+			}
+			tmp = tmp->next;
+
 		}
 	}
 	else
 		ft_check(inc, tmp->dir);
-	//free(str);
-
-	//free_lst(tmp);
 }
 //xtr

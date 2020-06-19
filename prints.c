@@ -148,7 +148,6 @@ void	get_time(struct stat fstat, t_dir *tmp, t_inc *inc, int flag)
 //			inc->dump_dir_tmp = ft_strdup(buf);
 		ft_putstr(buf);
 	}
-
 }
 
 void	print_ow_gr(char *name, char *g_name, t_inc *inc)
@@ -421,8 +420,8 @@ void	ft_print_ls(t_dir **lst, t_inc *inc, char *path)
 		sort_lst(lst, compare_time_c, 0);
 	if (inc->r == 1)
 		ft_rev_lst(lst);
-	if (inc->rr == 1)
-		ft_printf("%s:\n", path);
+//	if (inc->rr == 1)
+//		ft_printf("%s:\n", path);
 	if (inc->s_big == 1 && inc->u_big == 0)
 		sort_lst(lst, compare_size, 0);
 

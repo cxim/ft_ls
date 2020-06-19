@@ -126,7 +126,7 @@ void	free_l(t_inc *inc)
 //	if (inc->dump_dir_tmp)
 	free(inc->dump_dir_tmp);
 //	if (inc->dirp && inc->rr == 0)
-	closedir(inc->dirp);
+//	closedir(inc->dirp);
 	free(inc);
 	inc = NULL;
 }
@@ -146,6 +146,18 @@ int 	dir_file(t_inc *inc)
 	return -1;
 }
 
+int		compare_files_dirs(t_dir d1, t_dir d2)
+{
+	if (d1.type > d2.type)
+		return (1);
+	else if (d1.type == d2.type)
+	{
+		return (ft_strcmp(d1.dir, d2.dir));
+	}
+	else
+		return (0);
+}
+
 int main(int argc, char **argv)
 {
 	int 	i;
@@ -161,11 +173,11 @@ int main(int argc, char **argv)
 		if (argv[i][0] != '-')
 		{
 			tmp = (t_dir *)ft_memalloc(sizeof(t_dir));
-			//str_tmp = argv[i];
 			tmp->dir = ft_strdup(argv[i]);
 			tmp->next = inc->lst;
-			//inc->dump_dir = ft_strdup(str_tmp);
 			inc->lst = tmp;
+			inc->count++;
+			inc->lst->type = dir_file(inc);
 		}
 		else if (add_args(inc, argv[i]) == 0)
 			return (0);
@@ -173,6 +185,8 @@ int main(int argc, char **argv)
 	}
 	if (inc->lst == NULL)
 		make_lst(inc);
+	if (inc->count > 1)
+		sort_lst(&inc->lst, compare_files_dirs, 0);
 	i = dir_file(inc);
 	//ft_printf("%d\n", i);
 	if (i >= 0)
@@ -196,3 +210,4 @@ int main(int argc, char **argv)
 }
 //==2135==    definitely lost: 763 bytes in 91 blocks
 //==2135==    indirectly lost: 33,562 bytes in 30 blocks
+//исправить очитску мусору при папка+фйл + файл+файл + папка+пакпа
