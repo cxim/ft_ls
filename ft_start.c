@@ -3,7 +3,8 @@
 //
 
 #include "ft_ls.h"
-
+#include <sys/types.h>
+#include <attr/xattr.h>
 
 char	*some_str_two(char *str, t_inc *inc)
 {
@@ -39,10 +40,15 @@ void	print_info_two(t_dir *dir, int flag, t_inc *inc)
 	else
 		get_p(dir, 0);
 	//ft_putchar(' ');
-	ft_putnbr(fstat.st_nlink);
+	ft_putnbr(fstat.st_nlink); //zero = 261 ; 2697
 	ft_putstr(" ");
 	get_user(new, fstat, 1);
-	ft_printf(" %d%s", fstat.st_size, " ");
+	if (fstat.st_size == 0)
+	{
+		ft_printf(" %d, %d ", MAJOR(fstat.st_rdev),  MINOR(fstat.st_rdev));
+	}
+	else
+		ft_printf(" %d%s", fstat.st_size, " ");
 	dir->time = fstat.st_mtime;
 	dir->time_u = fstat.st_atime;
 	dir->size_f = fstat.st_size;
@@ -85,6 +91,10 @@ void	get_p(t_dir *tmp, int flag)
 			ft_putchar('d');
 		else if (S_ISDIR(fstat.st_mode) && flag == 1)
 			ft_putchar('d');
+		else if (S_ISCHR(fstat.st_mode))
+			ft_putchar('c');
+		else if (S_ISBLK(fstat.st_mode))
+			ft_putchar('b');
 		else
 			ft_putchar((S_ISLNK(fstat.st_mode)) ? 'l' : '-');
 		ft_putchar((fstat.st_mode & S_IRUSR) ? 'r' : '-');
@@ -96,6 +106,7 @@ void	get_p(t_dir *tmp, int flag)
 		ft_putchar((fstat.st_mode & S_IROTH) ? 'r' : '-');
 		ft_putchar((fstat.st_mode & S_IWOTH) ? 'w' : '-');
 		ft_putchar((fstat.st_mode & S_IXOTH) ? 'x' : '-');
+//		ft_putchar(getxattr(tmp->full_path, tmp->dir, NULL, 0) ? '+' : ' ');
 		ft_putstr(" "); // 1 || 2?
 	}
 }

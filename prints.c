@@ -200,6 +200,10 @@ void	get_permission(t_dir *tmp, struct stat fstat)
 		ft_putchar('p');
 	else if (tmp->true_dir && !(S_ISFIFO(fstat.st_mode)))
 		ft_putchar('d');
+	else if (S_ISCHR(fstat.st_mode))
+		ft_putchar('c');
+	else if (S_ISBLK(fstat.st_mode))
+		ft_putchar('b');
 	else
 		ft_putchar((S_ISLNK(fstat.st_mode)) ? 'l' : '-');
 	ft_putchar((fstat.st_mode & S_IRUSR) ? 'r' : '-');
@@ -263,6 +267,12 @@ void	get_lens(t_dir *dir, t_inc *inc)
 		get_user(inc, fstat, 0);
 		if (num_len(fstat.st_size) > inc->bytes_len)
 			inc->bytes_len = num_len(fstat.st_size);
+		if (S_ISCHR(fstat.st_mode) != 0) // MAJOR(fstat.st_rdev),  MINOR(fstat.st_rdev)
+			if ((num_len(MAJOR(fstat.st_rdev)) + num_len(MINOR(fstat.st_rdev)) + 3)> inc->bytes_len)
+				inc->bytes_len = (num_len(MAJOR(fstat.st_rdev)) + num_len(MINOR(fstat.st_rdev)) + 3);
+		if (S_ISBLK(fstat.st_mode) != 0) // MAJOR(fstat.st_rdev),  MINOR(fstat.st_rdev)
+			if ((num_len(MAJOR(fstat.st_rdev)) + num_len(MINOR(fstat.st_rdev)) + 3)> inc->bytes_len)
+				inc->bytes_len = (num_len(MAJOR(fstat.st_rdev)) + num_len(MINOR(fstat.st_rdev)) + 3);
 		tmp = tmp->next;
 	}
 }
@@ -299,10 +309,16 @@ void	print_l(t_dir *lst, t_inc *inc)
 		get_user(inc, fstat, 1);
 		ft_putstr(" ");
 		i = inc->bytes_len;
-		some = num_len(fstat.st_size);
+		if (S_ISCHR(fstat.st_mode) != 0 || S_ISBLK(fstat.st_mode))
+			some = num_len(MAJOR(fstat.st_rdev)) + num_len(MINOR(fstat.st_rdev)) + 3;
+		else
+			some = num_len(fstat.st_size);
 		while (i-- > some)
 			ft_putchar(' ');
-		ft_printf("%d%s", fstat.st_size, " ");
+		if (S_ISCHR(fstat.st_mode) != 0 || S_ISBLK(fstat.st_mode))
+			ft_printf(" %d, %d ", MAJOR(fstat.st_rdev),  MINOR(fstat.st_rdev));
+		else
+			ft_printf("%d%s", fstat.st_size, " ");
 		get_time(fstat, tmp, inc, 0);
 		if (inc->f_big)
 		{

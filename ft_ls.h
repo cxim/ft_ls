@@ -14,6 +14,8 @@
 #include <grp.h>
 #include <time.h>
 #include <limits.h>
+#include <linux/kdev_t.h>
+#include <attr/xattr.h>
 
 typedef struct		s_dir
 {

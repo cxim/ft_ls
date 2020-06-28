@@ -2,6 +2,7 @@
 // Created by И Б on 03.05.20.
 //
 #include "ft_ls.h"
+#include <linux/fs.h>
 
 int 	check_p(char *str)
 {
@@ -136,7 +137,10 @@ int 	dir_file(t_inc *inc)
 	lstat(inc->lst->dir, &inc->sb);
 	if (inc->sb.st_mtim.tv_sec != 0)
 	{
-		if (S_ISLNK(inc->sb.st_mode) && (inc->l == 0 && inc->f_big == 0)) //for simb link
+		if (S_ISCHR(inc->sb.st_mode)) {
+			return (0);
+		}
+		else if (S_ISLNK(inc->sb.st_mode) && (inc->l == 0 && inc->f_big == 0)) //for simb link
 			return 1;
 		else if (S_ISDIR(inc->sb.st_mode))
 			return 1;

@@ -25,6 +25,8 @@ time.h
 -
 limits.h
 -
+linux/kdev_t.h
+-
 
 /home/cxim1/unix/ft_ls/ft_printf/includes/libft/libft.h
 unistd.h
@@ -51,4 +53,8 @@ libft/libft.h
 /home/cxim1/unix/ft_ls/ft_start.c
 ft_ls.h
 /home/cxim1/unix/ft_ls/ft_ls.h
+sys/types.h
+-
+attr/xattr.h
+-
 
