@@ -27,6 +27,8 @@ limits.h
 -
 linux/kdev_t.h
 -
+attr/xattr.h
+-
 
 /home/cxim1/unix/ft_ls/ft_printf/includes/libft/libft.h
 unistd.h
@@ -54,7 +56,5 @@ libft/libft.h
 ft_ls.h
 /home/cxim1/unix/ft_ls/ft_ls.h
 sys/types.h
--
-attr/xattr.h
 -
 

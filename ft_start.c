@@ -4,7 +4,6 @@
 
 #include "ft_ls.h"
 #include <sys/types.h>
-#include <attr/xattr.h>
 
 char	*some_str_two(char *str, t_inc *inc)
 {
@@ -43,7 +42,7 @@ void	print_info_two(t_dir *dir, int flag, t_inc *inc)
 	ft_putnbr(fstat.st_nlink); //zero = 261 ; 2697
 	ft_putstr(" ");
 	get_user(new, fstat, 1);
-	if (fstat.st_size == 0)
+	if (S_ISCHR(fstat.st_mode) != 0 || S_ISBLK(fstat.st_mode))
 	{
 		ft_printf(" %d, %d ", MAJOR(fstat.st_rdev),  MINOR(fstat.st_rdev));
 	}
@@ -397,9 +396,9 @@ void	ft_ls(t_inc *inc, int flag) {
 //			tmp = tmp->next;
 //		}
 //	}
-	else if (flag == 0 || flag == 1)
+	else if (tmp->type == 0 || tmp->type == 1 || tmp->type == -1)
 	{
-		inc_tmp = inc;
+		inc_tmp = inc; //???
 		while (tmp != NULL)
 		{
 			if (tmp->type == 0 && flag != 1)
@@ -414,6 +413,13 @@ void	ft_ls(t_inc *inc, int flag) {
 					ft_putchar('\n');
 				}
 			}
+			else if (tmp->type == -1)
+			{
+				ft_putstr_fd("/bin/ls: ", 2); //потом исправить как фт_лс
+				ft_putstr_fd("cannot access '", 2);
+				ft_putstr_fd(tmp->dir, 2);
+				ft_putendl_fd("': No such file or directory", 2);
+			}
 			else
 			{
 				do_operation(tmp->dir, inc_tmp);
@@ -423,7 +429,6 @@ void	ft_ls(t_inc *inc, int flag) {
 				}
 			}
 			tmp = tmp->next;
-
 		}
 	}
 	else

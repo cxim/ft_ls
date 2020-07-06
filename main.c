@@ -134,8 +134,7 @@ void	free_l(t_inc *inc)
 
 int 	dir_file(t_inc *inc)
 {
-	lstat(inc->lst->dir, &inc->sb);
-	if (inc->sb.st_mtim.tv_sec != 0)
+	if (lstat(inc->lst->dir, &inc->sb) != -1)
 	{
 		if (S_ISCHR(inc->sb.st_mode)) {
 			return (0);
@@ -191,7 +190,7 @@ int main(int argc, char **argv)
 		make_lst(inc);
 	if (inc->count > 1)
 		sort_lst(&inc->lst, compare_files_dirs, 0);
-	i = dir_file(inc);
+	//i = dir_file(inc);
 	//ft_printf("%d\n", i);
 	if (i >= 0)
 		ft_ls(inc, i);
