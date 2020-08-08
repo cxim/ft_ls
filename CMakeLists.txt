@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.15)
+cmake_minimum_required(VERSION 3.16)
 project(ft_ls C)
 
 set(CMAKE_C_STANDARD 11)
@@ -122,4 +122,5 @@ add_executable(ft_ls
         ft_ls.h
         ft_start.c
         main.c
+        printf.h
         prints.c)

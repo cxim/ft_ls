@@ -161,7 +161,7 @@ void	print_ow_gr(char *name, char *g_name, t_inc *inc)
 		while (ft_strlen(name) < --i)
 			ft_putchar(' ');
 	}
-	ft_putchar(' ');
+	ft_putstr("  ");
 	ft_putstr(g_name);
 	if (ft_strlen(g_name) < inc->group_name_len)
 	{
@@ -215,7 +215,7 @@ void	get_permission(t_dir *tmp, struct stat fstat)
 	ft_putchar((fstat.st_mode & S_IROTH) ? 'r' : '-');
 	ft_putchar((fstat.st_mode & S_IWOTH) ? 'w' : '-');
 	ft_putchar((fstat.st_mode & S_IXOTH) ? 'x' : '-');
-	ft_putstr(" "); // 1 || 2?
+	ft_putstr("  "); // 1 || 2?
 }
 void 	print_blocks(t_dir *dir)
 {
@@ -234,7 +234,7 @@ void 	print_blocks(t_dir *dir)
 		tmp = tmp->next;
 	}
 	ft_putstr("total ");
-	ft_putnbr(res / 2);
+	ft_putnbr(res);
 	ft_putchar('\n');
 }
 
@@ -307,7 +307,7 @@ void	print_l(t_dir *lst, t_inc *inc)
 		ft_putnbr(fstat.st_nlink);
 		ft_putstr(" ");
 		get_user(inc, fstat, 1);
-		ft_putstr(" ");
+		ft_putstr("  ");
 		i = inc->bytes_len;
 		if (S_ISCHR(fstat.st_mode) != 0 || S_ISBLK(fstat.st_mode))
 			some = num_len(MAJOR(fstat.st_rdev)) + num_len(MINOR(fstat.st_rdev)) + 3;
@@ -418,7 +418,6 @@ int		compare_time_c(t_dir d1, t_dir d2)
 		return (0);
 }
 
-// У ВАС ОН БУДЕТ ЗА КРУГОМ ТОЛЬКО
 
 void	ft_print_ls(t_dir **lst, t_inc *inc, char *path)
 {
@@ -443,7 +442,7 @@ void	ft_print_ls(t_dir **lst, t_inc *inc, char *path)
 
 	if (inc->l == 1)
 	{
-		if (inc->rr == 1)
+		if (inc->rr == 1 && inc->lst->dir != path)
 			ft_printf("%s:\n", path);
 		print_l(*lst, inc);
 	}
@@ -451,7 +450,12 @@ void	ft_print_ls(t_dir **lst, t_inc *inc, char *path)
 	{
 		tmp = *lst;
 		if (inc->lst->next != NULL || inc->rr == 1)
-			ft_printf("%s:\n", path);
+		{
+			if (inc->lst->dir != path && inc->rr == 1)
+				ft_printf("%s:\n", path);
+			else if (inc->rr != 1)
+				ft_printf("%s:\n", path);
+		}
 		while (tmp != NULL)
 		{
 			ft_putstr(tmp->dir);
@@ -474,7 +478,10 @@ void	ft_print_ls(t_dir **lst, t_inc *inc, char *path)
 //
 //		}
 	}
+	inc->count--;
 	ft_putchar('\n');
+	if (inc->count > 0)
+		ft_putchar('\n');
 	if (inc->rr == 1)
 	{
 		big_r(*lst, inc);

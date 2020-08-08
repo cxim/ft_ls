@@ -241,123 +241,123 @@ CMakeFiles/ft_ls.dir/ft_printf/includes/libft/get_next_line.c.o: ../ft_printf/in
 CMakeFiles/ft_ls.dir/ft_printf/includes/libft/get_next_line.c.o: ../ft_printf/includes/libft/libft.h
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/base_n_p.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/base_n_p.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/base_n_p.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/base_n_p.c.o: ../ft_printf/srcs/base_n_p.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/bonus_color.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/bonus_color.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/bonus_color.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/bonus_color.c.o: ../ft_printf/srcs/bonus_color.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/bonus_fd.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/bonus_fd.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/bonus_fd.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/bonus_fd.c.o: ../ft_printf/srcs/bonus_fd.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/bonus_smile.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/bonus_smile.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/bonus_smile.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/bonus_smile.c.o: ../ft_printf/srcs/bonus_smile.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/color_option.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/color_option.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/color_option.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/color_option.c.o: ../ft_printf/srcs/color_option.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/format_checker.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/format_checker.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/format_checker.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/format_checker.c.o: ../ft_printf/srcs/format_checker.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/format_checker_one.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/format_checker_one.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/format_checker_one.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/format_checker_one.c.o: ../ft_printf/srcs/format_checker_one.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/ft_printf.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/ft_printf.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/ft_printf.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/ft_printf.c.o: ../ft_printf/srcs/ft_printf.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/ft_printf_one.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/ft_printf_one.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/ft_printf_one.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/ft_printf_one.c.o: ../ft_printf/srcs/ft_printf_one.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/print_some_wight_aruc.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/print_some_wight_aruc.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/print_some_wight_aruc.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/print_some_wight_aruc.c.o: ../ft_printf/srcs/print_some_wight_aruc.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_i_one.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/work_i_one.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/work_i_one.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_i_one.c.o: ../ft_printf/srcs/work_i_one.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_i_two.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/work_i_two.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/work_i_two.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_i_two.c.o: ../ft_printf/srcs/work_i_two.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_uxo_po_one.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/work_uxo_po_one.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/work_uxo_po_one.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_uxo_po_one.c.o: ../ft_printf/srcs/work_uxo_po_one.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_uxo_po_two.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/work_uxo_po_two.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/work_uxo_po_two.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_uxo_po_two.c.o: ../ft_printf/srcs/work_uxo_po_two.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_uxo_pt_one.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/work_uxo_pt_one.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/work_uxo_pt_one.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_uxo_pt_one.c.o: ../ft_printf/srcs/work_uxo_pt_one.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_errors.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_errors.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_errors.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_errors.c.o: ../ft_printf/srcs/work_with_errors.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_f_one.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_f_one.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_f_one.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_f_one.c.o: ../ft_printf/srcs/work_with_f_one.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_f_three.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_f_three.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_f_three.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_f_three.c.o: ../ft_printf/srcs/work_with_f_three.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_f_two.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_f_two.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_f_two.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_f_two.c.o: ../ft_printf/srcs/work_with_f_two.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_flags.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_flags.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_flags.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_flags.c.o: ../ft_printf/srcs/work_with_flags.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_floats.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_floats.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_floats.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_floats.c.o: ../ft_printf/srcs/work_with_floats.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_form_x.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_form_x.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_form_x.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_form_x.c.o: ../ft_printf/srcs/work_with_form_x.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_format_char_str.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_format_char_str.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_format_char_str.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_format_char_str.c.o: ../ft_printf/srcs/work_with_format_char_str.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_int.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_int.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_int.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_int.c.o: ../ft_printf/srcs/work_with_int.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_o.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_o.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_o.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_o.c.o: ../ft_printf/srcs/work_with_o.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_p.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_p.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_p.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_p.c.o: ../ft_printf/srcs/work_with_p.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_u.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_u.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_u.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_u.c.o: ../ft_printf/srcs/work_with_u.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_uxo_part_one.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_uxo_part_one.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_uxo_part_one.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_uxo_part_one.c.o: ../ft_printf/srcs/work_with_uxo_part_one.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_uxo_part_two.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_uxo_part_two.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_uxo_part_two.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_uxo_part_two.c.o: ../ft_printf/srcs/work_with_uxo_part_two.c
 
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_x_big.c.o: ../ft_printf/includes/libft/libft.h
-CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_x_big.c.o: ../ft_printf/includes/printf.h
+CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_x_big.c.o: ../printf.h
 CMakeFiles/ft_ls.dir/ft_printf/srcs/work_with_x_big.c.o: ../ft_printf/srcs/work_with_x_big.c
 
 CMakeFiles/ft_ls.dir/ft_start.c.o: ../ft_ls.h

@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/cxim1/unix/ft_ls/ft_ls.h
+/Users/mnarwhal/my_dir/ft_ls/ft_ls.h
 ft_printf/includes/printf.h
-/home/cxim1/unix/ft_ls/ft_printf/includes/printf.h
+/Users/mnarwhal/my_dir/ft_ls/ft_printf/includes/printf.h
 dirent.h
 -
 sys/types.h
@@ -25,12 +25,10 @@ time.h
 -
 limits.h
 -
-linux/kdev_t.h
--
-attr/xattr.h
+uuid/uuid.h
 -
 
-/home/cxim1/unix/ft_ls/ft_printf/includes/libft/libft.h
+/Users/mnarwhal/my_dir/ft_ls/ft_printf/includes/libft/libft.h
 unistd.h
 -
 stdlib.h
@@ -40,7 +38,7 @@ string.h
 fcntl.h
 -
 
-/home/cxim1/unix/ft_ls/ft_printf/includes/printf.h
+/Users/mnarwhal/my_dir/ft_ls/ft_printf/includes/printf.h
 stdio.h
 -
 unistd.h
@@ -50,11 +48,9 @@ stdarg.h
 fcntl.h
 -
 libft/libft.h
-/home/cxim1/unix/ft_ls/ft_printf/includes/libft/libft.h
+/Users/mnarwhal/my_dir/ft_ls/ft_printf/includes/libft/libft.h
 
-/home/cxim1/unix/ft_ls/ft_start.c
+/Users/mnarwhal/my_dir/ft_ls/prints.c
 ft_ls.h
-/home/cxim1/unix/ft_ls/ft_ls.h
-sys/types.h
--
+/Users/mnarwhal/my_dir/ft_ls/ft_ls.h
 

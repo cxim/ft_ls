@@ -14,8 +14,12 @@
 #include <grp.h>
 #include <time.h>
 #include <limits.h>
-#include <linux/kdev_t.h>
-#include <attr/xattr.h>
+# include <uuid/uuid.h>
+
+//#include <kdev_t.h>
+//#include <attr/xattr.h>
+# define MAJOR(x)((int32_t)(((u_int32_t)(x) >> 24) & 0xff))
+# define MINOR(x)((int32_t)((x) & 0xffffff))
 
 typedef struct		s_dir
 {
@@ -30,9 +34,9 @@ typedef struct		s_dir
 	time_t 			time;
 	time_t			time_u;
 	time_t			time_c;
-	ulong 			time_m;
-	ulong 			time_u_m;
-	ulong 			time_c_m;
+	unsigned long 			time_m;
+	unsigned long 			time_u_m;
+	unsigned long 			time_c_m;
 	struct s_dir 	*next;
 }					t_dir;
 
@@ -42,6 +46,7 @@ typedef struct		s_inc
 	int 			links_len;
 	int 			owner_name_len;
 	int 			group_name_len;
+	int				min;
 	int 			p;
 	int 			l;
 	int 			a;

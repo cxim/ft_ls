@@ -51,8 +51,8 @@ void	print_info_two(t_dir *dir, int flag, t_inc *inc)
 	dir->time = fstat.st_mtime;
 	dir->time_u = fstat.st_atime;
 	dir->size_f = fstat.st_size;
-	dir->time_m = fstat.st_mtim.tv_nsec;
-	dir->time_u_m = fstat.st_atim.tv_nsec;
+	dir->time_m = fstat.st_mtimespec.tv_nsec;
+	dir->time_u_m = fstat.st_atimespec.tv_nsec;
 	get_time(fstat, dir, inc, flag);
 	if (inc->f_big == 1)
 	{
@@ -128,8 +128,8 @@ void	print_info(t_inc *inc, int flag)
 	inc->lst->time = inc->sb.st_mtime;
 	inc->lst->time_u = inc->sb.st_atime;
 	inc->lst->size_f = inc->sb.st_size;
-	inc->lst->time_m = inc->sb.st_mtim.tv_nsec;
-	inc->lst->time_u_m = inc->sb.st_atim.tv_nsec;
+	inc->lst->time_m = inc->sb.st_mtimespec.tv_nsec;
+	inc->lst->time_u_m = inc->sb.st_atimespec.tv_nsec;
 	get_time(inc->sb, inc->lst, inc, flag);
 	if (inc->f_big == 1)
 	{
@@ -236,9 +236,9 @@ void	do_operation(char *str, t_inc *inc)
 				tmp->time_u = inc->sb.st_atime;
 				tmp->time_c = inc->sb.st_ctime;
 				tmp->size_f = inc->sb.st_size;
-				tmp->time_m = inc->sb.st_mtim.tv_nsec;
-				tmp->time_u_m = inc->sb.st_atim.tv_nsec;
-				tmp->time_c_m = inc->sb.st_ctim.tv_nsec;
+				tmp->time_m = inc->sb.st_mtimespec.tv_nsec;
+				tmp->time_u_m = inc->sb.st_atimespec.tv_nsec;
+				tmp->time_c_m = inc->sb.st_ctimespec.tv_nsec;
 				(S_ISDIR(inc->sb.st_mode) == 1) ? tmp->true_dir = 100 : 0;
 //				tm = localtime(&inc->sb.st_mtime);
 //				ft_printf("%d %d %d %d %d %d %d %s!!\n", tm->tm_year + 1900, tm->tm_mon + 1,
@@ -353,7 +353,7 @@ void	ft_ls(t_inc *inc, int flag) {
 	//sort_lst(&inc->lst, compare_strs, 0);
 	tmp = inc->lst;
 	lstat(tmp->dir, &inc->sb);
-	if (inc->d == 1 && flag == 1)
+	if (inc->d == 1 && tmp->type == 1)
 	{
 		sort_lst(&inc->lst, compare_strs, 0);
 		tmp = inc->lst;

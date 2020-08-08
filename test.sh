@@ -1,5 +1,5 @@
-./ft_ls  /bin/ -la > test/a
-ls /bin -la > test/b
+./ft_ls  -R test/ > test/a
+ls -R test/ > test/b
 #./ft_ls  -l > test/a1
 #ls  -l > test/b1
 #./ft_ls  -la > test/a2

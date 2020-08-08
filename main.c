@@ -2,7 +2,7 @@
 // Created by И Б on 03.05.20.
 //
 #include "ft_ls.h"
-#include <linux/fs.h>
+//#include <linux/fs.h>
 
 int 	check_p(char *str)
 {
@@ -30,43 +30,46 @@ int		add_args(t_inc *inc, char *str)
 	char 	*tmp;
 
 	i = 1;
-	while (str[i] != '\0')
-	{
-		if (str[i] == 'l')
-			inc->l = 1;
-		else if (str[i] == 'r')
-			inc->r = 1;
-		else if (str[i] == 't')
-			inc->t = 1;
-		else if (str[i] == 'a')
-			inc->a = 1;
-		else if (str[i] == 'R')
-			inc->rr = 1;
-		else if (str[i] == 'u')
-			inc->u = 1;
-		else if (str[i] == '1')
-			inc->one = 1;
-		else if (str[i] == 'c')
-			inc->c = 1;
-		else if (str[i] == 'S')
-			inc->s_big = 1;
-		else if (str[i] == 'U')
-			inc->u_big = 1;
-		else if (str[i] == 'F')
-			inc->f_big = 1;
-		else if (str[i] == 'p')
-			inc->p = check_p(str);
-		else if (str[i] == 'd')
-			inc->d = 1;
-		else
-		{
-			tmp = ft_strjoin(str, ": Invalid argument\n");
-			ft_putstr_fd(tmp, 2);
-			free_l(inc);
-			free(tmp);
-			exit (2);
+	if (ft_strlen(str) == 2 && str[1] == '-') {
+		inc->min = 1;
+	}
+	else {
+		while (str[i] != '\0') {
+			if (str[i] == 'l')
+				inc->l = 1;
+			else if (str[i] == 'r')
+				inc->r = 1;
+			else if (str[i] == 't')
+				inc->t = 1;
+			else if (str[i] == 'a')
+				inc->a = 1;
+			else if (str[i] == 'R')
+				inc->rr = 1;
+			else if (str[i] == 'u')
+				inc->u = 1;
+			else if (str[i] == '1')
+				inc->one = 1;
+			else if (str[i] == 'c')
+				inc->c = 1;
+			else if (str[i] == 'S')
+				inc->s_big = 1;
+			else if (str[i] == 'U')
+				inc->u_big = 1;
+			else if (str[i] == 'F')
+				inc->f_big = 1;
+			else if (str[i] == 'p')
+				inc->p = check_p(str);
+			else if (str[i] == 'd')
+				inc->d = 1;
+			else {
+				tmp = ft_strjoin(str, ": Invalid argument\n");
+				ft_putstr_fd(tmp, 2);
+				free_l(inc);
+				free(tmp);
+				exit(1);
+			}
+			i++;
 		}
-		i++;
 	}
 	return (1);
 }
@@ -173,7 +176,7 @@ int main(int argc, char **argv)
 	inc = (t_inc *)ft_memalloc(sizeof(t_inc));
 	while (i < argc)
 	{
-		if (argv[i][0] != '-')
+		if (argv[i][0] != '-' || ft_strlen(argv[i]) == 1)
 		{
 			tmp = (t_dir *)ft_memalloc(sizeof(t_dir));
 			tmp->dir = ft_strdup(argv[i]);
@@ -182,32 +185,27 @@ int main(int argc, char **argv)
 			inc->count++;
 			inc->lst->type = dir_file(inc);
 		}
-		else if (add_args(inc, argv[i]) == 0)
+		else if (inc->min == 0 && add_args(inc, argv[i]) == 0)
 			return (0);
 		i++;
 	}
 	if (inc->lst == NULL)
+	{
 		make_lst(inc);
+		inc->lst->type = dir_file(inc);
+	}
 	if (inc->count > 1)
 		sort_lst(&inc->lst, compare_files_dirs, 0);
 	//i = dir_file(inc);
 	//ft_printf("%d\n", i);
 	if (i >= 0)
 		ft_ls(inc, i);
-	else
-	{
-		ft_putstr("/bin/ls: "); //потом исправить как фт_лс
-		ft_putstr("cannot access '");
-		ft_putstr(inc->lst->dir);
-		ft_putendl("': No such file or directory");
-//		free(inc->dump_dir_tmp);
-		free_l(inc);
-		return (-1);
-	}
+
 	//free(str_tmp);
 //	free_lst(tmp);
 	//free(tmp->dir);
 	free_l(inc);
+
 //	free(str_tmp);
 	return (0);
 }
